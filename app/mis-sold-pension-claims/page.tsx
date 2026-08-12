@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
+  { q: 'Can my mis-sold pension claim be handled on a no win no fee basis?', a: 'Edward & Amaury Solicitors can often run suitable financial mis-selling cases on a no win no fee basis, subject to an individual assessment and written agreement. Availability is not guaranteed. Any proposed success fee, deduction and other terms will be explained before you decide whether to proceed. See our <a href="/no-win-no-fee-pension-claims/">no win no fee pension claims guide</a>.' },
   { q: 'What does it mean for a pension to be mis-sold?', a: 'A pension is mis-sold when a financial adviser recommends a pension product, transfer or course of action that is unsuitable for the client given their personal circumstances, financial situation and attitude to risk. This can include advising a transfer that results in the loss of valuable guaranteed benefits, or placing pension funds into inappropriate investments.' },
   { q: 'Who can make a mis-sold pension claim?', a: 'Anyone who received regulated financial advice about their pension that may have been unsuitable may potentially have grounds for a claim. Eligibility depends on the specific advice received, the losses or lost benefits suffered, who gave the advice and which route is available. A solicitor can assess your individual situation.' },
   { q: 'What evidence do I need?', a: 'Useful documents include your pension transfer documentation, suitability letter, risk profile questionnaire, pension statements, adviser correspondence, and any charges or fees information. Even if you do not have all of these, it is worth making an enquiry as some records may be obtainable from third parties.' },
@@ -93,6 +94,10 @@ export default function MisSoldPensionClaimsPage() {
               <li>The advice was not suitable for your individual circumstances</li>
             </ul>
             <p>It is important to note that not every poor pension outcome means advice was wrong. The question is whether the adviser met their professional and regulatory obligations to you at the time the advice was given.</p>
+
+            <h2>Can I Make a No Win No Fee Pension Claim?</h2>
+            <p>Edward &amp; Amaury Solicitors can often consider eligible financial mis-selling matters on a no win no fee basis. The arrangement is not available automatically and depends on an assessment of the advice, evidence, losses, time limits and available claim route. If funding can be offered, any success fee, deduction, disbursement and other relevant term will be explained in writing before you decide whether to proceed.</p>
+            <p><Link href="/no-win-no-fee-pension-claims/" className="text-[#1e3a5f] font-semibold underline">Read our complete guide to no win no fee pension claims</Link>.</p>
 
             <h2>What Losses May Be Recoverable?</h2>
             <p>Compensation for a mis-sold pension claim typically aims to put you back in the position you would have been in had the unsuitable advice not been given. This may include:</p>

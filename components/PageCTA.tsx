@@ -15,7 +15,7 @@ export default function PageCTA({ title = 'Ready to Find Out If You Can Claim?',
           Start Free Enquiry <ArrowRight size={16} />
         </Link>
       </div>
-      <p className="mt-4 text-xs text-gray-400">No obligation · Solicitor-led review · Fee arrangements explained before you proceed</p>
+      <p className="mt-4 text-xs text-gray-400">No obligation · Solicitor-led review · Ask whether no win no fee funding is available · Terms explained before you proceed</p>
     </div>
   )
 }

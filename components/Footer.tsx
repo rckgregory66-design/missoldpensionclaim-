@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin } from 'lucide-react'
 import { siteConfig } from '@/lib/metadata'
 
 const claimLinks = [
+  { label: 'No Win No Fee Pension Claims', href: '/no-win-no-fee-pension-claims/' },
   { label: 'Mis-Sold Pension Claims', href: '/mis-sold-pension-claims/' },
   { label: 'Mis-Sold SIPP Claims', href: '/mis-sold-sipp-claims/' },
   { label: 'Defined Benefit Transfer Claims', href: '/defined-benefit-pension-transfer-claims/' },

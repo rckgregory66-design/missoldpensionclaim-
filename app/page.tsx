@@ -8,8 +8,8 @@ import { OrganizationSchema, FAQSchema, AggregateRatingSchema } from '@/componen
 import { siteConfig } from '@/lib/metadata'
 
 export const metadata: Metadata = {
-  title: 'Mis-Sold Pension Claims Solicitors | Pension Compensation Claims',
-  description: 'Think you were given bad pension advice? Solicitor-led support for mis-sold pension, SIPP and defined benefit transfer claims. Free initial enquiry. Edward & Amaury Solicitors.',
+  title: 'Mis-Sold Pension Claims Solicitors | No Win No Fee Options',
+  description: 'Think you were given bad pension advice? Edward & Amaury Solicitors can often handle eligible mis-sold pension claims on a no win no fee basis. Free initial enquiry.',
   alternates: { canonical: '/' },
 }
 
@@ -27,6 +27,7 @@ const warningSigns = [
 ]
 
 const claimTypes = [
+  { title: 'No Win No Fee Pension Claims', desc: 'Find out whether your eligible pension mis-selling claim may be handled on a no win no fee basis.', href: '/no-win-no-fee-pension-claims/', icon: Shield },
   { title: 'Mis-Sold Pension Claims', desc: 'General mis-selling of personal and workplace pension products and unsuitable pension advice.', href: '/mis-sold-pension-claims/', icon: FileText },
   { title: 'Mis-Sold SIPP Claims', desc: 'Unsuitable advice to transfer into a self-invested personal pension, often into high-risk assets.', href: '/mis-sold-sipp-claims/', icon: TrendingDown },
   { title: 'Defined Benefit Transfer Claims', desc: 'Advice to transfer out of a final salary or DB scheme that may have been unsuitable.', href: '/defined-benefit-pension-transfer-claims/', icon: Scale },
@@ -48,6 +49,7 @@ const processSteps = [
 ]
 
 const homeFaqs = [
+  { q: 'Can I make a no win no fee pension claim?', a: 'Edward & Amaury Solicitors can often handle suitable financial mis-selling cases on a no win no fee basis. This is not automatic and depends on an assessment of the facts, evidence, losses and available route. Any success fee, deduction and other funding terms will be explained before you decide whether to proceed. Read our <a href="/no-win-no-fee-pension-claims/" class="text-[#1e3a5f] underline">no win no fee pension claims guide</a>.' },
   { q: 'What is pension mis-selling?', a: 'Pension mis-selling occurs when a financial adviser recommends a pension product, transfer or investment that is unsuitable for your individual circumstances. This may include advising you to transfer out of a final salary scheme, placing your pension into high-risk investments without adequately explaining the risks, or failing to explain charges or alternative options.' },
   { q: 'How do I know if my pension was mis-sold?', a: 'Common signs include being advised to transfer out of a defined benefit scheme, being moved into a SIPP you did not fully understand, being placed into high-risk or unregulated investments, losing guaranteed benefits, or receiving advice that did not reflect your financial situation or attitude to risk. You can use our <a href="/how-do-i-know-if-my-pension-was-mis-sold/" class="text-[#1e3a5f] underline">eligibility checklist</a> for more guidance.' },
   { q: 'Can I claim compensation for a mis-sold pension?', a: 'Whether you can claim depends on the specific advice you received, your individual circumstances, and the losses or lost benefits you have suffered. You may be able to complain to the Financial Ombudsman Service, make a claim through the Financial Services Compensation Scheme, or take legal action against the adviser or firm. A solicitor can review your situation and explain your options.' },
@@ -87,7 +89,7 @@ export default function HomePage() {
                   Check If You Can Claim <ArrowRight size={16} />
                 </Link>
               </div>
-              <p className="text-xs text-gray-400">No obligation · Solicitor-led review · Free initial enquiry · Fee arrangements explained before you proceed</p>
+              <p className="text-xs text-gray-400">No obligation · Solicitor-led review · Free initial enquiry · Ask whether no win no fee funding may be available</p>
             </div>
 
             {/* Hero form */}

@@ -3,6 +3,7 @@ import { siteConfig } from '@/lib/metadata'
 
 const pages = [
   { url: '/', priority: 1.0, changeFrequency: 'weekly' },
+  { url: '/no-win-no-fee-pension-claims/', priority: 0.9, changeFrequency: 'weekly' },
   { url: '/mis-sold-pension-claims/', priority: 0.9, changeFrequency: 'weekly' },
   { url: '/mis-sold-sipp-claims/', priority: 0.9, changeFrequency: 'weekly' },
   { url: '/defined-benefit-pension-transfer-claims/', priority: 0.9, changeFrequency: 'weekly' },
