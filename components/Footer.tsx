@@ -36,24 +36,6 @@ const legalLinks = [
 export default function Footer() {
   return (
     <footer className="bg-[#0a1628] text-gray-300">
-      {/* CTA strip */}
-      <div className="bg-[#1e3a5f] py-10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <h2 className="text-white text-2xl font-semibold mb-1">Think You May Have A Claim?</h2>
-            <p className="text-gray-300 text-sm">Speak to a solicitor today for a free, no-obligation initial enquiry.</p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a href={`tel:${siteConfig.phone.replace(/\s/g,'')}`} className="flex items-center justify-center gap-2 bg-[#c9a84c] hover:bg-[#b8960e] text-white font-semibold px-6 py-3 rounded-lg transition-colors">
-              <Phone size={16} /> {siteConfig.phone}
-            </a>
-            <Link href="/contact/" className="flex items-center justify-center gap-2 bg-white text-[#0f2035] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition-colors">
-              Free Enquiry Form
-            </Link>
-          </div>
-        </div>
-      </div>
-
       {/* Main footer */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
