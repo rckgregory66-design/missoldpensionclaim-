@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     type: 'website',
   },
+  verification: {
+    google: 'xWK42cIHFZJctEKK3JP6uAPONTBa419CgaRxw7BIn5U',
+  },
   robots: { index: true, follow: true },
 }
 
