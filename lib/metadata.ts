@@ -12,13 +12,15 @@ export const siteConfig = {
 }
 
 export function buildMetadata(override: Partial<Metadata> & { title: string; description: string }): Metadata {
+  const { title, description, ...metadataOverride } = override
+
   return {
     metadataBase: new URL(siteConfig.url),
-    title: override.title,
-    description: override.description,
+    title,
+    description,
     openGraph: {
-      title: override.title,
-      description: override.description,
+      title,
+      description,
       url: siteConfig.url,
       siteName: siteConfig.name,
       locale: 'en_GB',
@@ -26,13 +28,13 @@ export function buildMetadata(override: Partial<Metadata> & { title: string; des
     },
     twitter: {
       card: 'summary_large_image',
-      title: override.title,
-      description: override.description,
+      title,
+      description,
     },
     alternates: {
       canonical: override.alternates?.canonical ?? '/',
     },
     robots: { index: true, follow: true },
-    ...override,
+    ...metadataOverride,
   }
 }
