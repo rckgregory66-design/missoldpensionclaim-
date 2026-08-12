@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: '_6P32nzvOGjCGUwstNRGa1IWdwkz1AiHTdKa8zbvoOk',
+    other: {
+      'msvalidate.01': '40D00AD9CC126F4D8873AF68A24D8412',
+    },
   },
   robots: { index: true, follow: true },
 }
