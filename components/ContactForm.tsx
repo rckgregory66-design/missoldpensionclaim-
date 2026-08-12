@@ -56,8 +56,8 @@ export default function ContactForm({ compact = false }: { compact?: boolean }) 
     return (
       <div className="flex flex-col items-center justify-center py-10 text-center gap-4">
         <CheckCircle size={48} className="text-green-500" />
-        <h3 className="text-xl font-semibold text-[#0f2035]">Thank you for your enquiry</h3>
-        <p className="text-gray-600 max-w-sm">A member of our team will be in touch with you shortly to discuss your pension claim. We aim to respond within one business day.</p>
+        <h3 className={`text-xl font-semibold ${compact ? 'text-white' : 'text-[#0f2035]'}`}>Thank you for your enquiry</h3>
+        <p className={`${compact ? 'text-gray-300' : 'text-gray-600'} max-w-sm`}>A member of our team will be in touch with you shortly to discuss your pension claim. We aim to respond within one business day.</p>
       </div>
     )
   }
@@ -66,19 +66,19 @@ export default function ContactForm({ compact = false }: { compact?: boolean }) 
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className={compact ? 'grid grid-cols-1 gap-4' : 'grid grid-cols-1 sm:grid-cols-2 gap-4'}>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Full name *</label>
+          <label className={`block text-sm font-medium mb-1 ${compact ? 'text-gray-200' : 'text-gray-700'}`}>Full name *</label>
           <input required name="name" value={form.name} onChange={handleChange}
             className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
             placeholder="Your full name" />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Phone number *</label>
+          <label className={`block text-sm font-medium mb-1 ${compact ? 'text-gray-200' : 'text-gray-700'}`}>Phone number *</label>
           <input required name="phone" type="tel" value={form.phone} onChange={handleChange}
             className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
             placeholder="Your phone number" />
         </div>
         <div className={compact ? '' : 'sm:col-span-2'}>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Email address *</label>
+          <label className={`block text-sm font-medium mb-1 ${compact ? 'text-gray-200' : 'text-gray-700'}`}>Email address *</label>
           <input required name="email" type="email" value={form.email} onChange={handleChange}
             className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
             placeholder="Your email address" />
@@ -161,9 +161,9 @@ export default function ContactForm({ compact = false }: { compact?: boolean }) 
         <div className={compact ? '' : 'sm:col-span-2'}>
           <label className="flex items-start gap-2 cursor-pointer">
             <input required type="checkbox" name="consent" checked={form.consent} onChange={handleChange} className="mt-0.5 accent-[#1e3a5f]" />
-            <span className="text-xs text-gray-600 leading-relaxed">
+            <span className={`text-xs leading-relaxed ${compact ? 'text-gray-300' : 'text-gray-600'}`}>
               By submitting this form, you agree that Edward &amp; Amaury Solicitors or its authorised representatives may contact you about your enquiry. Your information will be handled in accordance with our{' '}
-              <a href="/privacy-policy/" className="text-[#1e3a5f] underline hover:text-[#162d4a]">Privacy Policy</a>.
+              <a href="/privacy-policy/" className={`${compact ? 'text-[#e2c766] hover:text-white' : 'text-[#1e3a5f] hover:text-[#162d4a]'} underline`}>Privacy Policy</a>.
               Submitting this form does not create a solicitor-client relationship.
             </span>
           </label>

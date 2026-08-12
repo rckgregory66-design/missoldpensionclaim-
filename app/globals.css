@@ -26,3 +26,93 @@ body {
   background: #ffffff;
   color: #1f2937;
 }
+
+/* Shared long-form typography for service and legal pages. */
+.prose-legal {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.prose-legal > h2 {
+  color: #0f2035;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 0.875rem;
+  letter-spacing: -0.015em;
+}
+
+.prose-legal > h3 {
+  color: #162d4a;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-legal > p {
+  margin-bottom: 1.125rem;
+}
+
+.prose-legal > ul,
+.prose-legal > ol {
+  margin: 0.875rem 0 1.5rem;
+  padding-left: 1.625rem;
+}
+
+.prose-legal > ul {
+  list-style: disc;
+}
+
+.prose-legal > ol {
+  list-style: decimal;
+}
+
+.prose-legal > ul > li,
+.prose-legal > ol > li {
+  margin: 0.45rem 0;
+  padding-left: 0.25rem;
+}
+
+.prose-legal > ul > li::marker,
+.prose-legal > ol > li::marker {
+  color: #b8960e;
+  font-weight: 700;
+}
+
+.prose-legal a:not([class]) {
+  color: #1e3a5f;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.prose-legal a:hover {
+  color: #9d7f0a;
+}
+
+.prose-legal strong {
+  color: #162d4a;
+  font-weight: 700;
+}
+
+.prose-legal > blockquote {
+  margin: 1.5rem 0;
+  border-left: 4px solid #c9a84c;
+  background: #f8fafc;
+  padding: 1rem 1.25rem;
+  color: #4b5563;
+}
+
+@media (min-width: 768px) {
+  .prose-legal > h2 {
+    font-size: 1.75rem;
+  }
+
+  .prose-legal > h3 {
+    font-size: 1.25rem;
+  }
+}
