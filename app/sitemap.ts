@@ -21,6 +21,11 @@ const routes = [
   { url: '/how-do-i-know-if-my-pension-was-mis-sold/', priority: 0.7, changeFrequency: 'monthly' as const },
   // Long-tail informational page (distinct from /fscs-pension-claims/ — targets the compensation limit query)
   { url: '/fscs-pension-compensation-limit/', priority: 0.8, changeFrequency: 'monthly' as const },
+  // Dedicated claim landing page
+  { url: '/make-a-claim/', priority: 0.9, changeFrequency: 'monthly' as const },
+  // High-intent informational pages
+  { url: '/can-i-claim-if-adviser-has-gone-bust/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/what-evidence-do-i-need-for-pension-mis-selling-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
   // Note: /pension-transfer-claim/, /self-invested-personal-pension-claim/, /final-salary-pension-transfer-claim/
   // redirect to the canonical versions above and are excluded from sitemap.
   // Compare pages

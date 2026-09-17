@@ -5,6 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
 import ContactForm from '@/components/ContactForm'
 import FAQAccordion from '@/components/FAQAccordion'
+import CompensationAssessment from '@/components/CompensationAssessment'
 import { BreadcrumbSchema, WebPageSchema, ArticleSchema, FAQSchema } from '@/components/Schema'
 import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
@@ -108,8 +109,13 @@ export default function CompensationPage() {
             <h2>Frequently Asked Questions</h2>
             <FAQAccordion faqs={faqs} />
 
-            <h2>Using a Simple Enquiry Form</h2>
-            <p>While we cannot predict the outcome of any individual claim, completing a short enquiry form allows us to understand your situation and give you a more informed picture of what may be possible in your case. There is no charge for an initial review.</p>
+            <h2>Quick Compensation Assessment</h2>
+            <p>This short assessment gives general guidance based on your pension type and situation. It is not a substitute for individual legal advice, and no specific figure can be given without reviewing your case in full.</p>
+
+            <CompensationAssessment />
+
+            <h2>Get a Personal Assessment</h2>
+            <p>While no specific figure can be given without reviewing your individual case, completing a short enquiry form allows us to understand your situation and give you a more informed picture of what may be possible. There is no charge for an initial review.</p>
 
             <div className="not-prose mt-6 bg-[#0f2035] rounded-xl p-6 text-white">
               <h3 className="font-semibold mb-2">Request Your Free Assessment</h3>

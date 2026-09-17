@@ -1,0 +1,49 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="50%" style="stop-color:#0f2035"/>
+      <stop offset="100%" style="stop-color:#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Gold accent bar -->
+  <rect x="80" y="80" width="6" height="80" fill="#c9a84c" rx="3"/>
+
+  <!-- SRA badge -->
+  <rect x="80" y="500" width="280" height="36" rx="18" fill="#c9a84c" fill-opacity="0.15" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="100" y="523" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-weight="600">SRA Regulated · No. 800525</text>
+
+  <!-- Main headline -->
+  <text x="100" y="160" font-family="Georgia, serif" font-size="60" font-weight="700" fill="#ffffff" letter-spacing="-1">Mis-Sold Pension</text>
+  <text x="100" y="230" font-family="Georgia, serif" font-size="60" font-weight="700" fill="#ffffff" letter-spacing="-1">Claims Solicitors</text>
+
+  <!-- Sub-headline -->
+  <text x="100" y="300" font-family="Arial, sans-serif" font-size="26" fill="#94a3b8">Free initial review · No win no fee options</text>
+
+  <!-- Divider -->
+  <rect x="100" y="340" width="120" height="3" fill="#c9a84c" rx="1.5"/>
+
+  <!-- Firm name -->
+  <text x="100" y="390" font-family="Arial, sans-serif" font-size="20" fill="#c9a84c" font-weight="600">Edward &amp; Amaury Solicitors</text>
+  <text x="100" y="418" font-family="Arial, sans-serif" font-size="17" fill="#64748b">missoldpensionclaim.co.uk</text>
+
+  <!-- Right side decorative element -->
+  <circle cx="980" cy="315" r="220" fill="#c9a84c" fill-opacity="0.04"/>
+  <circle cx="980" cy="315" r="170" fill="#c9a84c" fill-opacity="0.04"/>
+  <circle cx="980" cy="315" r="120" fill="#c9a84c" fill-opacity="0.06"/>
+
+  <!-- Scale icon (simplified) -->
+  <g transform="translate(920, 250)" opacity="0.3">
+    <rect x="58" y="0" width="4" height="130" fill="#c9a84c" rx="2"/>
+    <rect x="0" y="0" width="120" height="4" fill="#c9a84c" rx="2"/>
+    <circle cx="60" cy="2" r="6" fill="#c9a84c"/>
+    <ellipse cx="20" cy="50" rx="24" ry="16" fill="none" stroke="#c9a84c" stroke-width="3"/>
+    <line x1="20" y1="4" x2="20" y2="34" stroke="#c9a84c" stroke-width="3"/>
+    <ellipse cx="100" cy="50" rx="24" ry="16" fill="none" stroke="#c9a84c" stroke-width="3"/>
+    <line x1="100" y1="4" x2="100" y2="34" stroke="#c9a84c" stroke-width="3"/>
+    <rect x="40" y="130" width="40" height="6" fill="#c9a84c" rx="3"/>
+  </g>
+</svg>

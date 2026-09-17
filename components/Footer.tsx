@@ -16,9 +16,12 @@ const claimLinks = [
 ]
 
 const infoLinks = [
+  { label: 'Make a Claim', href: '/make-a-claim/' },
   { label: 'Am I Eligible?', href: '/how-do-i-know-if-my-pension-was-mis-sold/' },
   { label: 'Compensation Guide', href: '/mis-sold-pension-compensation-calculator/' },
   { label: 'FSCS Compensation Limit', href: '/fscs-pension-compensation-limit/' },
+  { label: 'Adviser Gone Bust?', href: '/can-i-claim-if-adviser-has-gone-bust/' },
+  { label: 'What Evidence Do I Need?', href: '/what-evidence-do-i-need-for-pension-mis-selling-claim/' },
   { label: 'Time Limits', href: '/time-limits-mis-sold-pension-claims/' },
   { label: 'Claim Process', href: '/pension-claim-process/' },
   { label: 'Compare: FOS vs FSCS', href: '/compare/fos-vs-fscs/' },

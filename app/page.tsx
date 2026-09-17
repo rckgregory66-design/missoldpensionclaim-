@@ -4,7 +4,7 @@ import { Phone, ArrowRight, AlertTriangle, CheckCircle, FileText, Users, Scale, 
 import TrustStrip from '@/components/TrustStrip'
 import ContactForm from '@/components/ContactForm'
 import FAQAccordion from '@/components/FAQAccordion'
-import { OrganizationSchema, FAQSchema, AggregateRatingSchema } from '@/components/Schema'
+import { OrganizationSchema, FAQSchema } from '@/components/Schema'
 import { siteConfig } from '@/lib/metadata'
 
 export const metadata: Metadata = {
@@ -62,7 +62,6 @@ export default function HomePage() {
   return (
     <>
       <FAQSchema faqs={homeFaqs} />
-      <AggregateRatingSchema ratingValue="5" reviewCount="2" />
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#0a1628] via-[#0f2035] to-[#1e3a5f] text-white py-16 md:py-24">

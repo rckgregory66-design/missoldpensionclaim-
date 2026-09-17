@@ -18,6 +18,18 @@ export const metadata: Metadata = {
     siteName: 'Mis-Sold Pension Claim',
     locale: 'en_GB',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Mis-Sold Pension Claims Solicitors — Edward & Amaury Solicitors',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og-image.svg'],
   },
   verification: {
     google: '_6P32nzvOGjCGUwstNRGa1IWdwkz1AiHTdKa8zbvoOk',
