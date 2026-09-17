@@ -64,6 +64,7 @@ export default function Header() {
             <Link href="/compare/" className="text-gray-200 hover:text-[#c9a84c] transition-colors">Compare</Link>
             <Link href="/faqs/" className="text-gray-200 hover:text-[#c9a84c] transition-colors">FAQs</Link>
             <Link href="/about/" className="text-gray-200 hover:text-[#c9a84c] transition-colors">About</Link>
+            <Link href="/contact/" className="text-gray-200 hover:text-[#c9a84c] transition-colors">Contact</Link>
           </nav>
 
           {/* CTA */}

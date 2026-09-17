@@ -4,7 +4,6 @@ const BASE_URL = 'https://missoldpensionclaim.co.uk'
 
 const routes = [
   { url: '/', priority: 1.0, changeFrequency: 'weekly' as const },
-  { url: '/make-a-claim/', priority: 0.9, changeFrequency: 'monthly' as const },
   { url: '/contact/', priority: 0.9, changeFrequency: 'monthly' as const },
   { url: '/mis-sold-pension-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
   { url: '/mis-sold-pension-compensation-calculator/', priority: 0.8, changeFrequency: 'monthly' as const },
@@ -20,11 +19,10 @@ const routes = [
   { url: '/financial-ombudsman-pension-complaints/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/time-limits-mis-sold-pension-claims/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/how-do-i-know-if-my-pension-was-mis-sold/', priority: 0.7, changeFrequency: 'monthly' as const },
-  // New long-tail pages
+  // Long-tail informational page (distinct from /fscs-pension-claims/ — targets the compensation limit query)
   { url: '/fscs-pension-compensation-limit/', priority: 0.8, changeFrequency: 'monthly' as const },
-  { url: '/pension-transfer-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
-  { url: '/self-invested-personal-pension-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
-  { url: '/final-salary-pension-transfer-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
+  // Note: /pension-transfer-claim/, /self-invested-personal-pension-claim/, /final-salary-pension-transfer-claim/
+  // redirect to the canonical versions above and are excluded from sitemap.
   // Compare pages
   { url: '/compare/fos-vs-fscs/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/defined-benefit-vs-defined-contribution/', priority: 0.7, changeFrequency: 'monthly' as const },

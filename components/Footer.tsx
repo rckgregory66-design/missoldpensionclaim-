@@ -18,6 +18,7 @@ const claimLinks = [
 const infoLinks = [
   { label: 'Am I Eligible?', href: '/how-do-i-know-if-my-pension-was-mis-sold/' },
   { label: 'Compensation Guide', href: '/mis-sold-pension-compensation-calculator/' },
+  { label: 'FSCS Compensation Limit', href: '/fscs-pension-compensation-limit/' },
   { label: 'Time Limits', href: '/time-limits-mis-sold-pension-claims/' },
   { label: 'Claim Process', href: '/pension-claim-process/' },
   { label: 'Compare: FOS vs FSCS', href: '/compare/fos-vs-fscs/' },

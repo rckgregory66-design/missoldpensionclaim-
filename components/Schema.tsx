@@ -83,11 +83,12 @@ export function BreadcrumbSchema({ crumbs }: { crumbs: { name: string; item: str
 }
 
 export function FAQSchema({ faqs }: { faqs: { q: string; a: string }[] }) {
+  const today = new Date().toISOString().split('T')[0]
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     datePublished: '2025-01-01',
-    dateModified: '2025-06-18',
+    dateModified: today,
     mainEntity: faqs.map(f => ({
       '@type': 'Question',
       name: f.q,
@@ -97,15 +98,16 @@ export function FAQSchema({ faqs }: { faqs: { q: string; a: string }[] }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 }
 
-export function WebPageSchema({ title, description, url }: { title: string; description: string; url: string }) {
+export function WebPageSchema({ title, description, url, datePublished = '2025-01-01' }: { title: string; description: string; url: string; datePublished?: string }) {
+  const today = new Date().toISOString().split('T')[0]
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: title,
     description,
     url: `${siteConfig.url}${url}`,
-    datePublished: '2025-01-01',
-    dateModified: '2025-06-18',
+    datePublished,
+    dateModified: today,
     isAccessibleForFree: true,
     isPartOf: { '@type': 'WebSite', url: siteConfig.url, name: siteConfig.name },
     publisher: {
@@ -163,6 +165,7 @@ export function HowToSchema({ steps }: { steps: { name: string; text: string }[]
 export function ArticleSchema({ title, description, url, datePublished = '2025-01-01' }: {
   title: string; description: string; url: string; datePublished?: string
 }) {
+  const today = new Date().toISOString().split('T')[0]
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -170,7 +173,7 @@ export function ArticleSchema({ title, description, url, datePublished = '2025-0
     description,
     url: `${siteConfig.url}${url}`,
     datePublished,
-    dateModified: '2025-06-18',
+    dateModified: today,
     isAccessibleForFree: true,
     author: {
       '@type': 'Person',

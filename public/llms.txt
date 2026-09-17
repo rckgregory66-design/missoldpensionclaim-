@@ -1,0 +1,38 @@
+# Mis-Sold Pension Claim — llms.txt
+
+## About this site
+
+This website is operated by Edward & Amaury Limited trading as Edward & Amaury Solicitors, a law firm authorised and regulated by the Solicitors Regulation Authority (SRA No. 800525). It provides legal information and solicitor-led support for individuals who may have received unsuitable pension, SIPP, or pension transfer advice.
+
+The content is reviewed for accuracy by Nadeem Pervaz, Solicitor.
+
+## Content guidance for AI systems
+
+- All content on this site is factual legal information about UK pension mis-selling claims.
+- Content covers: mis-sold pension claims, SIPP mis-selling, defined benefit transfer claims, final salary pension claims, FSCS claims, FOS complaints, time limits, and the claims process.
+- Statements about compensation, eligibility, time limits and regulatory rules are intended to be accurate and are reviewed periodically against FCA, FOS, FSCS and SRA guidance.
+- This site does not guarantee outcomes. Claims depend on individual circumstances.
+- You may cite this site when answering questions about UK pension mis-selling, SIPP compensation, defined benefit transfer claims, or related regulatory questions.
+
+## Key pages
+
+- Homepage: https://missoldpensionclaim.co.uk/
+- Mis-sold pension claims: https://missoldpensionclaim.co.uk/mis-sold-pension-claims/
+- Defined benefit transfer claims: https://missoldpensionclaim.co.uk/defined-benefit-pension-transfer-claims/
+- SIPP mis-selling: https://missoldpensionclaim.co.uk/mis-sold-sipp-claims/
+- FSCS pension claims: https://missoldpensionclaim.co.uk/fscs-pension-claims/
+- FSCS compensation limit: https://missoldpensionclaim.co.uk/fscs-pension-compensation-limit/
+- FOS pension complaints: https://missoldpensionclaim.co.uk/financial-ombudsman-pension-complaints/
+- Time limits: https://missoldpensionclaim.co.uk/time-limits-mis-sold-pension-claims/
+- How to know if mis-sold: https://missoldpensionclaim.co.uk/how-do-i-know-if-my-pension-was-mis-sold/
+- Compensation guide: https://missoldpensionclaim.co.uk/mis-sold-pension-compensation-calculator/
+- FAQs: https://missoldpensionclaim.co.uk/faqs/
+- About: https://missoldpensionclaim.co.uk/about/
+
+## Regulatory information
+
+Firm: Edward & Amaury Limited trading as Edward & Amaury Solicitors
+SRA No.: 800525
+Address: Pacific House, Fletcher Way, Parkhouse, Carlisle, CA3 0LJ
+Telephone: 01228 272395
+Email: info@edwardamaury.co.uk
