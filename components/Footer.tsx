@@ -21,6 +21,9 @@ const claimLinks = [
   { label: 'Forestry & Land SIPP Claims', href: '/mis-sold-sipp-claims/forestry-land-pension-investment/' },
   { label: 'Pension Scam Claims', href: '/pension-scam-claims/' },
   { label: 'Civil Service Pension Transfer Claims', href: '/civil-service-pension-transfer-claims/' },
+  { label: 'Local Government Pension Transfer Claims', href: '/local-government-pension-transfer-claims/' },
+  { label: 'Mini-Bond & Care Home SIPP Claims', href: '/mis-sold-sipp-claims/mini-bonds-care-home-pension-investment/' },
+  { label: 'Pension Drawdown Mis-Selling', href: '/pension-drawdown-mis-selling-claims/' },
 ]
 
 const infoLinks = [
@@ -45,6 +48,8 @@ const infoLinks = [
   { label: 'Was My Pension Review Mis-Selling?', href: '/pension-review-was-it-mis-selling/' },
   { label: 'Complaint Letter Guide', href: '/pension-complaint-letter-template/' },
   { label: 'Solicitor vs Direct Claim', href: '/compare/solicitor-vs-direct-claim/' },
+  { label: 'Pensions Ombudsman vs FOS', href: '/compare/pensions-ombudsman-vs-fos/' },
+  { label: 'No Win No Fee Percentage', href: '/no-win-no-fee-pension-claims-percentage/' },
   { label: 'How to Make an FSCS Claim', href: '/how-to-make-an-fscs-pension-claim/' },
   { label: 'What Is a CETV?', href: '/what-is-a-cash-equivalent-transfer-value/' },
   { label: 'DB Transfer Redress Calculation', href: '/how-is-defined-benefit-pension-transfer-redress-calculated/' },

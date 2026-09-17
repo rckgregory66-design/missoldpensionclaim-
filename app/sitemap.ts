@@ -42,6 +42,12 @@ const routes = [
   { url: '/mis-sold-sipp-claims/forestry-land-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
   // Note: /pension-transfer-claim/, /self-invested-personal-pension-claim/, /final-salary-pension-transfer-claim/
   // redirect to the canonical versions above and are excluded from sitemap.
+  // Batch 6 — LGPS, mini-bonds, pensions ombudsman, drawdown, no win no fee %
+  { url: '/local-government-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
+  { url: '/mis-sold-sipp-claims/mini-bonds-care-home-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/compare/pensions-ombudsman-vs-fos/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/pension-drawdown-mis-selling-claims/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/no-win-no-fee-pension-claims-percentage/', priority: 0.7, changeFrequency: 'monthly' as const },
   // Batch 5 — civil service pension, TVAS, solicitor vs direct, pension reviews, complaint letter
   { url: '/civil-service-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
   { url: '/pension-transfer-value-analysis/', priority: 0.7, changeFrequency: 'monthly' as const },
