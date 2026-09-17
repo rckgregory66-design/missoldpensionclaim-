@@ -66,6 +66,12 @@ const routes = [
   { url: '/compare/fos-vs-legal-action/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/defined-benefit-vs-defined-contribution/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/solicitor-vs-direct-claim/', priority: 0.7, changeFrequency: 'monthly' as const },
+  // Batch 9 — cold calling, divorce transfer, SIPP vs PP, FOS process, LBA
+  { url: '/pension-cold-calling-claims/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/pension-transfer-after-divorce/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/compare/sipp-vs-personal-pension/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/pension-ombudsman-complaint-process/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/mis-sold-pension-letter-before-action/', priority: 0.7, changeFrequency: 'monthly' as const },
   // Batch 8 — annuity mis-selling, CMC, moved abroad, crypto SIPP, adviser duty of care
   { url: '/pension-annuity-mis-selling-claims/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/what-if-i-already-used-a-claims-management-company/', priority: 0.8, changeFrequency: 'monthly' as const },

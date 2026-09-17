@@ -30,6 +30,8 @@ const claimLinks = [
   { label: 'Pension Charges Mis-Selling', href: '/pension-charges-mis-selling/' },
   { label: 'Pension Annuity Mis-Selling Claims', href: '/pension-annuity-mis-selling-claims/' },
   { label: 'Cryptocurrency Bitcoin SIPP Claims', href: '/mis-sold-sipp-claims/cryptocurrency-bitcoin-pension-investment/' },
+  { label: 'Pension Cold Calling Claims', href: '/pension-cold-calling-claims/' },
+  { label: 'FOS Complaint Process', href: '/pension-ombudsman-complaint-process/' },
 ]
 
 const infoLinks = [
