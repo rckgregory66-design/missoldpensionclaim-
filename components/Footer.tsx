@@ -32,6 +32,8 @@ const claimLinks = [
   { label: 'Cryptocurrency Bitcoin SIPP Claims', href: '/mis-sold-sipp-claims/cryptocurrency-bitcoin-pension-investment/' },
   { label: 'Pension Cold Calling Claims', href: '/pension-cold-calling-claims/' },
   { label: 'FOS Complaint Process', href: '/pension-ombudsman-complaint-process/' },
+  { label: 'How Much Compensation Can I Get?', href: '/how-much-compensation-can-i-get/' },
+  { label: 'FCA Rules on Pension Advice', href: '/pension-advice-fca-rules/' },
 ]
 
 const infoLinks = [

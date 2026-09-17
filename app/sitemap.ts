@@ -66,6 +66,11 @@ const routes = [
   { url: '/compare/fos-vs-legal-action/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/defined-benefit-vs-defined-contribution/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/solicitor-vs-direct-claim/', priority: 0.7, changeFrequency: 'monthly' as const },
+  // Batch 10 — what is a personal pension, FCA rules, how much comp, transfer without advice
+  { url: '/what-is-a-personal-pension/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/pension-advice-fca-rules/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/how-much-compensation-can-i-get/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/pension-transfer-without-advice/', priority: 0.7, changeFrequency: 'monthly' as const },
   // Batch 9 — cold calling, divorce transfer, SIPP vs PP, FOS process, LBA
   { url: '/pension-cold-calling-claims/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/pension-transfer-after-divorce/', priority: 0.7, changeFrequency: 'monthly' as const },
