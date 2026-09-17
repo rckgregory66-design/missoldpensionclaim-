@@ -66,6 +66,12 @@ const routes = [
   { url: '/compare/fos-vs-legal-action/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/defined-benefit-vs-defined-contribution/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/solicitor-vs-direct-claim/', priority: 0.7, changeFrequency: 'monthly' as const },
+  // Batch 8 — annuity mis-selling, CMC, moved abroad, crypto SIPP, adviser duty of care
+  { url: '/pension-annuity-mis-selling-claims/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/what-if-i-already-used-a-claims-management-company/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/can-i-claim-if-i-moved-abroad/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/mis-sold-sipp-claims/cryptocurrency-bitcoin-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/financial-adviser-duty-of-care/', priority: 0.7, changeFrequency: 'monthly' as const },
   // Batch 7 — police, armed forces, occupational, pension charges, annuity vs drawdown
   { url: '/police-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
   { url: '/armed-forces-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },

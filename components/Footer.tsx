@@ -28,6 +28,8 @@ const claimLinks = [
   { label: 'Armed Forces Pension Transfer Claims', href: '/armed-forces-pension-transfer-claims/' },
   { label: 'Occupational Pension Transfer Claims', href: '/occupational-pension-transfer-claims/' },
   { label: 'Pension Charges Mis-Selling', href: '/pension-charges-mis-selling/' },
+  { label: 'Pension Annuity Mis-Selling Claims', href: '/pension-annuity-mis-selling-claims/' },
+  { label: 'Cryptocurrency Bitcoin SIPP Claims', href: '/mis-sold-sipp-claims/cryptocurrency-bitcoin-pension-investment/' },
 ]
 
 const infoLinks = [
