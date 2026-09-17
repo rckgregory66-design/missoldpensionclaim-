@@ -26,6 +26,13 @@ const routes = [
   // High-intent informational pages
   { url: '/can-i-claim-if-adviser-has-gone-bust/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/what-evidence-do-i-need-for-pension-mis-selling-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
+  // Batch 1 — eligibility, NHS, process, tax
+  { url: '/can-i-claim-if-i-am-already-retired/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/can-i-claim-on-behalf-of-a-deceased-relative/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/how-long-does-a-pension-claim-take/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/nhs-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
+  { url: '/is-pension-mis-selling-compensation-taxable/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/what-is-a-suitability-report/', priority: 0.7, changeFrequency: 'monthly' as const },
   // Note: /pension-transfer-claim/, /self-invested-personal-pension-claim/, /final-salary-pension-transfer-claim/
   // redirect to the canonical versions above and are excluded from sitemap.
   // Compare pages
