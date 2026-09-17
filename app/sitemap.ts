@@ -41,8 +41,12 @@ const routes = [
   { url: '/mis-sold-sipp-claims/hotel-room-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
   // Note: /pension-transfer-claim/, /self-invested-personal-pension-claim/, /final-salary-pension-transfer-claim/
   // redirect to the canonical versions above and are excluded from sitemap.
+  // Batch 3 — process detail + compare pages
+  { url: '/what-happens-after-fos-rejects-my-pension-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/how-is-defined-benefit-pension-transfer-redress-calculated/', priority: 0.8, changeFrequency: 'monthly' as const },
   // Compare pages
   { url: '/compare/fos-vs-fscs/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/compare/fos-vs-legal-action/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/defined-benefit-vs-defined-contribution/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/solicitor-vs-direct-claim/', priority: 0.7, changeFrequency: 'monthly' as const },
   // Information pages
