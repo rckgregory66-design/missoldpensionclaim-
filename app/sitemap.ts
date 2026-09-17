@@ -66,6 +66,12 @@ const routes = [
   { url: '/compare/fos-vs-legal-action/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/defined-benefit-vs-defined-contribution/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/solicitor-vs-direct-claim/', priority: 0.7, changeFrequency: 'monthly' as const },
+  // Batch 7 — police, armed forces, occupational, pension charges, annuity vs drawdown
+  { url: '/police-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
+  { url: '/armed-forces-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
+  { url: '/occupational-pension-transfer-claims/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/pension-charges-mis-selling/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/compare/annuity-vs-drawdown/', priority: 0.7, changeFrequency: 'monthly' as const },
   // Information pages
   { url: '/about/', priority: 0.6, changeFrequency: 'monthly' as const },
   { url: '/faqs/', priority: 0.7, changeFrequency: 'monthly' as const },

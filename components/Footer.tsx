@@ -24,6 +24,10 @@ const claimLinks = [
   { label: 'Local Government Pension Transfer Claims', href: '/local-government-pension-transfer-claims/' },
   { label: 'Mini-Bond & Care Home SIPP Claims', href: '/mis-sold-sipp-claims/mini-bonds-care-home-pension-investment/' },
   { label: 'Pension Drawdown Mis-Selling', href: '/pension-drawdown-mis-selling-claims/' },
+  { label: 'Police Pension Transfer Claims', href: '/police-pension-transfer-claims/' },
+  { label: 'Armed Forces Pension Transfer Claims', href: '/armed-forces-pension-transfer-claims/' },
+  { label: 'Occupational Pension Transfer Claims', href: '/occupational-pension-transfer-claims/' },
+  { label: 'Pension Charges Mis-Selling', href: '/pension-charges-mis-selling/' },
 ]
 
 const infoLinks = [
