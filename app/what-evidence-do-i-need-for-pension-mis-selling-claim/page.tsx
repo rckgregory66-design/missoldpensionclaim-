@@ -81,6 +81,10 @@ export default function EvidencePage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">
               A question we hear regularly is: "I don&apos;t have any paperwork from when I transferred my pension — does that mean I can&apos;t claim?" The answer, in most cases, is no. Many claimants do not have their original documents to hand, and there are ways to obtain them. This guide explains what evidence is useful, what is not essential, and what to do if documents are missing.
             </p>
+            <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
+              <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
+              <p className="text-white text-sm leading-relaxed">The most useful documents are: your suitability report, Transfer Value Analysis (for DB transfers), client fact find, and pension correspondence. But you don't need them all to start — a data subject access request to your former adviser can often recover missing documents. Contact us for a free review with whatever you have.</p>
+            </div>
 
             <h2>Why Evidence Matters</h2>
             <p>Evidence helps establish two core elements of a mis-sold pension claim:</p>

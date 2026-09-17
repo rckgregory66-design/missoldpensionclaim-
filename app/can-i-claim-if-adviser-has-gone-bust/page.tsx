@@ -49,6 +49,10 @@ export default function AdviserGoneBustPage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">
               One of the most common concerns we hear from potential claimants is this: "My financial adviser has closed down — does that mean I have lost my chance to claim?" In most cases, the answer is no. There is a route specifically designed for this situation.
             </p>
+            <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
+              <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
+              <p className="text-white text-sm leading-relaxed">Yes. If your adviser's firm was FCA-authorised and has since failed, the FSCS may compensate you up to the current FSCS limit. The firm closing does not end your right to claim — the FSCS is designed exactly for this situation. Contact us for a free assessment.</p>
+            </div>
 
             <h2>What Happens When a Financial Adviser Goes Out of Business?</h2>
             <p>When an FCA-authorised financial adviser firm becomes insolvent, enters administration or is otherwise unable to meet claims against it, the FSCS steps in as a compensation scheme of last resort. The FSCS declares firms "in default" and then becomes the body you claim against — rather than the firm itself.</p>
