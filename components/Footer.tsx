@@ -18,6 +18,8 @@ const claimLinks = [
   { label: 'UCIS SIPP Claims', href: '/mis-sold-sipp-claims/unregulated-collective-investment-schemes/' },
   { label: 'Green Energy SIPP Claims', href: '/mis-sold-sipp-claims/green-energy-pension-investment/' },
   { label: 'Hotel Room SIPP Claims', href: '/mis-sold-sipp-claims/hotel-room-pension-investment/' },
+  { label: 'Forestry & Land SIPP Claims', href: '/mis-sold-sipp-claims/forestry-land-pension-investment/' },
+  { label: 'Pension Scam Claims', href: '/pension-scam-claims/' },
 ]
 
 const infoLinks = [
@@ -36,6 +38,9 @@ const infoLinks = [
   { label: 'Time Limits', href: '/time-limits-mis-sold-pension-claims/' },
   { label: 'Claim Process', href: '/pension-claim-process/' },
   { label: 'After FOS Rejection', href: '/what-happens-after-fos-rejects-my-pension-claim/' },
+  { label: 'Teachers Pension Transfer Claims', href: '/teachers-pension-transfer-claims/' },
+  { label: 'How to Make an FSCS Claim', href: '/how-to-make-an-fscs-pension-claim/' },
+  { label: 'What Is a CETV?', href: '/what-is-a-cash-equivalent-transfer-value/' },
   { label: 'DB Transfer Redress Calculation', href: '/how-is-defined-benefit-pension-transfer-redress-calculated/' },
   { label: 'Compare: FOS vs Legal Action', href: '/compare/fos-vs-legal-action/' },
   { label: 'Compare: FOS vs FSCS', href: '/compare/fos-vs-fscs/' },

@@ -39,8 +39,14 @@ const routes = [
   { url: '/mis-sold-sipp-claims/unregulated-collective-investment-schemes/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/mis-sold-sipp-claims/green-energy-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/mis-sold-sipp-claims/hotel-room-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/mis-sold-sipp-claims/forestry-land-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
   // Note: /pension-transfer-claim/, /self-invested-personal-pension-claim/, /final-salary-pension-transfer-claim/
   // redirect to the canonical versions above and are excluded from sitemap.
+  // Batch 4 — teachers pension, FSCS how-to, CETV explainer, pension scams
+  { url: '/teachers-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
+  { url: '/how-to-make-an-fscs-pension-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/what-is-a-cash-equivalent-transfer-value/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/pension-scam-claims/', priority: 0.8, changeFrequency: 'monthly' as const },
   // Batch 3 — process detail + compare pages
   { url: '/what-happens-after-fos-rejects-my-pension-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/how-is-defined-benefit-pension-transfer-redress-calculated/', priority: 0.8, changeFrequency: 'monthly' as const },

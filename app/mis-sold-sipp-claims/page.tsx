@@ -119,6 +119,7 @@ export default function MisSoldSippClaimsPage() {
                 { label: 'UCIS Pension Claims', href: '/mis-sold-sipp-claims/unregulated-collective-investment-schemes/', desc: 'Unregulated collective investment schemes.' },
                 { label: 'Green Energy SIPP Claims', href: '/mis-sold-sipp-claims/green-energy-pension-investment/', desc: 'Solar, carbon credits, biofuel schemes.' },
                 { label: 'Hotel Room SIPP Claims', href: '/mis-sold-sipp-claims/hotel-room-pension-investment/', desc: 'Serviced accommodation pension investments.' },
+                { label: 'Forestry & Land SIPP Claims', href: '/mis-sold-sipp-claims/forestry-land-pension-investment/', desc: 'Forestry, farmland and land banking schemes.' },
               ].map(item => (
                 <Link key={item.href} href={item.href} className="bg-[#f0f4f8] border border-gray-200 rounded-lg p-4 hover:border-[#c9a84c] transition-colors group">
                   <p className="font-semibold text-[#0f2035] text-sm group-hover:text-[#1e3a5f]">{item.label}</p>
