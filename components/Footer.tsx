@@ -20,6 +20,7 @@ const claimLinks = [
   { label: 'Hotel Room SIPP Claims', href: '/mis-sold-sipp-claims/hotel-room-pension-investment/' },
   { label: 'Forestry & Land SIPP Claims', href: '/mis-sold-sipp-claims/forestry-land-pension-investment/' },
   { label: 'Pension Scam Claims', href: '/pension-scam-claims/' },
+  { label: 'Civil Service Pension Transfer Claims', href: '/civil-service-pension-transfer-claims/' },
 ]
 
 const infoLinks = [
@@ -39,6 +40,11 @@ const infoLinks = [
   { label: 'Claim Process', href: '/pension-claim-process/' },
   { label: 'After FOS Rejection', href: '/what-happens-after-fos-rejects-my-pension-claim/' },
   { label: 'Teachers Pension Transfer Claims', href: '/teachers-pension-transfer-claims/' },
+  { label: 'Civil Service Pension Transfer', href: '/civil-service-pension-transfer-claims/' },
+  { label: 'What Is a TVAS?', href: '/pension-transfer-value-analysis/' },
+  { label: 'Was My Pension Review Mis-Selling?', href: '/pension-review-was-it-mis-selling/' },
+  { label: 'Complaint Letter Guide', href: '/pension-complaint-letter-template/' },
+  { label: 'Solicitor vs Direct Claim', href: '/compare/solicitor-vs-direct-claim/' },
   { label: 'How to Make an FSCS Claim', href: '/how-to-make-an-fscs-pension-claim/' },
   { label: 'What Is a CETV?', href: '/what-is-a-cash-equivalent-transfer-value/' },
   { label: 'DB Transfer Redress Calculation', href: '/how-is-defined-benefit-pension-transfer-redress-calculated/' },

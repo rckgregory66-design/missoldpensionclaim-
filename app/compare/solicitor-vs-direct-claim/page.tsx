@@ -1,130 +1,172 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { CheckCircle, ArrowRight } from 'lucide-react'
+import { ArrowRight, CheckCircle, XCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
-import { BreadcrumbSchema, WebPageSchema, ArticleSchema, FAQSchema } from '@/components/Schema'
-import AuthorBox from '@/components/AuthorBox'
 import FAQAccordion from '@/components/FAQAccordion'
+import ContactForm from '@/components/ContactForm'
+import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
+import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Solicitor vs Direct Claim: Which Is Right for Your Pension Claim?',
-  description: 'Compare making a direct FOS or FSCS complaint yourself versus using a solicitor for your mis-sold pension claim. Understand the trade-offs and when professional help adds value.',
+  title: 'Solicitor vs Direct Claim: Which Is Better for a Pension Claim?',
+  description: 'Should you use a solicitor or go direct to FOS or FSCS for your pension claim? Honest comparison of costs, speed, complexity and outcomes. Solicitor guide.',
   alternates: { canonical: '/compare/solicitor-vs-direct-claim/' },
 }
 
 const faqs = [
-  { q: 'Can I complain to the FOS or FSCS myself for free?', a: 'Yes. Both the Financial Ombudsman Service and the Financial Services Compensation Scheme provide free, consumer-facing routes that you can use directly without a solicitor or claims management company. They provide guidance on their websites on how to make a complaint or application. You are never required to use professional help to access these routes.' },
-  { q: 'Will a solicitor take a percentage of my compensation?', a: 'This depends on how the work is arranged. Some solicitors work on a fixed fee or hourly rate. Others may offer a conditional fee arrangement (no win, no fee). Fee arrangements vary and must be explained to you clearly before any chargeable work begins. Always ensure you understand the fee structure before proceeding.' },
-  { q: 'What if my FOS complaint is rejected — can a solicitor still help?', a: 'Yes. If you reject a FOS decision, it is not binding on you and you may still be able to pursue legal action in court. A solicitor can review whether there are grounds to challenge the outcome through other means. Similarly, if an FSCS application is rejected, a solicitor may be able to advise on whether there are grounds for review or alternative routes.' },
-  { q: 'Is a solicitor the same as a claims management company?', a: 'No. Solicitors are regulated by the Solicitors Regulation Authority (SRA) and owe legal duties to their clients. Claims management companies (CMCs) are regulated by the FCA but are not solicitors. Edward & Amaury Solicitors is a law firm authorised and regulated by the SRA (SRA No. 800525), not a CMC.' },
+  { q: 'Do I need a solicitor to make a pension mis-selling claim?', a: 'No — you can make a pension mis-selling complaint directly to the Financial Ombudsman Service (FOS) or claim directly from the FSCS without professional help. Both services are free to use and do not require legal representation. However, using a solicitor can add significant value in complex cases — particularly where a defined benefit transfer is involved, where the loss calculation is complex, or where you have claims against multiple parties.' },
+  { q: 'How much does it cost to use a solicitor for a pension claim?', a: 'Many solicitors handle pension mis-selling claims on a no win no fee basis (conditional fee agreement). This means you pay nothing if the claim is unsuccessful, and the solicitor\'s fee — typically a percentage of the compensation recovered — is payable only if you succeed. If you instruct a solicitor on this basis, your financial exposure if the claim fails is zero (subject to the terms of the agreement).' },
+  { q: 'What are the advantages of going directly to the FOS or FSCS?', a: 'The main advantage of going direct is cost — both the FOS and FSCS are free to use. For straightforward claims where the evidence is clear, the loss is easy to calculate, and the firm is still trading (FOS) or has failed (FSCS), going direct can be efficient. The FOS in particular handles a large volume of pension complaints and does not require complex legal submissions.' },
+  { q: 'When does using a solicitor add most value for a pension claim?', a: 'A solicitor adds most value where: the claim involves a defined benefit transfer (where loss calculations follow the FCA\'s PS22/13 methodology and can be complex); the claim involves a SIPP operator as well as the adviser (requiring strategy across multiple parties); the FOS or FSCS initial decision is lower than the true loss and needs to be challenged; the loss exceeds the FOS £430,000 cap or the FSCS £85,000 limit; or where the adviser is still trading and litigation is the appropriate route.' },
+  { q: 'Can I start by going direct and then instruct a solicitor later?', a: 'Yes. You can start a FOS complaint yourself and instruct a solicitor to take over at any point in the process — including if you receive an initial assessment or offer you want to challenge. Similarly, you can begin a FSCS claim yourself and take legal advice at any stage. Time limits still apply throughout, so do not allow the process to drift.' },
+  { q: 'What is the FOS compensation cap and does it affect my claim?', a: 'The FOS can currently award compensation of up to £430,000 for complaints about acts or omissions on or after 1 April 2019. For older complaints, the limit is lower. If your loss exceeds the applicable FOS cap, you cannot recover the excess through the FOS — legal action would be the appropriate route for the excess. A solicitor can advise on whether your potential loss is likely to approach or exceed the cap.' },
+  { q: 'Is the FOS decision binding?', a: 'If you accept an FOS final decision, it becomes binding on the firm. However, the firm is not bound until you accept. You can reject an FOS decision and pursue the matter through the courts instead — though you would then need to fund litigation. A solicitor can advise on whether an FOS decision is fair or whether it is worth challenging.' },
 ]
 
 const rows = [
-  { feature: 'Cost', direct: 'Free — no charge to use FOS or FSCS', solicitor: 'Fees apply (fixed, hourly or conditional) — must be explained upfront' },
-  { feature: 'Who handles the claim', direct: 'You — you write the complaint, submit evidence and correspond', solicitor: 'Solicitor — manages communications, evidence and process on your behalf' },
-  { feature: 'Legal expertise', direct: 'None — FOS and FSCS do not require legal argument', solicitor: 'Full legal analysis of the advice, regulatory standards and losses' },
-  { feature: 'Best for', direct: 'Straightforward cases where the firm and advice issue are clear', solicitor: 'Complex cases, high-value claims, rejected complaints, or multiple parties' },
-  { feature: 'Time required from you', direct: 'Higher — you must manage submissions and responses yourself', solicitor: 'Lower — most work is handled by the solicitor' },
-  { feature: 'Advice on which route to use', direct: 'None — you must identify the correct route yourself', solicitor: 'Provided — solicitor identifies the correct route for your circumstances' },
-  { feature: 'If complaint is rejected', direct: 'You must decide next steps yourself', solicitor: 'Solicitor can advise on alternatives including legal action' },
-  { feature: 'Regulated by', direct: 'N/A', solicitor: 'Solicitors Regulation Authority (SRA)' },
+  { factor: 'Cost', solicitor: 'No win no fee (usually) — fee from compensation only', direct: 'Free' },
+  { factor: 'Who handles the claim', solicitor: 'Qualified solicitor prepares and manages the file', direct: 'You prepare and submit everything yourself' },
+  { factor: 'Loss calculation', solicitor: 'Solicitor calculates loss per FCA methodology (PS22/13)', direct: 'You calculate, or rely on FOS/FSCS to assess' },
+  { factor: 'DB transfer claims', solicitor: 'Complex calculations handled professionally', direct: 'FOS/FSCS can assess, but you need to evidence the loss' },
+  { factor: 'Multi-party claims', solicitor: 'Can pursue adviser and SIPP operator simultaneously', direct: 'Possible but more complex to coordinate yourself' },
+  { factor: 'FOS cap', solicitor: 'Can advise on and pursue losses above the FOS cap via litigation', direct: 'FOS limited to £430,000 cap — no access to courts' },
+  { factor: 'FSCS limit', solicitor: 'Can advise on strategy where loss exceeds £85,000', direct: 'FSCS limited to £85,000 per firm' },
+  { factor: 'Challenging decisions', solicitor: 'Experienced at challenging FOS/FSCS decisions', direct: 'You challenge any decisions yourself' },
+  { factor: 'Speed', solicitor: 'Similar to direct; FOS/FSCS timescales are driven by those bodies', direct: 'Direct applications can be submitted immediately' },
 ]
 
 export default function SolicitorVsDirectPage() {
   return (
     <>
-      <BreadcrumbSchema crumbs={[{ name: 'Comparisons', item: '/compare/' }, { name: 'Solicitor vs Direct Claim', item: '/compare/solicitor-vs-direct-claim/' }]} />
-      <WebPageSchema title="Solicitor vs Direct Claim: Which Is Right for Your Pension Claim?" description={metadata.description as string} url="/compare/solicitor-vs-direct-claim/" />
-      <ArticleSchema title="Solicitor vs Direct Claim: Which Is Right for Your Pension Claim?" description={metadata.description as string} url="/compare/solicitor-vs-direct-claim/" />
+      <BreadcrumbSchema crumbs={[
+        { name: 'Compare', item: '/compare/' },
+        { name: 'Solicitor vs Direct Claim', item: '/compare/solicitor-vs-direct-claim/' },
+      ]} />
       <FAQSchema faqs={faqs} />
+      <WebPageSchema title="Solicitor vs Direct Claim" description={metadata.description as string} url="/compare/solicitor-vs-direct-claim/" />
+      <ArticleSchema title="Solicitor vs Direct Claim" description={metadata.description as string} url="/compare/solicitor-vs-direct-claim/" />
 
-      <Breadcrumb crumbs={[{ label: 'Comparisons', href: '/compare/' }, { label: 'Solicitor vs Direct Claim' }]} />
+      <Breadcrumb crumbs={[{ label: 'Compare', href: '/compare/' }, { label: 'Solicitor vs Direct Claim' }]} />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-4xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#0f2035] mb-4">Solicitor-Led Claim vs Direct Complaint: What Are the Differences?</h1>
-          <AuthorBox publishedDate="January 2025" reviewedDate="June 2025" />
+        <div className="grid lg:grid-cols-3 gap-10">
+          <article className="lg:col-span-2 prose-legal">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#0f2035] mb-4">Solicitor vs Direct Claim — Which Route Is Better for a Pension Mis-Selling Claim?</h1>
+            <AuthorBox publishedDate="September 2026" />
+            <TLDRBox points={[
+              'You can go direct to the FOS or FSCS for free — no solicitor required for straightforward claims.',
+              'A solicitor (usually on no win no fee) adds most value for complex DB transfer claims, multi-party claims, or losses above the FOS cap or FSCS limit.',
+              'The FOS cap is £430,000 (for complaints about acts after April 2019) — losses above this cannot be recovered through the FOS.',
+              'The FSCS limit is £85,000 per failed firm — losses above this need other routes.',
+              'You can start direct and bring in a solicitor at any point if needed.',
+            ]} />
 
-          <TLDRBox points={[
-            'You are never required to use a solicitor — FOS and FSCS are both free and accessible directly',
-            'A solicitor can add value in complex cases, rejected complaints, or where large sums are involved',
-            'Going direct is faster and costs nothing; a solicitor-led claim takes longer but provides expert advocacy',
-            'SRA-regulated solicitors must explain fees clearly before starting work — there should be no surprises',
-            'A free initial consultation from a regulated firm costs you nothing and helps you understand your options',
-          ]} />
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">You do not need a solicitor to make a pension mis-selling claim. Both the FOS and FSCS are free to use without legal representation. But for complex claims — particularly defined benefit transfers, multi-party SIPP cases, or large losses — professional advice can add real value. Here is an honest comparison to help you decide.</p>
 
-          <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">You are never required to use a solicitor to pursue a mis-sold pension claim. Both the Financial Ombudsman Service and the FSCS are free and accessible directly. But professional support can make a significant difference in complex cases. This page sets out the trade-offs honestly.</p>
+            <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
+              <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
+              <p className="text-white text-sm leading-relaxed">For straightforward claims, going direct to the FOS or FSCS is free and often effective. For DB transfers, large losses, or multi-party claims, a no win no fee solicitor can increase recovery and handle complexity. You can always start direct and add professional support later.</p>
+            </div>
 
-          <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
-            <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-            <p className="text-white text-sm leading-relaxed">For straightforward cases, you can complain to the FOS or apply to the FSCS directly — free of charge, without a solicitor. Solicitor support adds most value in <strong className="text-[#c9a84c]">complex cases</strong>, where the advice failing is disputed, where a complaint has already been rejected, or where the claim value is high enough to justify the cost of professional help.</p>
-          </div>
-
-          <h2 className="text-2xl font-bold text-[#0f2035] mb-4">Side-by-Side Comparison</h2>
-
-          <div className="not-prose overflow-x-auto mb-10 rounded-xl border border-gray-200">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="bg-[#0f2035] text-white">
-                  <th className="px-5 py-3 text-left font-semibold w-1/3">Feature</th>
-                  <th className="px-5 py-3 text-left font-semibold w-1/3">Direct Complaint (FOS / FSCS)</th>
-                  <th className="px-5 py-3 text-left font-semibold w-1/3">Solicitor-Led Claim</th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((r, i) => (
-                  <tr key={r.feature} className={i % 2 === 0 ? 'bg-white' : 'bg-[#f8f9fa]'}>
-                    <td className="px-5 py-3 font-medium text-[#0f2035]">{r.feature}</td>
-                    <td className="px-5 py-3 text-gray-600">{r.direct}</td>
-                    <td className="px-5 py-3 text-gray-600">{r.solicitor}</td>
+            <h2>Head-to-Head Comparison</h2>
+            <div className="not-prose overflow-x-auto mb-8">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-[#0f2035] text-white">
+                    <th className="text-left p-3 font-semibold rounded-tl-lg">Factor</th>
+                    <th className="text-left p-3 font-semibold">Solicitor</th>
+                    <th className="text-left p-3 font-semibold rounded-tr-lg">Direct (FOS / FSCS)</th>
                   </tr>
+                </thead>
+                <tbody>
+                  {rows.map((r, i) => (
+                    <tr key={r.factor} className={i % 2 === 0 ? 'bg-white' : 'bg-[#f0f4f8]'}>
+                      <td className="p-3 font-semibold text-[#0f2035] border-b border-gray-100">{r.factor}</td>
+                      <td className="p-3 text-gray-700 border-b border-gray-100">{r.solicitor}</td>
+                      <td className="p-3 text-gray-700 border-b border-gray-100">{r.direct}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <h2>When to Go Direct</h2>
+            <div className="not-prose space-y-2 mb-6">
+              {[
+                'The claim involves a straightforward complaint about advice — unsuitable fund selection, undisclosed charges, or unsuitable risk',
+                'The firm is still trading and FCA-authorised (FOS route)',
+                'The firm has failed (FSCS route) and the loss is clearly within the £85,000 limit',
+                'The claim involves a personal pension rather than a DB transfer',
+                'You have the time and confidence to handle the correspondence yourself',
+              ].map(item => (
+                <div key={item} className="flex items-start gap-2 text-sm text-gray-700 bg-[#f0f4f8] rounded-lg p-3 border border-gray-200">
+                  <CheckCircle size={14} className="text-green-500 shrink-0 mt-0.5" />{item}
+                </div>
+              ))}
+            </div>
+
+            <h2>When a Solicitor Adds Most Value</h2>
+            <div className="not-prose space-y-2 mb-8">
+              {[
+                'The claim involves a defined benefit or final salary pension transfer — where the PS22/13 loss calculation is complex',
+                'You have claims against both the adviser and a SIPP operator — requiring coordinated strategy',
+                'The potential loss approaches or exceeds the FOS cap (£430,000) or the FSCS limit (£85,000)',
+                'The FOS or FSCS has issued an initial decision that seems too low and you want to challenge it',
+                'The adviser firm is still trading and litigation — not FOS — is the appropriate route',
+                'You are unsure whether you are out of time and need legal advice on limitation',
+              ].map(item => (
+                <div key={item} className="flex items-start gap-2 text-sm text-gray-700 bg-[#f0f4f8] rounded-lg p-3 border border-gray-200">
+                  <CheckCircle size={14} className="text-green-500 shrink-0 mt-0.5" />{item}
+                </div>
+              ))}
+            </div>
+
+            <h2>No Win No Fee — What It Means in Practice</h2>
+            <p>Most pension mis-selling solicitors offer conditional fee agreements (no win no fee). Under these arrangements:</p>
+            <ul>
+              <li>You pay nothing if the claim is unsuccessful</li>
+              <li>If the claim succeeds, the solicitor's fee — a percentage of the compensation recovered — is deducted from the award</li>
+              <li>Your out-of-pocket risk if the claim fails is zero (subject to the specific terms of the agreement)</li>
+            </ul>
+            <p>No win no fee aligns the solicitor's incentives with yours — they are only paid if you recover compensation. See our full <Link href="/no-win-no-fee-pension-claims/" className="text-[#1e3a5f] underline">no win no fee guide</Link>.</p>
+
+            <h2>Frequently Asked Questions</h2>
+            <FAQAccordion faqs={faqs} />
+          </article>
+
+          <aside className="space-y-6">
+            <div className="bg-[#0f2035] rounded-xl p-6 text-white">
+              <h3 className="font-semibold mb-2 text-sm">Free Advice on Your Options</h3>
+              <p className="text-gray-300 text-sm mb-5">Not sure which route is right for your claim? Contact us for a free, no-obligation assessment.</p>
+              <ContactForm compact />
+            </div>
+            <div className="bg-[#f0f4f8] rounded-xl p-5 border border-gray-200">
+              <h3 className="font-semibold text-[#0f2035] mb-4 text-sm">Related Pages</h3>
+              <ul className="space-y-2 text-sm">
+                {[
+                  { label: 'No Win No Fee Pension Claims', href: '/no-win-no-fee-pension-claims/' },
+                  { label: 'Compare: FOS vs Legal Action', href: '/compare/fos-vs-legal-action/' },
+                  { label: 'Compare: FOS vs FSCS', href: '/compare/fos-vs-fscs/' },
+                  { label: 'How Long Does a Claim Take?', href: '/how-long-does-a-pension-claim-take/' },
+                  { label: 'Pension Claim Process', href: '/pension-claim-process/' },
+                  { label: 'Make a Claim', href: '/make-a-claim/' },
+                ].map(l => (
+                  <li key={l.href}><Link href={l.href} className="text-[#1e3a5f] hover:underline flex items-center gap-1"><ArrowRight size={12} />{l.label}</Link></li>
                 ))}
-              </tbody>
-            </table>
-          </div>
-
-          <h2 className="text-2xl font-bold text-[#0f2035] mb-3">When Going Direct May Be Appropriate</h2>
-          <p className="text-gray-600 mb-4 leading-relaxed">Making a direct complaint to the FOS or an application to the FSCS may be right for you if:</p>
-          <ul className="space-y-2 mb-6">
-            {[
-              'The facts are clear and well-documented — you have a suitability letter, pension statements and correspondence',
-              'The advice failure is straightforward — for example, you were placed into investments you clearly told the adviser you did not want',
-              'The case is relatively lower value and the cost of solicitor support is disproportionate',
-              'You have time to manage the process and are comfortable dealing with the relevant body directly',
-            ].map(p => (
-              <li key={p} className="flex items-start gap-2 text-sm text-gray-700"><CheckCircle size={16} className="text-green-500 shrink-0 mt-0.5" />{p}</li>
-            ))}
-          </ul>
-
-          <h2 className="text-2xl font-bold text-[#0f2035] mb-3">When a Solicitor May Add Most Value</h2>
-          <p className="text-gray-600 mb-4 leading-relaxed">Solicitor support is likely to add most value when:</p>
-          <ul className="space-y-2 mb-6">
-            {[
-              'The case is complex — for example, involving multiple parties, a failed firm, or disputed suitability',
-              'The claim involves significant sums — a large DB transfer or significant investment losses',
-              'A complaint to the firm has already been rejected and you are unsure how to proceed',
-              'You are unsure which route applies or whether you are eligible to claim',
-              'You do not have time to manage the process yourself or find it daunting',
-              'You may need to consider legal proceedings if the FOS or FSCS route is unavailable or unsuccessful',
-            ].map(p => (
-              <li key={p} className="flex items-start gap-2 text-sm text-gray-700"><CheckCircle size={16} className="text-green-500 shrink-0 mt-0.5" />{p}</li>
-            ))}
-          </ul>
-
-          <div className="bg-[#f0f4f8] rounded-xl p-5 border border-gray-200 mb-8">
-            <p className="text-sm text-gray-700 leading-relaxed"><strong>We will always be transparent.</strong> At Edward &amp; Amaury Solicitors, we will tell you honestly whether we think your case merits professional support — and if you can proceed directly, we will tell you that too. A free initial review carries no obligation.</p>
-          </div>
-
-          <Link href="/pension-claim-process/" className="inline-flex items-center gap-2 bg-[#0f2035] hover:bg-[#162d4a] text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors mb-10">
-            Learn how our process works <ArrowRight size={14} />
-          </Link>
-
-          <h2 className="text-2xl font-bold text-[#0f2035] mb-4 mt-4">Frequently Asked Questions</h2>
-          <FAQAccordion faqs={faqs} />
+              </ul>
+            </div>
+            <div className="bg-[#f0f4f8] rounded-xl p-5 border border-gray-200">
+              <h3 className="font-semibold text-[#0f2035] mb-3 text-sm">Key Caps at a Glance</h3>
+              <div className="space-y-2 text-xs text-gray-700">
+                <div className="flex items-start gap-2"><CheckCircle size={12} className="text-green-500 shrink-0 mt-0.5" /><span><strong>FOS cap:</strong> £430,000 (acts after 1 April 2019) — lower for earlier acts</span></div>
+                <div className="flex items-start gap-2"><CheckCircle size={12} className="text-green-500 shrink-0 mt-0.5" /><span><strong>FSCS limit:</strong> £85,000 per eligible claimant per failed firm</span></div>
+                <div className="flex items-start gap-2"><XCircle size={12} className="text-red-400 shrink-0 mt-0.5" /><span><strong>Excess above cap:</strong> not recoverable via FOS/FSCS — requires litigation</span></div>
+              </div>
+            </div>
+          </aside>
         </div>
-
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

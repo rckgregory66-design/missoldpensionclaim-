@@ -42,6 +42,11 @@ const routes = [
   { url: '/mis-sold-sipp-claims/forestry-land-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
   // Note: /pension-transfer-claim/, /self-invested-personal-pension-claim/, /final-salary-pension-transfer-claim/
   // redirect to the canonical versions above and are excluded from sitemap.
+  // Batch 5 — civil service pension, TVAS, solicitor vs direct, pension reviews, complaint letter
+  { url: '/civil-service-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
+  { url: '/pension-transfer-value-analysis/', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/pension-review-was-it-mis-selling/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/pension-complaint-letter-template/', priority: 0.7, changeFrequency: 'monthly' as const },
   // Batch 4 — teachers pension, FSCS how-to, CETV explainer, pension scams
   { url: '/teachers-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
   { url: '/how-to-make-an-fscs-pension-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
