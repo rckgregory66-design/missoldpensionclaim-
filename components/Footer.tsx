@@ -13,6 +13,11 @@ const claimLinks = [
   { label: 'High-Risk Investment Claims', href: '/high-risk-pension-investment-claims/' },
   { label: 'FSCS Pension Claims', href: '/fscs-pension-claims/' },
   { label: 'FOS Pension Complaints', href: '/financial-ombudsman-pension-complaints/' },
+  { label: 'Storage Pod SIPP Claims', href: '/mis-sold-sipp-claims/storage-pod-pension-investment/' },
+  { label: 'Overseas Property SIPP Claims', href: '/mis-sold-sipp-claims/overseas-property-pension-investment/' },
+  { label: 'UCIS SIPP Claims', href: '/mis-sold-sipp-claims/unregulated-collective-investment-schemes/' },
+  { label: 'Green Energy SIPP Claims', href: '/mis-sold-sipp-claims/green-energy-pension-investment/' },
+  { label: 'Hotel Room SIPP Claims', href: '/mis-sold-sipp-claims/hotel-room-pension-investment/' },
 ]
 
 const infoLinks = [

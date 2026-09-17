@@ -33,6 +33,12 @@ const routes = [
   { url: '/nhs-pension-transfer-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
   { url: '/is-pension-mis-selling-compensation-taxable/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/what-is-a-suitability-report/', priority: 0.7, changeFrequency: 'monthly' as const },
+  // Batch 2 — SIPP sub-pages
+  { url: '/mis-sold-sipp-claims/storage-pod-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/mis-sold-sipp-claims/overseas-property-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/mis-sold-sipp-claims/unregulated-collective-investment-schemes/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/mis-sold-sipp-claims/green-energy-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/mis-sold-sipp-claims/hotel-room-pension-investment/', priority: 0.8, changeFrequency: 'monthly' as const },
   // Note: /pension-transfer-claim/, /self-invested-personal-pension-claim/, /final-salary-pension-transfer-claim/
   // redirect to the canonical versions above and are excluded from sitemap.
   // Compare pages

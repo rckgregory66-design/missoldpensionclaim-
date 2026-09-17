@@ -110,6 +110,23 @@ export default function MisSoldSippClaimsPage() {
               Read about time limits <ArrowRight size={13} />
             </Link>
 
+            <h2 className="mt-8">Specific SIPP Investment Types</h2>
+            <p>We have dedicated guides covering the most common types of unsuitable SIPP investment:</p>
+            <div className="not-prose grid sm:grid-cols-2 gap-3 mb-6">
+              {[
+                { label: 'Storage Pod SIPP Claims', href: '/mis-sold-sipp-claims/storage-pod-pension-investment/', desc: 'Illiquid storage unit investments placed in SIPPs.' },
+                { label: 'Overseas Property SIPP Claims', href: '/mis-sold-sipp-claims/overseas-property-pension-investment/', desc: 'Off-plan and foreign property schemes.' },
+                { label: 'UCIS Pension Claims', href: '/mis-sold-sipp-claims/unregulated-collective-investment-schemes/', desc: 'Unregulated collective investment schemes.' },
+                { label: 'Green Energy SIPP Claims', href: '/mis-sold-sipp-claims/green-energy-pension-investment/', desc: 'Solar, carbon credits, biofuel schemes.' },
+                { label: 'Hotel Room SIPP Claims', href: '/mis-sold-sipp-claims/hotel-room-pension-investment/', desc: 'Serviced accommodation pension investments.' },
+              ].map(item => (
+                <Link key={item.href} href={item.href} className="bg-[#f0f4f8] border border-gray-200 rounded-lg p-4 hover:border-[#c9a84c] transition-colors group">
+                  <p className="font-semibold text-[#0f2035] text-sm group-hover:text-[#1e3a5f]">{item.label}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{item.desc}</p>
+                </Link>
+              ))}
+            </div>
+
             <h2 className="mt-8">Frequently Asked Questions</h2>
             <FAQAccordion faqs={faqs} />
           </article>
