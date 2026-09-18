@@ -32,6 +32,9 @@ export function OrganizationSchema() {
       name: 'Authorised and regulated by the Solicitors Regulation Authority',
       identifier: siteConfig.sraNumber,
     },
+    sameAs: [
+      `https://www.sra.org.uk/consumers/register/organisation/?sraNumber=${siteConfig.sraNumber}`,
+    ],
     serviceType: [
       'Mis-sold pension claims',
       'SIPP mis-selling claims',
