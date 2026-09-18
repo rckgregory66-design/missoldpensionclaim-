@@ -89,6 +89,8 @@ const routes = [
   { url: '/occupational-pension-transfer-claims/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/pension-charges-mis-selling/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/compare/annuity-vs-drawdown/', priority: 0.7, changeFrequency: 'monthly' as const },
+  // Regional pages
+  { url: '/carlisle-pension-mis-selling-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
   // Information pages
   { url: '/about/', priority: 0.6, changeFrequency: 'monthly' as const },
   { url: '/faqs/', priority: 0.7, changeFrequency: 'monthly' as const },

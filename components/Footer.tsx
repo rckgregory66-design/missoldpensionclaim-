@@ -34,6 +34,7 @@ const claimLinks = [
   { label: 'FOS Complaint Process', href: '/pension-ombudsman-complaint-process/' },
   { label: 'How Much Compensation Can I Get?', href: '/how-much-compensation-can-i-get/' },
   { label: 'FCA Rules on Pension Advice', href: '/pension-advice-fca-rules/' },
+  { label: 'Carlisle Pension Claims', href: '/carlisle-pension-mis-selling-claims/' },
 ]
 
 const infoLinks = [

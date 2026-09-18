@@ -145,6 +145,55 @@ export function AggregateRatingSchema({ ratingValue = '4.9', reviewCount = '47' 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 }
 
+export function LocalBusinessSchema({ locationName, streetAddress, addressLocality, postalCode, url, description }: {
+  locationName: string; streetAddress: string; addressLocality: string; postalCode: string; url: string; description: string
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': ['LegalService', 'LocalBusiness'],
+    '@id': `${siteConfig.url}${url}#local-business`,
+    name: locationName,
+    url: `${siteConfig.url}${url}`,
+    telephone: siteConfig.phone,
+    email: siteConfig.email,
+    description,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress,
+      addressLocality,
+      postalCode,
+      addressCountry: 'GB',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 54.8951,
+      longitude: -2.9382,
+    },
+    areaServed: [
+      { '@type': 'City', name: 'Carlisle' },
+      { '@type': 'AdministrativeArea', name: 'Cumbria' },
+      { '@type': 'Country', name: 'United Kingdom' },
+    ],
+    parentOrganization: {
+      '@type': 'LegalService',
+      '@id': `${siteConfig.url}/#organization`,
+      name: siteConfig.firmName,
+    },
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'Authorised and regulated by the Solicitors Regulation Authority',
+      identifier: siteConfig.sraNumber,
+    },
+    serviceType: [
+      'Mis-sold pension claims',
+      'SIPP mis-selling claims',
+      'Defined benefit pension transfer claims',
+      'Pension compensation claims',
+    ],
+  }
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+}
+
 export function HowToSchema({ steps }: { steps: { name: string; text: string }[] }) {
   const schema = {
     '@context': 'https://schema.org',
