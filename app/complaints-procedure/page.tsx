@@ -22,61 +22,73 @@ export default function ComplaintsPage() {
         <p className="text-gray-600 mb-8 leading-relaxed">This Complaints Handling Procedure tells you how we will deal with your complaint and how long it is likely to take. It also provides important information about what you can do if you are not happy with the way in which we are dealing with your complaint, or about our final decision.</p>
 
         <div className="prose-legal">
+          <p>Mis-Sold Pension Claim is a trading style of Edward and Amaury Limited (Edward &amp; Amaury Solicitors). We are committed to providing a quality legal service to all of our clients. If you feel unhappy with the way that we are handling matters, do not hesitate to speak to your fee earner about it. We understand that clients can feel anxious about legal matters, and we can assure you that your concerns will be dealt with sympathetically and in confidence.</p>
+          <p>Hopefully they will be able to resolve your concerns. If they are unable to do so or you remain unhappy about the situation, please contact the Compliance Officer for Legal Practice (COLP) at our office. Your complaint will be dealt with independently by the COLP, and will ordinarily be referred for investigation where the matter cannot be resolved informally. The matter will be dealt with by someone else, where it personally concerns the COLP or they are acting in your case.</p>
+          <p>You may contact them by telephone, fax or e-mail. It is more helpful in most cases if you write to them, setting out your concerns and what you would ideally like us to do about them. This gives us a clearer idea of the nature of your complaint, and the matters which will need to be looked into. However, if for any reason, you do not feel comfortable about writing to us, please feel free to telephone them, even if only by way of an initial call before writing to us.</p>
+
           <h2>Designated Complaints Handler</h2>
-          <p>If you have any concerns about our service, our work, or our charges, you should discuss these first with the individual who has day-to-day control of your matter. If this person cannot satisfactorily address your concerns and you wish to make a complaint, please contact our Designated Complaints Handler:</p>
           <div className="bg-[#f0f4f8] rounded-lg p-5 border border-gray-200 not-prose my-4">
-            <p className="font-semibold text-[#0f2035] mb-2">Nadeem Shahid Pervaz</p>
-            <p className="text-gray-700 text-sm"><strong>Address:</strong> 17 Spencer Street, Carlisle, CA1 1BE</p>
+            <p className="font-semibold text-[#0f2035] mb-2">Mr Nadeem Pervaz — Compliance Officer for Legal Practice and Complaints Handler</p>
+            <p className="text-gray-700 text-sm"><strong>Address:</strong> Pacific House, Fletcher Way, Parkhouse, Carlisle, CA3 0LJ</p>
             <p className="text-gray-700 text-sm"><strong>Email:</strong> nadeem@edwardamaury.co.uk</p>
+            <p className="text-gray-700 text-sm"><strong>Telephone:</strong> 01228 272395</p>
           </div>
 
-          <h2>Step One: Acknowledging your Complaint</h2>
-          <p>Within two working days of receiving your complaint, your complaint will be recorded in our Complaints Register and a separate file will be opened in which we will store any correspondence and other documents relating to your complaint. Within two working days we will also send you a letter acknowledging your complaint.</p>
-
-          <h2>Step Two: Investigating your Complaint</h2>
-          <p>Within five working days of receiving your complaint, we will review your file(s) and any other relevant documentation and send you a letter telling you how we propose to deal with your complaint. Examples of what we might say in this letter are as follows:</p>
+          <h2>What will happen next?</h2>
+          <p>Where it is felt that an initial meeting with them may be of mutual assistance, we will invite you to attend if it is convenient for you to do so. You may, in any event, request such a meeting yourself, if you feel your concerns could be better expressed this way. Where a meeting has taken place, our investigations would normally be completed within 3 days of that meeting.</p>
+          <p>Mr Pervaz will either write to you within 3 days of any meeting, to confirm what took place and any solutions that were agreed, or setting out his findings, or, in relatively complex matters, he will invite you to meet with him further to discuss and hopefully resolve your concerns.</p>
+          <p>If you do not want a meeting or it is not possible to attend, he will send you a detailed reply to your complaint, including suggestions for resolving the matter. The remedies open to the firm, following investigation of the complaint may be:</p>
           <ul>
-            <li>If your complaint is straightforward we might make suggestions as to how we can put things right or we may offer you some form of redress;</li>
-            <li>If your complaint is more complicated we might ask you to confirm, explain or clarify any issues;</li>
-            <li>We may ask to meet with you to discuss things face-to-face and we would hope to be in a position to meet with you no longer than fourteen working days after first receiving your complaint. If you would prefer not to meet, or if we cannot arrange this within an agreeable timescale, we will write to you fully setting out our views on the situation and making suggestions as to how we can put things right, or asking you to confirm, explain or clarify any issues. Within three working days of any meeting, we will write to you again to confirm what took place and to confirm any offer of redress that we have made.</li>
+            <li>Putting the matter right;</li>
+            <li>An apology from the firm and an assurance that we will do our best to ensure it will not happen again;</li>
+            <li>A reduction in the bill;</li>
+            <li>A total abatement of the bill;</li>
+            <li>Compensation for loss suffered;</li>
+            <li>Compensation for inconvenience and/or distress;</li>
+            <li>Notification of your right to complain to the Legal Ombudsman or the Solicitors Regulation Authority, either as a matter of professional conduct, or in respect of inadequate professional service.</li>
           </ul>
-          <p>Whichever form our investigation takes, we will aim to give you our final decision within six weeks of receiving your complaint (or sooner if possible).</p>
+          <p>If you are satisfied with the investigation, the fee-earner will continue to handle the file. However, if the relationship has broken down, the file will be transferred to another fee-earner in the firm, and you will be informed of the identity of the new fee-earner.</p>
+          <p>However, if you are still not satisfied, we will arrange for our findings and proposals and all correspondence relating to the matter to be independently reviewed. This will happen, depending upon the nature of your concerns, and at our discretion, either by:</p>
+          <ul>
+            <li>asking our local Law Society or another local firm of solicitors to review your complaint; or</li>
+            <li>inviting you to agree to independent mediation.</li>
+          </ul>
+          <p>We will let you know within 3 days of receipt of your letter, who is going to review the matter and how long this will take.</p>
+          <p>We have 8 weeks from receipt of your initial complaint to review your complaint and try to resolve your complaint.</p>
 
-          <h2>Data Protection Complaints</h2>
-          <p>If you wish to complain about how we use and manage your personal information, please follow the procedure set out above. We are obliged under the Data Use and Access Act 2025 to acknowledge your complaint within 30 days.</p>
-
-          <h2>Step Three: Appealing against our Final Decision</h2>
-          <p>If you are not satisfied with our final decision, please let us know and we will review our decision again. We will let you know the result of any appeal within five working days of receiving your appeal.</p>
-
-          <h2>Step Four: The Legal Ombudsman</h2>
-          <p>If you are still not satisfied, you can then contact the Legal Ombudsman about your complaint provided you do so within six months of the end of our Internal Complaints Handling Procedure.</p>
-          <p>In addition, there are time limits relating to the date you first became aware or should have become aware of the problem. The relevant time limits are set out in the version of the Legal Ombudsman&apos;s Scheme Rules in force from time to time and may only be extended by the Legal Ombudsman in exceptional circumstances. You must take your complaint to the Legal Ombudsman within six months of receiving a final response to your complaint, and no more than one year from the date of the act or omission (or no more than one year from when you should reasonably have known there was cause for complaint).</p>
-          <p>Ordinarily, you cannot use the Legal Ombudsman unless you have first attempted to resolve your complaint using our internal Complaints Handling Procedure, but you will be able to contact the Legal Ombudsman if the complaint has not been resolved to your satisfaction within eight weeks of first making the complaint to us, or the Legal Ombudsman determines there are fair and reasonable circumstances for it to consider your complaint sooner, or it considers that your complaint cannot be resolved using our internal procedure because the relationship between you and us has broken down irretrievably.</p>
-          <p>To use the Legal Ombudsman you must be an individual, a micro-enterprise, a charity with an annual income under £1 million, a club, association or society with an annual income under £1 million, a trustee of a trust with a net asset value under £1 million, or a personal representative or residuary beneficiary of an estate where the person with the complaint died before referring it. If you are not, you can only obtain redress by using our Complaints Handling Procedure, by mediation or arbitration, or by taking action through the Courts.</p>
+          <h2>The Legal Ombudsman</h2>
+          <p>You must have tried resolving your complaint with us first but, if we are unable to help you, or you are not satisfied with our handling of your complaint, you can have the complaint independently looked at by the Legal Ombudsman, an independent complaints body, established under the Legal Services Act 2007, that deals with legal services complaints. There is no charge to you to use this scheme.</p>
+          <p>You may be able to complain direct to the Legal Ombudsman either before the expiry of the 8 weeks or without waiting for our response if:</p>
+          <ul>
+            <li>An Ombudsman considers that there are exceptional reasons to consider the complaint sooner, or without it having been made first to us; or</li>
+            <li>An Ombudsman considers that in-house resolution is not possible due to irretrievable breakdown in the relationship between us and you.</li>
+          </ul>
+          <p>Please note that there are time limits within which you must make your complaint to the Legal Ombudsman. These time limits are:</p>
+          <ul>
+            <li>You refer the complaint to the Legal Ombudsman within 6 months of the date of our final written response; and</li>
+            <li>You refer the complaint to the Legal Ombudsman within either: 6 years from the date of act or omission or the problem happening; or if the act took place more than 6 years ago, 3 years from when you found out about it or should reasonably have known that there was cause for complaint.</li>
+          </ul>
 
           <div className="bg-[#f0f4f8] rounded-lg p-5 border border-gray-200 not-prose my-4">
             <p className="font-semibold text-[#0f2035] mb-2">Legal Ombudsman</p>
-            <p className="text-gray-700 text-sm"><strong>Post:</strong> PO Box 6167, Slough, SL1 0EH</p>
-            <p className="text-gray-700 text-sm"><strong>Telephone:</strong> 0300 555 0333</p>
+            <p className="text-gray-700 text-sm"><strong>Post:</strong> PO Box 6806, Wolverhampton WV1 9WJ</p>
+            <p className="text-gray-700 text-sm"><strong>Telephone:</strong> 0300 555 0333 (8:30am to 5:30pm)</p>
+            <p className="text-gray-700 text-sm"><strong>Minicom:</strong> 0300 555 1777</p>
             <p className="text-gray-700 text-sm"><strong>Email:</strong> enquiries@legalombudsman.org.uk</p>
             <p className="text-gray-700 text-sm"><strong>Website:</strong> www.legalombudsman.org.uk</p>
           </div>
+          <p>We enclose links to the Legal Ombudsman&apos;s leaflets &quot;Here to help&quot; and &quot;How to complain to your legal service provider&quot;: <a href="https://www.legalombudsman.org.uk/information-centre/consumer-resources/complaining-to-a-service-provider/" target="_blank" rel="noopener noreferrer">legalombudsman.org.uk</a>.</p>
+          <p>If we are unable to resolve your complaint using our internal complaints process, alternative complaints bodies exist (such as ProMediate UK Limited — Address: Brow Farm, Top Road, Frodsham, Cheshire WA6 6SP; Tel: 02036213908 and 07827961764; Web Address: <a href="https://www.promediate.co.uk" target="_blank" rel="noopener noreferrer">www.promediate.co.uk</a>; E-mail: enquiries@promediate.co.uk) which are competent to deal with complaints about legal services should both you and our firm wish to use such a scheme. There is no charge to you to use this scheme.</p>
+          <p>The Legal Ombudsman is still able to consider complaints that have previously been considered by an ADR entity.</p>
 
-          <h2>Complaining to the Solicitors Regulation Authority</h2>
-          <p>The Solicitors Regulation Authority can help you if you are concerned about our behaviour. This could be for things like dishonesty, taking or losing your money or treating you unfairly because of your age, a disability or other characteristic.</p>
+          <h2>The Solicitors Regulation Authority</h2>
+          <p>The Solicitors Regulation Authority can help you if you are concerned about our behaviour. This could be for things like dishonesty, taking or losing your money or treating you unfairly because of your age, a disability or other characteristic. You can raise your concerns with the Solicitors Regulation Authority at <a href="https://www.sra.org.uk/consumers/problems/report-solicitor" target="_blank" rel="noopener noreferrer">sra.org.uk</a>.</p>
           <div className="bg-[#f0f4f8] rounded-lg p-5 border border-gray-200 not-prose my-4">
             <p className="font-semibold text-[#0f2035] mb-2">Solicitors Regulation Authority</p>
             <p className="text-gray-700 text-sm"><strong>Post:</strong> The Cube, 199 Wharfside Street, Birmingham, B1 1RN</p>
-            <p className="text-gray-700 text-sm"><strong>Telephone:</strong> 0370 606 2555</p>
-            <p className="text-gray-700 text-sm"><strong>Email:</strong> report@sra.org.uk</p>
-            <p className="text-gray-700 text-sm"><strong>Website:</strong> www.sra.org.uk</p>
+            <p className="text-gray-700 text-sm"><strong>Telephone:</strong> 0370 606 2555 (8:00am–6:00pm Mon, Wed, Thu &amp; Fri; 9:30am–6:00pm Tue)</p>
+            <p className="text-gray-700 text-sm"><strong>Website:</strong> www.sra.org.uk/contactus</p>
           </div>
-
-          <h2>Complaining to the Information Commissioner</h2>
-          <p>If you are still not satisfied about how we have handled a complaint about how we have used or managed your data, you can then contact the Information Commissioner. Complaints to the ICO are made via their website.</p>
-
-          <h2>Alternative Dispute Resolution</h2>
-          <p>Where we are not able to settle your complaint using our internal complaints process, there are alternative complaints bodies (such as the Ombudsman Services, www.ombudsman-services.org) which are competent to deal with complaints about legal services should both you and our firm wish to use such a scheme. Please let us know if you would like to consider using an alternative complaints body to resolve your complaint.</p>
 
           <div className="bg-[#f0f4f8] rounded-xl p-6 border border-gray-200 not-prose mt-6">
             <p className="text-sm text-gray-700 leading-relaxed"><strong>Edward &amp; Amaury Limited</strong> trading as Edward &amp; Amaury Solicitors. Authorised and regulated by the Solicitors Regulation Authority. SRA number: {siteConfig.sraNumber}. Registered in England and Wales. Address: {siteConfig.address}. Telephone: {siteConfig.phone}.</p>
