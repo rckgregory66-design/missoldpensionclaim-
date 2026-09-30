@@ -19,11 +19,9 @@ export default function FAQAccordion({ faqs, schema = true }: { faqs: FAQ[]; sch
             <span>{faq.q}</span>
             <ChevronDown size={18} className={`shrink-0 ml-3 text-[#c9a84c] transition-transform duration-200 ${open === i ? 'rotate-180' : ''}`} />
           </button>
-          {open === i && (
-            <div className="px-5 py-4 text-sm text-gray-600 leading-relaxed border-t border-gray-100 bg-white">
-              <div dangerouslySetInnerHTML={{ __html: faq.a }} />
-            </div>
-          )}
+          <div hidden={open !== i} className="px-5 py-4 text-sm text-gray-600 leading-relaxed border-t border-gray-100 bg-white">
+            <div dangerouslySetInnerHTML={{ __html: faq.a }} />
+          </div>
         </div>
       ))}
     </div>

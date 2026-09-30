@@ -101,6 +101,15 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="py-8 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg">
+            <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
+            <p className="text-white text-sm leading-relaxed speakable">You may be able to claim if you were given unsuitable advice to transfer a defined benefit pension, open a SIPP or invest in high-risk products. Edward &amp; Amaury Solicitors (SRA No. 800525) offer a free initial review and can advise on the Financial Ombudsman, FSCS and legal routes. Outcomes depend on individual circumstances.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Trust strip */}
       <TrustStrip />
 

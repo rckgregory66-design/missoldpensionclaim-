@@ -38,7 +38,7 @@ export default function ContactForm({ compact = false }: { compact?: boolean }) 
     setLoading(true)
     setError(null)
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('/api/contact/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

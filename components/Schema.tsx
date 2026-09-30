@@ -86,12 +86,10 @@ export function BreadcrumbSchema({ crumbs }: { crumbs: { name: string; item: str
 }
 
 export function FAQSchema({ faqs }: { faqs: { q: string; a: string }[] }) {
-  const today = new Date().toISOString().split('T')[0]
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     datePublished: '2025-01-01',
-    dateModified: today,
     mainEntity: faqs.map(f => ({
       '@type': 'Question',
       name: f.q,
@@ -102,17 +100,16 @@ export function FAQSchema({ faqs }: { faqs: { q: string; a: string }[] }) {
 }
 
 export function WebPageSchema({ title, description, url, datePublished = '2025-01-01' }: { title: string; description: string; url: string; datePublished?: string }) {
-  const today = new Date().toISOString().split('T')[0]
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
+    '@id': `${siteConfig.url}${url}#webpage`,
     name: title,
     description,
     url: `${siteConfig.url}${url}`,
     datePublished,
-    dateModified: today,
     isAccessibleForFree: true,
-    isPartOf: { '@type': 'WebSite', url: siteConfig.url, name: siteConfig.name },
+    isPartOf: { '@type': 'WebSite', '@id': `${siteConfig.url}/#website`, url: siteConfig.url, name: siteConfig.name, publisher: { '@id': `${siteConfig.url}/#organization` } },
     publisher: {
       '@type': 'Organization',
       '@id': `${siteConfig.url}/#organization`,
@@ -217,15 +214,15 @@ export function HowToSchema({ steps }: { steps: { name: string; text: string }[]
 export function ArticleSchema({ title, description, url, datePublished = '2025-01-01' }: {
   title: string; description: string; url: string; datePublished?: string
 }) {
-  const today = new Date().toISOString().split('T')[0]
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    '@id': `${siteConfig.url}${url}#article`,
+    mainEntityOfPage: { '@id': `${siteConfig.url}${url}#webpage` },
     headline: title,
     description,
     url: `${siteConfig.url}${url}`,
     datePublished,
-    dateModified: today,
     isAccessibleForFree: true,
     author: {
       '@type': 'Person',

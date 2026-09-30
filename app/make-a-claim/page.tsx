@@ -80,6 +80,15 @@ export default function MakeAClaimPage() {
         </div>
       </section>
 
+      <section className="py-8 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg">
+            <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
+            <p className="text-white text-sm leading-relaxed speakable">To make a mis-sold pension claim, contact Edward &amp; Amaury Solicitors for a free initial review. A solicitor checks your advice documents, identifies whether the Financial Ombudsman Service, the FSCS or legal action is the right route, and explains any fees before work begins. Time limits can apply, so act promptly.</p>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="py-14 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

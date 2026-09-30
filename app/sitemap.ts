@@ -92,6 +92,7 @@ const routes = [
   // Regional pages
   { url: '/carlisle-pension-mis-selling-claims/', priority: 0.9, changeFrequency: 'monthly' as const },
   // Information pages
+  { url: '/compare/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/about/', priority: 0.6, changeFrequency: 'monthly' as const },
   { url: '/faqs/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/privacy-policy/', priority: 0.3, changeFrequency: 'yearly' as const },
@@ -103,7 +104,6 @@ const routes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map(route => ({
     url: `${BASE_URL}${route.url}`,
-    lastModified: new Date(),
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }))

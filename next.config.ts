@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 
 const nextConfig: NextConfig = {
+  // Canonicals, sitemap, schema and every internal link use trailing slashes; match that at the server
+  trailingSlash: true,
   async redirects() {
     return [
       // Redirect cannibalistic near-duplicate pages to the established versions
