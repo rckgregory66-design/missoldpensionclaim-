@@ -59,7 +59,7 @@ export default function FOSRejectionPage() {
               'Take specialist legal advice before deciding whether to accept or challenge a negative FOS outcome.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">A rejection by the Financial Ombudsman Service can feel like the end of the road for a pension mis-selling claim. It is not. A FOS final decision is binding on the firm — but only if you choose to accept it. If you do not accept it, you retain the right to bring court proceedings, and a court will make its own assessment entirely independently of what the FOS decided.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">A rejection by the <Link href="/financial-ombudsman-pension-complaints/" className="text-[#1e3a5f] underline">Financial Ombudsman Service</Link> can feel like the end of the road for a pension mis-selling claim. It is not. A FOS final decision is binding on the firm — but only if you choose to accept it. If you do not accept it, you retain the right to bring court proceedings, and a court will make its own assessment entirely independently of what the FOS decided.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

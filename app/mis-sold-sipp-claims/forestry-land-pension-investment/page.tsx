@@ -54,7 +54,7 @@ export default function ForestryLandPage() {
               'Time limits apply — seek advice promptly.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Forestry investments, farmland schemes, plantation projects, and land banking arrangements were marketed to pension investors as tangible, asset-backed opportunities — a supposedly safe alternative to stocks and shares. In practice, they were illiquid, unregulated assets that were entirely unsuitable for most SIPP investors. Many have since failed, and investors have lost significant pension savings as a result.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Forestry investments, farmland schemes, plantation projects, and land banking arrangements were marketed to pension investors as tangible, asset-backed opportunities — a supposedly safe alternative to stocks and shares. In practice, they were illiquid, unregulated assets that were entirely unsuitable for most <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> investors. Many have since failed, and investors have lost significant pension savings as a result.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

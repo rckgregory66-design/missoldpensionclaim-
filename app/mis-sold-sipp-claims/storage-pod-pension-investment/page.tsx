@@ -53,7 +53,7 @@ export default function StoragePodPage() {
               'Contact us for a free initial review — time limits may apply.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Storage pods were marketed to pension investors in the 2000s and 2010s as supposedly stable, income-generating assets that could be held inside a Self-Invested Personal Pension (SIPP). In reality, they were high-risk, illiquid, unregulated investments — and the advice to transfer pensions into SIPPs to hold them was, in most cases, wholly unsuitable.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Storage pods were marketed to pension investors in the 2000s and 2010s as supposedly stable, income-generating assets that could be held inside a Self-Invested Personal Pension (<Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link>). In reality, they were high-risk, illiquid, unregulated investments — and the advice to transfer pensions into SIPPs to hold them was, in most cases, wholly unsuitable.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
@@ -64,7 +64,7 @@ export default function StoragePodPage() {
               <AlertTriangle size={20} className="text-red-500 shrink-0 mt-0.5" />
               <div>
                 <p className="font-semibold text-red-800 text-sm mb-1">FCA and FOS Position</p>
-                <p className="text-sm text-red-700 leading-relaxed">The FCA and FOS have consistently held that placing pension funds into unregulated, illiquid, high-risk assets like storage pods through a SIPP was unsuitable for most retail investors. SIPP operators who accepted such investments without adequate due diligence have also been found liable. These cases have a well-established track record at the FOS and FSCS.</p>
+                <p className="text-sm text-red-700 leading-relaxed">The FCA and FOS have consistently held that placing pension funds into unregulated, illiquid, high-risk assets like storage pods through a SIPP was unsuitable for most retail investors. SIPP operators who accepted such investments without adequate due diligence have also been found liable. These cases have a well-established track record at the FOS and <Link href="/fscs-pension-claims/" className="text-[#1e3a5f] underline">FSCS</Link>.</p>
               </div>
             </div>
 

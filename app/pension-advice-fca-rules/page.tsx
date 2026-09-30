@@ -73,7 +73,7 @@ export default function FCARulesPensionAdvicePage() {
               ))}
             </div>
             <h2>The FCA\'s Starting Assumption on DB Transfers</h2>
-            <p>The FCA has made clear — in FG17/9 and in COBS 19 — that its starting assumption is that transferring out of a defined benefit pension is unlikely to be in the client's best interests. An adviser must be able to demonstrate positive reasons why a transfer is suitable, not simply fail to identify a reason why it is unsuitable. This places the burden firmly on the adviser — and means a generic or superficial analysis will not meet the required standard.</p>
+            <p>The FCA has made clear — in FG17/9 and in COBS 19 — that its starting assumption is that transferring out of a <Link href="/defined-benefit-pension-transfer-claims/" className="text-[#1e3a5f] underline">defined benefit</Link> pension is unlikely to be in the client's best interests. An adviser must be able to demonstrate positive reasons why a transfer is suitable, not simply fail to identify a reason why it is unsuitable. This places the burden firmly on the adviser — and means a generic or superficial analysis will not meet the required standard.</p>
             <p>See our guides on <Link href="/what-is-a-suitability-report/" className="text-[#1e3a5f] underline">what a suitability report should contain</Link>, <Link href="/pension-transfer-value-analysis/" className="text-[#1e3a5f] underline">transfer value analysis</Link>, and <Link href="/how-is-defined-benefit-pension-transfer-redress-calculated/" className="text-[#1e3a5f] underline">how DB transfer redress is calculated under PS22/13</Link>.</p>
             <h2>Frequently Asked Questions</h2>
             <FAQAccordion faqs={faqs} />

@@ -61,7 +61,7 @@ export default function PensionScamPage() {
               'Report suspected scams to Action Fraud and the FCA — but also take legal advice on a compensation claim.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Pension scams have cost UK savers hundreds of millions of pounds over the past two decades. Victims were approached — often by cold call — with promises of high returns, guaranteed income, or early pension access. A transfer was arranged, pension funds moved into a SIPP, and the money invested in high-risk or fraudulent assets. When the scheme collapsed, the pension was gone. But there may still be routes to compensation.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Pension scams have cost UK savers hundreds of millions of pounds over the past two decades. Victims were approached — often by cold call — with promises of high returns, guaranteed income, or early pension access. A transfer was arranged, pension funds moved into a <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link>, and the money invested in high-risk or fraudulent assets. When the scheme collapsed, the pension was gone. But there may still be routes to compensation.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

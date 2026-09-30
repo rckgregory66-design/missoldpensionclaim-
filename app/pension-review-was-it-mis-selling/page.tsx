@@ -62,7 +62,7 @@ export default function PensionReviewMisSellingPage() {
               'Time limits apply but may run from when you first knew or should have known about the mis-selling.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Thousands of people in the UK were approached for a "free pension review" — by cold call, text, or online — and went on to transfer their pension into a SIPP based on the advice that followed. In many cases, that advice was unsuitable. If this happened to you and your pension has suffered losses, you may be able to claim compensation.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Thousands of people in the UK were approached for a "free pension review" — by cold call, text, or online — and went on to transfer their pension into a <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> based on the advice that followed. In many cases, that advice was unsuitable. If this happened to you and your pension has suffered losses, you may be able to claim compensation.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

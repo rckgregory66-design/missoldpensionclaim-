@@ -67,7 +67,7 @@ export default function FSCSCompensationLimitPage() {
               'If your loss exceeds the limit, a solicitor can help you explore whether other parties in the advice chain are also liable.',
               'The Financial Ombudsman Service has a higher limit (£415,000) but only applies where the adviser firm is still trading.',
             ]} />
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">If your pension was mis-sold by a firm that has since failed, the Financial Services Compensation Scheme (FSCS) may be able to compensate you. But the FSCS applies a cap on how much it will pay. This page explains the current FSCS pension compensation limit, how it works in practice, and what your options are if your loss exceeds it.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">If your pension was mis-sold by a firm that has since failed, the Financial Services Compensation Scheme (<Link href="/fscs-pension-claims/" className="text-[#1e3a5f] underline">FSCS</Link>) may be able to compensate you. But the FSCS applies a cap on how much it will pay. This page explains the current FSCS pension compensation limit, how it works in practice, and what your options are if your loss exceeds it.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

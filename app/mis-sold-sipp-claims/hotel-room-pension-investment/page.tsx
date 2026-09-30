@@ -54,7 +54,7 @@ export default function HotelRoomPage() {
               'Contact us for a free initial review — time limits may apply.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Hotel room and serviced accommodation investments were among the most widely mis-sold SIPP assets of the 2000s and 2010s. Marketed as offering reliable rental income backed by bricks and mortar, they were in practice illiquid, unregulated, and dependent on the success of a single property development. Many have since failed. If your pension was invested in one of these schemes, you may have a significant claim.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Hotel room and serviced accommodation investments were among the most widely mis-sold <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> assets of the 2000s and 2010s. Marketed as offering reliable rental income backed by bricks and mortar, they were in practice illiquid, unregulated, and dependent on the success of a single property development. Many have since failed. If your pension was invested in one of these schemes, you may have a significant claim.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

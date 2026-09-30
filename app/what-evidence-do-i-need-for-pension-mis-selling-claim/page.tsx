@@ -95,7 +95,7 @@ export default function EvidencePage() {
               <li><strong>What advice you were given</strong> — was it suitable for your circumstances, investment objectives and attitude to risk?</li>
               <li><strong>What loss you have suffered</strong> — how does your current position compare to where you would have been had you received suitable advice?</li>
             </ul>
-            <p>Strong evidence makes both of these easier to demonstrate. But the absence of documents can itself be significant — an adviser who failed to produce a suitability report, or produced an inadequate one, has fallen short of FCA requirements.</p>
+            <p>Strong evidence makes both of these easier to demonstrate. But the absence of documents can itself be significant — an adviser who failed to produce a <Link href="/what-is-a-suitability-report/" className="text-[#1e3a5f] underline">suitability report</Link>, or produced an inadequate one, has fallen short of FCA requirements.</p>
 
             <h2>The Most Useful Documents</h2>
 
@@ -123,10 +123,10 @@ export default function EvidencePage() {
             <p>Where a firm has failed or been wound up, records may be held by an administrator or successor firm. The FCA Register may show who holds records for a dissolved firm.</p>
 
             <h3>Contact the Pension Scheme Administrator</h3>
-            <p>Your original defined benefit scheme administrator may hold copies of transfer correspondence, benefit statements and the transfer value letter. These can help reconstruct what happened even if adviser documents are missing.</p>
+            <p>Your original <Link href="/defined-benefit-pension-transfer-claims/" className="text-[#1e3a5f] underline">defined benefit</Link> scheme administrator may hold copies of transfer correspondence, benefit statements and the transfer value letter. These can help reconstruct what happened even if adviser documents are missing.</p>
 
             <h3>Check With the New Scheme</h3>
-            <p>The SIPP provider or investment platform that received your pension will have records of the transfer and any investments made. You can request these under a DSAR.</p>
+            <p>The <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> provider or investment platform that received your pension will have records of the transfer and any investments made. You can request these under a DSAR.</p>
 
             <div className="not-prose bg-amber-50 border-l-4 border-[#c9a84c] p-5 rounded-r-lg my-6 flex gap-3">
               <AlertTriangle size={20} className="text-[#c9a84c] shrink-0 mt-0.5" />

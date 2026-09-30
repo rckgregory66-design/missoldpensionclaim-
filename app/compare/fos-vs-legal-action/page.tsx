@@ -129,14 +129,14 @@ export default function FOSvsLegalPage() {
             </div>
 
             <h2>The FOS Award Cap — Why It Matters for DB Transfer Claims</h2>
-            <p>The FOS can award up to £430,000 per complaint. For many standard pension mis-selling claims, this is more than sufficient. However, defined benefit pension transfer claims — particularly for claimants who transferred large funds or gave up very valuable scheme benefits — can involve losses that significantly exceed this limit.</p>
+            <p>The FOS can award up to £430,000 per complaint. For many standard pension mis-selling claims, this is more than sufficient. However, <Link href="/defined-benefit-pension-transfer-claims/" className="text-[#1e3a5f] underline">defined benefit</Link> pension transfer claims — particularly for claimants who transferred large funds or gave up very valuable scheme benefits — can involve losses that significantly exceed this limit.</p>
             <p>In these cases, a claimant who brings only an FOS complaint risks leaving significant money on the table. A solicitor can advise whether legal proceedings — in addition to or instead of the FOS route — are necessary to recover the full loss.</p>
             <Link href="/how-is-defined-benefit-pension-transfer-redress-calculated/" className="inline-flex items-center gap-1 text-[#1e3a5f] font-semibold underline text-sm">
               How DB transfer redress is calculated <ArrowRight size={12} />
             </Link>
 
             <h2>Using Both Routes — What You Need to Know</h2>
-            <p>You can use the FOS route first and, if the outcome is unsatisfactory, then pursue legal action — subject to time limits. However:</p>
+            <p>You can use the FOS route first and, if the outcome is unsatisfactory, then pursue legal action — subject to <Link href="/time-limits-mis-sold-pension-claims/" className="text-[#1e3a5f] underline">time limits</Link>. However:</p>
             <ul>
               <li>Once you <strong>accept</strong> a FOS final decision, you generally cannot bring a court claim for the same loss against the same firm.</li>
               <li>Do <strong>not run FOS and court proceedings simultaneously</strong> for the same complaint — courts typically stay proceedings while the FOS considers the same complaint.</li>

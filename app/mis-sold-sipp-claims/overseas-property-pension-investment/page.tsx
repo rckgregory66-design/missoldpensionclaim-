@@ -54,7 +54,7 @@ export default function OverseasPropertyPage() {
               'Time limits apply — seek advice promptly.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">During the 2000s and early 2010s, thousands of people were advised to transfer their pensions into SIPPs and invest in overseas property — off-plan developments in countries including Cape Verde, Turkey, Brazil, Bulgaria, and the UAE. These investments were high-risk, illiquid, and in most cases wholly unsuitable as pension assets. Many of the developments failed to complete, and investors were left with worthless or near-worthless SIPPs.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">During the 2000s and early 2010s, thousands of people were advised to transfer their pensions into <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPPs</Link> and invest in overseas property — off-plan developments in countries including Cape Verde, Turkey, Brazil, Bulgaria, and the UAE. These investments were high-risk, illiquid, and in most cases wholly unsuitable as pension assets. Many of the developments failed to complete, and investors were left with worthless or near-worthless SIPPs.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

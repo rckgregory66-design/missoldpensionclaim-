@@ -58,7 +58,7 @@ export default function AdviserGoneBustPage() {
             </div>
 
             <h2>What Happens When a Financial Adviser Goes Out of Business?</h2>
-            <p>When an FCA-authorised financial adviser firm becomes insolvent, enters administration or is otherwise unable to meet claims against it, the FSCS steps in as a compensation scheme of last resort. The FSCS declares firms "in default" and then becomes the body you claim against — rather than the firm itself.</p>
+            <p>When an FCA-authorised financial adviser firm becomes insolvent, enters administration or is otherwise unable to meet claims against it, the <Link href="/fscs-pension-claims/" className="text-[#1e3a5f] underline">FSCS</Link> steps in as a compensation scheme of last resort. The FSCS declares firms "in default" and then becomes the body you claim against — rather than the firm itself.</p>
             <p>This means that the fact your adviser is no longer trading does not, by itself, prevent you from pursuing compensation for unsuitable pension advice. You are claiming against the FSCS, using the same underlying facts about the advice you received.</p>
 
             <h2>What Is the FSCS and How Does It Apply to Pension Claims?</h2>

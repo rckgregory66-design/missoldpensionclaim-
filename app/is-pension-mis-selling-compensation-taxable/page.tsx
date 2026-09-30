@@ -68,14 +68,14 @@ export default function TaxablePage() {
 
             <h2>The General Position</h2>
             <p>Under HMRC's general approach, compensation received for financial loss is not treated as income or as a taxable gain. The principle is that compensation restores you to the position you would have been in — it does not put you in a better position, and therefore does not represent a taxable receipt.</p>
-            <p>This principle applies to most pension mis-selling compensation payments: whether awarded by the Financial Ombudsman Service, paid by the FSCS, or agreed as part of a settlement with an adviser firm. The capital element of the compensation is generally not subject to income tax or capital gains tax.</p>
+            <p>This principle applies to most pension mis-selling compensation payments: whether awarded by the <Link href="/financial-ombudsman-pension-complaints/" className="text-[#1e3a5f] underline">Financial Ombudsman Service</Link>, paid by the FSCS, or agreed as part of a settlement with an adviser firm. The capital element of the compensation is generally not subject to income tax or capital gains tax.</p>
 
             <h2>The Interest Element — Potentially Taxable</h2>
-            <p>Where a compensation award includes an interest element — added by the FOS or FSCS to reflect the time value of money over the period since the loss was suffered — that interest may be treated by HMRC as taxable interest income.</p>
+            <p>Where a compensation award includes an interest element — added by the FOS or <Link href="/fscs-pension-claims/" className="text-[#1e3a5f] underline">FSCS</Link> to reflect the time value of money over the period since the loss was suffered — that interest may be treated by HMRC as taxable interest income.</p>
             <p>The amount of interest included in a compensation award can be significant, particularly for long-standing claims or claims involving large amounts. It is important to understand how much of your award is capital compensation and how much is interest, so you can assess your tax position accurately.</p>
 
             <h2>Payments Into a Pension — Annual Allowance Risk</h2>
-            <p>Where compensation is paid directly back into a pension arrangement rather than to you in cash — sometimes used in SIPP compensation cases to reconstruct the pension to its correct value — there can be implications for your pension annual allowance.</p>
+            <p>Where compensation is paid directly back into a pension arrangement rather than to you in cash — sometimes used in <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> compensation cases to reconstruct the pension to its correct value — there can be implications for your pension annual allowance.</p>
             <div className="not-prose bg-[#f0f4f8] border border-gray-200 rounded-xl p-5 my-6">
               <div className="flex gap-2 mb-2">
                 <Info size={16} className="text-[#c9a84c] shrink-0 mt-0.5" />

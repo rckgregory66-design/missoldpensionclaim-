@@ -57,7 +57,7 @@ export default function PensionOmbudsmanProcessPage() {
               'The FOS can award up to £430,000 for post-April 2019 acts; older limits apply to earlier complaints.',
               'For large or complex claims, solicitor-led representation typically produces better outcomes.',
             ]} />
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The Financial Ombudsman Service is the primary route for most pension mis-selling complaints in the UK. Understanding the process — and navigating it correctly — is critical to a successful outcome. Missing the 6-month referral deadline or failing to identify all grounds at the outset can significantly damage your claim.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The <Link href="/financial-ombudsman-pension-complaints/" className="text-[#1e3a5f] underline">Financial Ombudsman Service</Link> is the primary route for most pension mis-selling complaints in the UK. Understanding the process — and navigating it correctly — is critical to a successful outcome. Missing the 6-month referral deadline or failing to identify all grounds at the outset can significantly damage your claim.</p>
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">Most pension mis-selling complaints go to the FOS. You must complain to the firm first, then refer to the FOS within 6 months of their Final Response Letter. We can manage the entire process — contact us for a free review.</p>

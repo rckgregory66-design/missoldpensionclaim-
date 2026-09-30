@@ -62,7 +62,7 @@ export default function HighRiskInvestmentPage() {
               'If the adviser firm has since collapsed, the FSCS may be able to compensate you. If it is still trading, the FOS is the usual first step.',
               'Time limits apply — if you have only recently discovered losses, do not assume you are out of time before seeking advice.',
             ]} />
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">If your pension was transferred into a SIPP and then invested in high-risk, alternative or unregulated assets, you may have grounds for a compensation claim. Many people were advised to move their pension savings into products that were wholly unsuitable for their circumstances.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">If your pension was transferred into a <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> and then invested in high-risk, alternative or unregulated assets, you may have grounds for a compensation claim. Many people were advised to move their pension savings into products that were wholly unsuitable for their circumstances.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

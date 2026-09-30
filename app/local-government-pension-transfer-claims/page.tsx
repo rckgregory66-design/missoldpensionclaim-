@@ -60,7 +60,7 @@ export default function LGPSPage() {
               'Time limits apply — seek advice promptly.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The Local Government Pension Scheme provides millions of public sector workers with guaranteed, inflation-linked retirement income backed by the government. Advice to transfer out of the LGPS into a SIPP or personal pension was almost always unsuitable. If you were advised to transfer and have suffered losses, you may have grounds for a significant claim.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The Local Government Pension Scheme provides millions of public sector workers with guaranteed, inflation-linked retirement income backed by the government. Advice to transfer out of the LGPS into a <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> or personal pension was almost always unsuitable. If you were advised to transfer and have suffered losses, you may have grounds for a significant claim.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

@@ -95,7 +95,7 @@ export default function PensionsOmbudsmansVsFOSPage() {
             </div>
 
             <h2>Pension Mis-Selling — FOS Is the Right Route</h2>
-            <p>If your complaint is that a financial adviser gave you unsuitable advice — to transfer your defined benefit pension, to invest in a high-risk SIPP, or to take any other action that caused you financial loss — the <strong>FOS</strong> is the correct starting point.</p>
+            <p>If your complaint is that a financial adviser gave you unsuitable advice — to transfer your defined benefit pension, to invest in a high-risk <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link>, or to take any other action that caused you financial loss — the <strong>FOS</strong> is the correct starting point.</p>
             <p>The process is:</p>
             <ol>
               <li>Complain to the firm that gave you the advice (they have eight weeks to respond).</li>

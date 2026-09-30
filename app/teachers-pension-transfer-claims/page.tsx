@@ -60,7 +60,7 @@ export default function TeachersPensionPage() {
               'Contact us for a free initial review — time limits may apply, so do not delay.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The Teachers Pension Scheme is a public sector defined benefit scheme that provides teachers with guaranteed, inflation-linked retirement income backed by the government. Advice to transfer out of it — into a SIPP or personal pension — is almost never in a teacher's best interests. If you received such advice and went on to transfer, you may have grounds for a substantial compensation claim.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The Teachers Pension Scheme is a public sector defined benefit scheme that provides teachers with guaranteed, inflation-linked retirement income backed by the government. Advice to transfer out of it — into a <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> or personal pension — is almost never in a teacher's best interests. If you received such advice and went on to transfer, you may have grounds for a substantial compensation claim.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
@@ -76,7 +76,7 @@ export default function TeachersPensionPage() {
             </div>
 
             <h2>What the Teachers Pension Scheme Provides</h2>
-            <p>The TPS is a public sector defined benefit scheme, meaning your pension income is guaranteed by the government and linked to your service and salary — not to investment performance. Understanding the value of what you gave up is central to any claim.</p>
+            <p>The TPS is a public sector <Link href="/defined-benefit-pension-transfer-claims/" className="text-[#1e3a5f] underline">defined benefit</Link> scheme, meaning your pension income is guaranteed by the government and linked to your service and salary — not to investment performance. Understanding the value of what you gave up is central to any claim.</p>
 
             <div className="not-prose space-y-3 mb-8">
               {tpsBenefits.map(b => (

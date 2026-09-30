@@ -54,7 +54,7 @@ export default function GreenEnergyPage() {
               'Time limits apply — seek advice without delay.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Green energy investments — solar panel leasing schemes, biofuel plantations, carbon credit funds, and wind energy projects — were sold to pension investors with an appeal that combined environmental virtue with promised returns. In reality, most were high-risk, illiquid assets that were wholly unsuitable for placement in a SIPP. Thousands of investors lost significant pension savings as a result.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Green energy investments — solar panel leasing schemes, biofuel plantations, carbon credit funds, and wind energy projects — were sold to pension investors with an appeal that combined environmental virtue with promised returns. In reality, most were high-risk, illiquid assets that were wholly unsuitable for placement in a <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link>. Thousands of investors lost significant pension savings as a result.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

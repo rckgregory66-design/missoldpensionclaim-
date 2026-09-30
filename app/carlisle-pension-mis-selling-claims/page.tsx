@@ -84,7 +84,7 @@ export default function CarlislePensionClaimsPage() {
             </div>
 
             <h2>Pension Mis-Selling Claims for Cumbria Residents</h2>
-            <p>Pension mis-selling affected many thousands of people across the UK during the 2000s and 2010s. Common patterns included unsuitable advice to transfer out of employer defined benefit schemes, SIPP investments into unregulated or illiquid assets, and pension liberation schemes targeting people who needed early access to their funds.</p>
+            <p>Pension mis-selling affected many thousands of people across the UK during the 2000s and 2010s. Common patterns included unsuitable advice to transfer out of employer defined benefit schemes, <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> investments into unregulated or illiquid assets, and pension liberation schemes targeting people who needed early access to their funds.</p>
             <p>As a Carlisle firm, we have seen the impact of these schemes on people across Cumbria — former NHS workers advised to transfer out of their NHS pension, public sector employees placed into SIPPs with speculative investments, and individuals targeted by cold callers offering "free pension reviews" that turned out to be the entry point for mis-selling.</p>
 
             <h2>Claim Types We Handle</h2>

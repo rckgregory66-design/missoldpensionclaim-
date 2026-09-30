@@ -54,7 +54,7 @@ export default function UCISPage() {
               'Time limits apply — seek advice promptly.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Thousands of people lost their pension savings when they were advised to transfer into SIPPs that were then invested in unregulated collective investment schemes (UCIS). These were funds that fell outside FCA regulation — meaning there was no requirement to meet product standards, no mandatory oversight, and no FCA protection for investors. Advising retail investors to hold UCIS in their pensions was, in most cases, a serious regulatory breach.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Thousands of people lost their pension savings when they were advised to transfer into <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPPs</Link> that were then invested in unregulated collective investment schemes (UCIS). These were funds that fell outside FCA regulation — meaning there was no requirement to meet product standards, no mandatory oversight, and no FCA protection for investors. Advising retail investors to hold UCIS in their pensions was, in most cases, a serious regulatory breach.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

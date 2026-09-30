@@ -111,7 +111,7 @@ export default function FosVsFscsPage() {
           </Link>
 
           <h2 className="text-2xl font-bold text-[#0f2035] mb-3 mt-8">What If Neither Route Applies?</h2>
-          <p className="text-gray-600 mb-6 leading-relaxed">In some cases, neither the FOS nor the FSCS may be available — for example, where the firm was never FCA-authorised, where time limits have passed, or where the FSCS has declined to accept a claim. In these situations, legal proceedings may be the appropriate route, though eligibility depends on individual circumstances.</p>
+          <p className="text-gray-600 mb-6 leading-relaxed">In some cases, neither the FOS nor the FSCS may be available — for example, where the firm was never FCA-authorised, where <Link href="/time-limits-mis-sold-pension-claims/" className="text-[#1e3a5f] underline">time limits</Link> have passed, or where the FSCS has declined to accept a claim. In these situations, legal proceedings may be the appropriate route, though eligibility depends on individual circumstances.</p>
 
           <h2 className="text-2xl font-bold text-[#0f2035] mb-4 mt-10">Frequently Asked Questions</h2>
           <FAQAccordion faqs={faqs} />

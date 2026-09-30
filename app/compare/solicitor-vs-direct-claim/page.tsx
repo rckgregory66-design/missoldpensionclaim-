@@ -66,7 +66,7 @@ export default function SolicitorVsDirectPage() {
               'You can start direct and bring in a solicitor at any point if needed.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">You do not need a solicitor to make a pension mis-selling claim. Both the FOS and FSCS are free to use without legal representation. But for complex claims — particularly defined benefit transfers, multi-party SIPP cases, or large losses — professional advice can add real value. Here is an honest comparison to help you decide.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">You do not need a solicitor to make a pension mis-selling claim. Both the FOS and <Link href="/fscs-pension-claims/" className="text-[#1e3a5f] underline">FSCS</Link> are free to use without legal representation. But for complex claims — particularly defined benefit transfers, multi-party SIPP cases, or large losses — professional advice can add real value. Here is an honest comparison to help you decide.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

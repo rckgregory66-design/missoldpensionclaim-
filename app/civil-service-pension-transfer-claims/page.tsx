@@ -60,7 +60,7 @@ export default function CivilServicePensionPage() {
               'Time limits apply — do not delay in seeking advice.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The Civil Service Pension Scheme is one of the most comprehensive public sector pension schemes in the UK, providing guaranteed, inflation-linked retirement income backed by the government. If you were advised to transfer out of it — into a SIPP or personal pension — that advice was almost certainly unsuitable, and you may have grounds for a significant compensation claim.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The Civil Service Pension Scheme is one of the most comprehensive public sector pension schemes in the UK, providing guaranteed, inflation-linked retirement income backed by the government. If you were advised to transfer out of it — into a <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> or personal pension — that advice was almost certainly unsuitable, and you may have grounds for a significant compensation claim.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
@@ -71,7 +71,7 @@ export default function CivilServicePensionPage() {
               <AlertTriangle size={20} className="text-red-500 shrink-0 mt-0.5" />
               <div>
                 <p className="font-semibold text-red-800 text-sm mb-1">FCA Regulatory Priority</p>
-                <p className="text-sm text-red-700 leading-relaxed">The FCA identified defined benefit pension transfer mis-selling — including transfers from public sector schemes like the CSPS — as a major consumer harm. Advisers were required to demonstrate positively that a transfer was in the member's best interests. This was a test they could rarely satisfy for a CSPS member.</p>
+                <p className="text-sm text-red-700 leading-relaxed">The FCA identified <Link href="/defined-benefit-pension-transfer-claims/" className="text-[#1e3a5f] underline">defined benefit</Link> pension transfer mis-selling — including transfers from public sector schemes like the CSPS — as a major consumer harm. Advisers were required to demonstrate positively that a transfer was in the member's best interests. This was a test they could rarely satisfy for a CSPS member.</p>
               </div>
             </div>
 

@@ -126,7 +126,7 @@ export default function MisSoldPensionClaimsPage() {
             </ul>
 
             <h2>What Are the Time Limits?</h2>
-            <p>Time limits can apply to mis-sold pension claims and vary depending on the route available to you. For Financial Ombudsman Service complaints, you generally must complain within six months of receiving your adviser's final response. Different rules apply to FSCS applications and legal claims. If in doubt, seek advice promptly.</p>
+            <p>Time limits can apply to mis-sold pension claims and vary depending on the route available to you. For <Link href="/financial-ombudsman-pension-complaints/" className="text-[#1e3a5f] underline">Financial Ombudsman Service</Link> complaints, you generally must complain within six months of receiving your adviser's final response. Different rules apply to FSCS applications and legal claims. If in doubt, seek advice promptly.</p>
             <Link href="/time-limits-mis-sold-pension-claims/" className="inline-flex items-center gap-1 text-[#1e3a5f] font-semibold underline text-sm">
               Read more about time limits <ArrowRight size={13} />
             </Link>

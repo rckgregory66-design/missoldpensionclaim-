@@ -51,7 +51,7 @@ export default function DBRedressPage() {
               'Actuarial input may be needed for complex cases with large transfer values or unusual scheme benefits.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">One of the most common questions in defined benefit pension transfer claims is how compensation is calculated — and why the amounts are often substantial. The answer lies in the extraordinary value of the guaranteed benefits that were given up, and the gap between that value and what the transferred fund is now worth.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">One of the most common questions in <Link href="/defined-benefit-pension-transfer-claims/" className="text-[#1e3a5f] underline">defined benefit</Link> pension transfer claims is how compensation is calculated — and why the amounts are often substantial. The answer lies in the extraordinary value of the guaranteed benefits that were given up, and the gap between that value and what the transferred fund is now worth.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
@@ -64,7 +64,7 @@ export default function DBRedressPage() {
               <li>Calculating the value of the pension you would have had, had you stayed in the DB scheme, and</li>
               <li>Comparing that against the value of the pension fund you actually have.</li>
             </ul>
-            <p>The difference — the shortfall — is the redress that the firm or FSCS must provide.</p>
+            <p>The difference — the shortfall — is the redress that the firm or <Link href="/fscs-pension-claims/" className="text-[#1e3a5f] underline">FSCS</Link> must provide.</p>
 
             <h2>The FCA Redress Methodology (PS22/13)</h2>
             <p>In July 2022, the FCA published Policy Statement PS22/13, which established a standardised redress methodology for defined benefit pension transfer claims. This gave firms and advisers a prescribed framework for calculating loss, using consistent assumptions and discount rates.</p>

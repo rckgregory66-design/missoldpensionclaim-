@@ -60,7 +60,7 @@ export default function DeceasedRelativePage() {
 
             <h2>Does a Pension Mis-Selling Claim Die With the Person?</h2>
             <p>Under the Law Reform (Miscellaneous Provisions) Act 1934, most causes of action — including claims for financial loss — survive the death of the person who suffered them. This means a potential mis-sold pension claim that existed at the time of death can, in principle, be pursued by the estate.</p>
-            <p>The right is not automatic in every case. Some routes — such as the Financial Ombudsman Service — have their own rules about claims made by beneficiaries or estates after death, and these may differ from the general legal position. The FSCS similarly has eligibility criteria that need to be assessed.</p>
+            <p>The right is not automatic in every case. Some routes — such as the <Link href="/financial-ombudsman-pension-complaints/" className="text-[#1e3a5f] underline">Financial Ombudsman Service</Link> — have their own rules about claims made by beneficiaries or estates after death, and these may differ from the general legal position. The FSCS similarly has eligibility criteria that need to be assessed.</p>
 
             <h2>Who Can Bring the Claim?</h2>
             <p>The personal representative of the deceased — that is, either:</p>
@@ -72,7 +72,7 @@ export default function DeceasedRelativePage() {
             <p>If you are not already a personal representative, you may need to apply for a grant of probate or letters of administration before you can act. A solicitor can advise on this process.</p>
 
             <h2>If a Complaint Had Already Been Started</h2>
-            <p>If the deceased had already submitted a complaint to the firm, referred the matter to the FOS, or made an FSCS application before they died, the personal representative should notify the relevant body of the death as soon as possible. In many cases, the complaint or claim can be continued by the personal representative without needing to start again.</p>
+            <p>If the deceased had already submitted a complaint to the firm, referred the matter to the FOS, or made an <Link href="/fscs-pension-claims/" className="text-[#1e3a5f] underline">FSCS</Link> application before they died, the personal representative should notify the relevant body of the death as soon as possible. In many cases, the complaint or claim can be continued by the personal representative without needing to start again.</p>
             <p>Time limits may still be running — contact the FOS or FSCS promptly to ask about the status of any existing complaint and how to continue it.</p>
 
             <h2>Claiming Under a Lasting Power of Attorney</h2>

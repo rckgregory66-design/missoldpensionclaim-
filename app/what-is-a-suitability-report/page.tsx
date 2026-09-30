@@ -60,7 +60,7 @@ export default function SuitabilityReportPage() {
               'You can obtain copies through a data subject access request (DSAR) even if you no longer have them.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">When you received advice about your pension — whether to transfer to a SIPP, move into particular investments, or give up a final salary pension — the adviser was required by FCA rules to provide a suitability report. Understanding what it should have contained, and what happens when it is absent or inadequate, is important for anyone considering a pension mis-selling claim.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">When you received advice about your pension — whether to transfer to a <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link>, move into particular investments, or give up a final salary pension — the adviser was required by FCA rules to provide a suitability report. Understanding what it should have contained, and what happens when it is absent or inadequate, is important for anyone considering a pension mis-selling claim.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

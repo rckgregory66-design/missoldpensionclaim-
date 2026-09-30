@@ -61,7 +61,7 @@ export default function DefinedBenefitPage() {
 
             <h2>What Is a Defined Benefit Pension?</h2>
             <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg mb-4">
-              <p className="text-sm text-blue-800 leading-relaxed"><strong>In simple terms:</strong> A defined benefit pension promises a set income for life when you retire — it does not depend on how markets perform. A defined contribution pension (like a SIPP or personal pension) gives you a pot of money that grows or shrinks with investments. When advisers recommended transferring from DB to DC, they were asking clients to swap a guaranteed income for investment risk.</p>
+              <p className="text-sm text-blue-800 leading-relaxed"><strong>In simple terms:</strong> A defined benefit pension promises a set income for life when you retire — it does not depend on how markets perform. A defined contribution pension (like a <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> or personal pension) gives you a pot of money that grows or shrinks with investments. When advisers recommended transferring from DB to DC, they were asking clients to swap a guaranteed income for investment risk.</p>
             </div>
             <p>A defined benefit (DB) pension — commonly called a final salary pension — is a type of workplace pension that provides a guaranteed retirement income. The income is usually calculated on the basis of your salary and the number of years you were a member of the scheme. Unlike defined contribution pensions, the investment risk sits with the employer rather than the employee.</p>
             <p>DB pensions are widely regarded as extremely valuable because they offer:</p>

@@ -62,7 +62,7 @@ export default function PensionComplaintLetterPage() {
               'Keep records — the six-month window to go to the FOS runs from the firm\'s final response.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Before you can refer a pension mis-selling complaint to the Financial Ombudsman Service, you must complain directly to the firm that gave you the advice. This page explains what to include in your complaint letter and how to give your complaint the best chance of success.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Before you can refer a pension mis-selling complaint to the <Link href="/financial-ombudsman-pension-complaints/" className="text-[#1e3a5f] underline">Financial Ombudsman Service</Link>, you must complain directly to the firm that gave you the advice. This page explains what to include in your complaint letter and how to give your complaint the best chance of success.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

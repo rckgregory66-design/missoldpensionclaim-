@@ -51,7 +51,7 @@ export default function TVASPage() {
               'Failure to produce a TVAS or TVC at all was itself a regulatory breach.',
             ]} />
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">When a financial adviser recommended that you transfer out of a defined benefit pension, they were required by FCA rules to produce a Transfer Value Analysis — a document designed to show whether the transfer value could actually replicate the guaranteed income you were giving up. In most cases, it could not. Understanding your TVAS (or TVC) is often key to understanding why you have a claim.</p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">When a financial adviser recommended that you transfer out of a <Link href="/defined-benefit-pension-transfer-claims/" className="text-[#1e3a5f] underline">defined benefit</Link> pension, they were required by FCA rules to produce a Transfer Value Analysis — a document designed to show whether the transfer value could actually replicate the guaranteed income you were giving up. In most cases, it could not. Understanding your TVAS (or TVC) is often key to understanding why you have a claim.</p>
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>

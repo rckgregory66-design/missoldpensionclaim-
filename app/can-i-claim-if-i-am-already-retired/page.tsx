@@ -59,7 +59,7 @@ export default function AlreadyRetiredPage() {
             </div>
 
             <h2>Why Retired Claimants Often Have Strong Cases</h2>
-            <p>For retirees who were advised to transfer out of a defined benefit or final salary pension, the loss is often very clear. You are now receiving an income from the arrangement the advice moved you into — and that can be directly compared with what you would have received had you stayed in the original scheme.</p>
+            <p>For retirees who were advised to transfer out of a <Link href="/defined-benefit-pension-transfer-claims/" className="text-[#1e3a5f] underline">defined benefit</Link> or final salary pension, the loss is often very clear. You are now receiving an income from the arrangement the advice moved you into — and that can be directly compared with what you would have received had you stayed in the original scheme.</p>
             <p>This comparison — the guaranteed income you gave up versus the income you now have — often forms the core of compensation calculations in defined benefit transfer claims. For a retired person, the numbers are no longer hypothetical. The income gap is real and ongoing.</p>
 
             <h2>Does Drawing Your Pension Affect Your Right to Claim?</h2>

@@ -55,7 +55,7 @@ export default function TimeLimitsPage() {
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg mb-6">
-              <p className="text-sm text-blue-800 leading-relaxed"><strong>In simple terms:</strong> Every route for claiming has a deadline. Miss it and you may lose the right to claim regardless of how strong your case is. The deadlines are different for FOS complaints, FSCS applications and legal proceedings — and for older cases, the clock may start from when you discovered the problem, not when the original advice was given.</p>
+              <p className="text-sm text-blue-800 leading-relaxed"><strong>In simple terms:</strong> Every route for claiming has a deadline. Miss it and you may lose the right to claim regardless of how strong your case is. The deadlines are different for FOS complaints, <Link href="/fscs-pension-claims/" className="text-[#1e3a5f] underline">FSCS</Link> applications and legal proceedings — and for older cases, the clock may start from when you discovered the problem, not when the original advice was given.</p>
             </div>
 
             <div className="bg-red-50 border-l-4 border-red-400 p-5 rounded-r-lg mb-8 flex gap-3">

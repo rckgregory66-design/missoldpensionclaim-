@@ -61,7 +61,7 @@ export default function FOSPage() {
 
             <h2>What Is the Financial Ombudsman Service?</h2>
             <p>The <a href="https://www.financial-ombudsman.org.uk" className="text-[#1e3a5f] underline" target="_blank" rel="noopener noreferrer">Financial Ombudsman Service (FOS)</a> is an independent body that resolves disputes between financial services firms and their customers. It is free to use for consumers and most small businesses. Its decisions are binding on financial firms if the complainant accepts them.</p>
-            <p>The FOS handles a wide range of complaints including those relating to pension advice, SIPP recommendations, defined benefit transfers and related financial advice.</p>
+            <p>The FOS handles a wide range of complaints including those relating to pension advice, <Link href="/mis-sold-sipp-claims/" className="text-[#1e3a5f] underline">SIPP</Link> recommendations, defined benefit transfers and related financial advice.</p>
 
             <h2>When Can You Complain to the FOS About a Pension?</h2>
             <p>You may be able to complain to the FOS about pension advice where:</p>

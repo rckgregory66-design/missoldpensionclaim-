@@ -85,7 +85,7 @@ export default function BadPensionAdvicePage() {
             <p>The charges, ongoing fees and product costs involved in the recommended pension were not clearly explained. Charges can significantly erode pension fund value over time and are a material consideration in any recommendation.</p>
 
             <h3>Failure to Compare Existing Benefits</h3>
-            <p>The adviser did not adequately compare the benefits of the existing pension arrangement with the proposed new arrangement, particularly where a transfer from a defined benefit scheme was involved.</p>
+            <p>The adviser did not adequately compare the benefits of the existing pension arrangement with the proposed new arrangement, particularly where a transfer from a <Link href="/defined-benefit-pension-transfer-claims/" className="text-[#1e3a5f] underline">defined benefit</Link> scheme was involved.</p>
 
             <h3>Failure to Explain Loss of Guarantees</h3>
             <p>You were not clearly told what guaranteed benefits you would be giving up by making a transfer — for example, a guaranteed annuity rate, a final salary income, or death in service benefits.</p>
@@ -97,7 +97,7 @@ export default function BadPensionAdvicePage() {
             <p>The adviser had a financial interest in recommending a particular pension or investment, which was not disclosed or which influenced the advice given.</p>
 
             <h2>The Role of the Suitability Report</h2>
-            <p>A financial adviser making a pension recommendation must provide a written suitability report. This document should explain why the recommendation is suitable for you, the risks involved, and the charges that will apply. If you have a suitability report, it is an important piece of evidence in any mis-selling claim. An inadequate, inaccurate or misleading suitability report may itself indicate that the advice process was flawed.</p>
+            <p>A financial adviser making a pension recommendation must provide a written <Link href="/what-is-a-suitability-report/" className="text-[#1e3a5f] underline">suitability report</Link>. This document should explain why the recommendation is suitable for you, the risks involved, and the charges that will apply. If you have a suitability report, it is an important piece of evidence in any mis-selling claim. An inadequate, inaccurate or misleading suitability report may itself indicate that the advice process was flawed.</p>
 
             <h2>How a Claim May Be Pursued</h2>
             <p>Claims for bad pension advice may be pursued through:</p>
