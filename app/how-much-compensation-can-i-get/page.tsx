@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'How Much Pension Mis-Selling Compensation Can I Get?',
   description: 'How is pension mis-selling compensation calculated? What affects the amount? FOS cap, FSCS limit, and how DB and SIPP claims are valued — full guide.',
   alternates: { canonical: '/how-much-compensation-can-i-get/' },
+  openGraph: pageOpenGraph('/how-much-compensation-can-i-get/'),
 }
 
 const faqs = [
@@ -110,6 +113,7 @@ export default function HowMuchCompensationPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/how-much-compensation-can-i-get/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

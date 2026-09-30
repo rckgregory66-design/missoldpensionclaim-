@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'FCA Rules on Pension Advice | COBS, PROD and Consumer Duty Explained',
+  title: 'FCA Rules on Pension Advice | COBS and Consumer Duty',
   description: 'What FCA rules govern pension advice in the UK? COBS 9, PROD, PS22/13 and the Consumer Duty set the standards — and breach of them can mean mis-selling.',
   alternates: { canonical: '/pension-advice-fca-rules/' },
+  openGraph: pageOpenGraph('/pension-advice-fca-rules/'),
 }
 
 const faqs = [
@@ -97,6 +100,7 @@ export default function FCARulesPensionAdvicePage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-advice-fca-rules/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

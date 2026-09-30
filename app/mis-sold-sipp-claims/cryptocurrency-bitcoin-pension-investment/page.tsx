@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Cryptocurrency & Bitcoin SIPP Pension Claims | FCA Unregulated',
   description: 'Were pension funds invested in Bitcoin or other cryptocurrency via a SIPP? Crypto is FCA-unregulated — unsuitable for pension investment. Free claim review.',
   alternates: { canonical: '/mis-sold-sipp-claims/cryptocurrency-bitcoin-pension-investment/' },
+  openGraph: pageOpenGraph('/mis-sold-sipp-claims/cryptocurrency-bitcoin-pension-investment/'),
 }
 
 const faqs = [
@@ -51,7 +54,7 @@ export default function CryptocurrencyBitcoinSIPPPage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The FCA has never regulated cryptocurrency as an investment. Placing pension savings — money earmarked for retirement — into Bitcoin, Ethereum, or other crypto assets via a SIPP was almost always entirely unsuitable. If your pension was invested in cryptocurrency, you may have significant claims against the adviser, the SIPP operator, or both.</p>
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">Cryptocurrency is not FCA-regulated. Pension investment in crypto assets was almost always unsuitable. Claims may be available against the adviser, SIPP operator, or through the FSCS. Contact us for a free, no-obligation review.</p>
+              <p className="text-white text-sm leading-relaxed">Cryptocurrency is not regulated by the FCA, and placing pension money into crypto assets was very often unsuitable for ordinary savers. Depending on the circumstances, claims may be available against the adviser or the SIPP operator, or through the FSCS if the firm has failed. Contact us for a free, no-obligation review.</p>
             </div>
             <div className="not-prose bg-red-50 border-l-4 border-red-400 p-5 rounded-r-lg mb-8 flex gap-3">
               <AlertTriangle size={20} className="text-red-500 shrink-0 mt-0.5" />
@@ -104,6 +107,7 @@ export default function CryptocurrencyBitcoinSIPPPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-sipp-claims/cryptocurrency-bitcoin-pension-investment/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

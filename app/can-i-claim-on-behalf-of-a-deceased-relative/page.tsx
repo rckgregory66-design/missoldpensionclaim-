@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Can I Claim Pension Compensation for a Deceased Relative? | Guide',
-  description: 'If a family member was mis-sold a pension and has since died, their estate may still be able to claim compensation. Solicitor guide to claiming on behalf of a deceased person.',
+  title: 'Claim Pension Compensation for a Deceased Relative | Guide',
+  description: 'If a family member was mis-sold a pension and has since died, their estate may still be able to claim. Solicitor guide to claiming for a deceased person.',
   alternates: { canonical: '/can-i-claim-on-behalf-of-a-deceased-relative/' },
+  openGraph: pageOpenGraph('/can-i-claim-on-behalf-of-a-deceased-relative/'),
 }
 
 const faqs = [
@@ -126,6 +129,7 @@ export default function DeceasedRelativePage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/can-i-claim-on-behalf-of-a-deceased-relative/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import Breadcrumb from '@/components/Breadcrumb'
 import { BreadcrumbSchema, WebPageSchema } from '@/components/Schema'
-import { siteConfig } from '@/lib/metadata'
+import { siteConfig, pageOpenGraph } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Complaints Handling Procedure | Edward & Amaury Solicitors',
   description: 'Our Complaints Handling Procedure. How we deal with your complaint, how long it takes, and your rights to the Legal Ombudsman and SRA.',
   alternates: { canonical: '/complaints-procedure/' },
+  openGraph: pageOpenGraph('/complaints-procedure/'),
 }
 
 export default function ComplaintsPage() {

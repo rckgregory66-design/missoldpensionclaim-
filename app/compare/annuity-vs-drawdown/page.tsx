@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, XCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Annuity vs Drawdown: Which Is Better? | Pension Mis-Selling Guide',
-  description: 'Was drawdown the right choice for you, or should your adviser have recommended an annuity? Understanding the difference is key to assessing whether you were mis-sold.',
+  title: 'Annuity vs Drawdown: Which Is Better? | Mis-Selling Guide',
+  description: 'Was drawdown right for you, or should your adviser have recommended an annuity? Understanding the difference helps you assess whether you were mis-sold.',
   alternates: { canonical: '/compare/annuity-vs-drawdown/' },
+  openGraph: pageOpenGraph('/compare/annuity-vs-drawdown/'),
 }
 
 const faqs = [
@@ -123,6 +126,7 @@ export default function AnnuityVsDrawdownPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/compare/annuity-vs-drawdown/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, XCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -11,8 +13,9 @@ import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
   title: 'FOS vs Legal Action for Pension Claims | Which Route Is Better?',
-  description: 'Comparing FOS pension complaints against legal proceedings. FOS is free and simpler. Legal action has no cap and can be faster for the right case. Solicitor guide.',
+  description: 'FOS pension complaints compared with legal proceedings. FOS is free and simpler; legal action has no cap and may suit some cases. Solicitor guide.',
   alternates: { canonical: '/compare/fos-vs-legal-action/' },
+  openGraph: pageOpenGraph('/compare/fos-vs-legal-action/'),
 }
 
 const faqs = [
@@ -167,6 +170,7 @@ export default function FOSvsLegalPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/compare/fos-vs-legal-action/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

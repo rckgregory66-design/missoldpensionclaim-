@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -6,9 +7,10 @@ import PageCTA from '@/components/PageCTA'
 import { BreadcrumbSchema, WebPageSchema } from '@/components/Schema'
 
 export const metadata: Metadata = {
-  title: 'Pension Claim Comparisons | FOS vs FSCS, DB vs DC, Solicitor vs Direct',
-  description: 'Side-by-side comparisons to help you understand your pension mis-selling claim options. Compare the FOS vs FSCS, defined benefit vs defined contribution, and more.',
+  title: 'Pension Claim Comparisons | FOS vs FSCS, DB vs DC and More',
+  description: 'Side-by-side comparisons of your pension mis-selling claim options, including FOS vs FSCS, DB vs DC pensions, and solicitor vs direct claims.',
   alternates: { canonical: '/compare/' },
+  openGraph: pageOpenGraph('/compare/'),
 }
 
 const comparisons = [

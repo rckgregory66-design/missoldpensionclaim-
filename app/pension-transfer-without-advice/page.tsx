@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Pension Transfer Without Advice | Execution-Only Transfers Explained',
+  title: 'Pension Transfer Without Advice | Execution-Only Transfers',
   description: 'Can you transfer a defined benefit pension without taking advice? The rules, the risks, and whether you can claim if a transfer-without-advice goes wrong.',
   alternates: { canonical: '/pension-transfer-without-advice/' },
+  openGraph: pageOpenGraph('/pension-transfer-without-advice/'),
 }
 
 const faqs = [
@@ -96,6 +99,7 @@ export default function PensionTransferWithoutAdvicePage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-transfer-without-advice/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

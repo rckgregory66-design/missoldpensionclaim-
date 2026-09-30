@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, AlertTriangle, Info } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
@@ -12,6 +14,7 @@ export const metadata: Metadata = {
   title: 'Can I Claim If My Pension Adviser Has Gone Bust? | FSCS Guide',
   description: 'If your financial adviser has gone out of business, you may still be able to claim compensation through the FSCS. Solicitor-led guide to your options.',
   alternates: { canonical: '/can-i-claim-if-adviser-has-gone-bust/' },
+  openGraph: pageOpenGraph('/can-i-claim-if-adviser-has-gone-bust/'),
 }
 
 const faqs = [
@@ -161,6 +164,7 @@ export default function AdviserGoneBustPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/can-i-claim-if-adviser-has-gone-bust/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

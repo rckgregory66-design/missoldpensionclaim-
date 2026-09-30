@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -11,8 +13,9 @@ import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
   title: 'How to Make an FSCS Pension Claim | Step-by-Step Guide',
-  description: 'Step-by-step guide to making an FSCS pension claim. What to prepare, how to apply, what the FSCS assesses, and how long it takes. Solicitor-assisted claims available.',
+  description: 'Step-by-step guide to making an FSCS pension claim: what to prepare, how to apply, what the FSCS assesses and how long it takes. Solicitor help available.',
   alternates: { canonical: '/how-to-make-an-fscs-pension-claim/' },
+  openGraph: pageOpenGraph('/how-to-make-an-fscs-pension-claim/'),
 }
 
 const faqs = [
@@ -157,6 +160,7 @@ export default function FSCSHowToPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/how-to-make-an-fscs-pension-claim/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

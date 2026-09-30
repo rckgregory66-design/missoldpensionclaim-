@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, Info } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import ContactForm from '@/components/ContactForm'
 import FAQAccordion from '@/components/FAQAccordion'
 import CompensationAssessment from '@/components/CompensationAssessment'
@@ -11,9 +13,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'How Much Compensation For a Mis-Sold Pension? | Compensation Guide',
+  title: 'How Much Compensation for a Mis-Sold Pension? | Guide',
   description: 'Understand how mis-sold pension compensation is calculated. No guarantees are given — compensation depends on your individual circumstances and losses suffered.',
   alternates: { canonical: '/mis-sold-pension-compensation-calculator/' },
+  openGraph: pageOpenGraph('/mis-sold-pension-compensation-calculator/'),
 }
 
 const faqs = [
@@ -59,7 +62,7 @@ export default function CompensationPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">Compensation for a mis-sold pension aims to restore you to the financial position you would have been in without the bad advice. For <a href="/defined-benefit-pension-transfer-claims/" className="text-[#c9a84c] underline">defined benefit transfer claims</a>, this typically means the value of the guaranteed income you gave up versus what your transferred fund is now worth. For <a href="/mis-sold-sipp-claims/" className="text-[#c9a84c] underline">SIPP claims</a>, it typically means investment losses plus charges. No specific figure can be given without reviewing your individual case.</p>
+              <p className="text-white text-sm leading-relaxed">Compensation aims to restore you to the position you would have been in without the unsuitable advice. For <a href="/defined-benefit-pension-transfer-claims/" className="text-[#c9a84c] underline">defined benefit transfer claims</a>, that typically compares the guaranteed income you gave up with your transferred fund's value. For <a href="/mis-sold-sipp-claims/" className="text-[#c9a84c] underline">SIPP claims</a>, it typically means investment losses plus charges. No figure can be given without reviewing your case.</p>
             </div>
 
             <div className="bg-amber-50 border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8 flex gap-3">
@@ -141,6 +144,7 @@ export default function CompensationPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-pension-compensation-calculator/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

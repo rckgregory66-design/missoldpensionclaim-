@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Pension Scam Claims | Were You a Victim of Pension Fraud? Solicitors',
-  description: 'Were you cold-called about your pension or pressured into a transfer? Pension scam victims may be able to recover losses through FOS, FSCS or legal action. Free review.',
+  title: 'Pension Scam Claims | Were You a Victim of Pension Fraud?',
+  description: 'Cold-called about your pension or pressured into a transfer? Pension scam victims may recover losses through FOS, FSCS or legal action. Free review.',
   alternates: { canonical: '/pension-scam-claims/' },
+  openGraph: pageOpenGraph('/pension-scam-claims/'),
 }
 
 const faqs = [
@@ -141,6 +144,7 @@ export default function PensionScamPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-scam-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, Shield } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Local Government Pension Transfer Claims | LGPS Mis-Selling Solicitors',
+  title: 'Local Government Pension Transfer Claims | LGPS Mis-Selling',
   description: 'Were you advised to transfer out of the LGPS? Transferring from a local government pension is almost always unsuitable advice. Free initial review.',
   alternates: { canonical: '/local-government-pension-transfer-claims/' },
+  openGraph: pageOpenGraph('/local-government-pension-transfer-claims/'),
 }
 
 const faqs = [
@@ -61,7 +64,7 @@ export default function LGPSPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">Advice to transfer out of the LGPS was almost always unsuitable. If you transferred and suffered a loss, you may have a significant compensation claim. Contact us for a free review — time limits apply.</p>
+              <p className="text-white text-sm leading-relaxed">The FCA's position is that transferring out of a defined benefit scheme such as the Local Government Pension Scheme (LGPS) is not in most people's best interests. If you were advised to transfer and suffered a loss, you may have a compensation claim. Time limits apply, so contact us for a free review promptly.</p>
             </div>
 
             <div className="not-prose bg-red-50 border-l-4 border-red-400 p-5 rounded-r-lg mb-8 flex gap-3">
@@ -122,6 +125,7 @@ export default function LGPSPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/local-government-pension-transfer-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

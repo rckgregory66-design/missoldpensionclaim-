@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import Breadcrumb from '@/components/Breadcrumb'
 import { BreadcrumbSchema, WebPageSchema } from '@/components/Schema'
-import { siteConfig } from '@/lib/metadata'
+import { siteConfig, pageOpenGraph } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Mis-Sold Pension Claim',
   description: 'How Edward & Amaury Solicitors collects, uses and protects your personal data in connection with the Mis-Sold Pension Claim service.',
   alternates: { canonical: '/privacy-policy/' },
+  openGraph: pageOpenGraph('/privacy-policy/'),
 }
 
 export default function PrivacyPage() {

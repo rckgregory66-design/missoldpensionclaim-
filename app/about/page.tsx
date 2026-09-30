@@ -4,12 +4,13 @@ import { Shield, Users, CheckCircle, Scale } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
 import { BreadcrumbSchema, WebPageSchema } from '@/components/Schema'
-import { siteConfig } from '@/lib/metadata'
+import { siteConfig, pageOpenGraph } from '@/lib/metadata'
 
 export const metadata: Metadata = {
-  title: 'About Us | Edward & Amaury Solicitors — Mis-Sold Pension Claim',
-  description: 'Learn about the team behind Mis-Sold Pension Claim. Operated by Edward & Amaury Solicitors, authorised and regulated by the Solicitors Regulation Authority, SRA No. 800525.',
+  title: 'About Edward & Amaury Solicitors | Mis-Sold Pension Claim',
+  description: 'About Edward & Amaury Solicitors, the SRA-regulated firm (SRA No. 800525) behind Mis-Sold Pension Claim, and the solicitor who reviews our guidance.',
   alternates: { canonical: '/about/' },
+  openGraph: pageOpenGraph('/about/'),
 }
 
 export default function AboutPage() {
@@ -21,7 +22,7 @@ export default function AboutPage() {
       <Breadcrumb crumbs={[{ label: 'About Us' }]} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#0f2035] mb-4">About Mis-Sold Pension Claim</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#0f2035] mb-4">About Edward &amp; Amaury Solicitors</h1>
         <p className="text-lg text-gray-600 mb-10 leading-relaxed">Mis-Sold Pension Claim is a specialist service operated by Edward &amp; Amaury Solicitors, a law firm authorised and regulated by the Solicitors Regulation Authority. We provide solicitor-led support to individuals who believe they may have received unsuitable advice about their pension.</p>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-12">

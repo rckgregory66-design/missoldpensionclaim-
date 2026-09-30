@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -11,8 +13,9 @@ import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
   title: 'Pension Annuity Mis-Selling Claims | Unsuitable Annuity Advice',
-  description: 'Were you advised to buy the wrong type of annuity, or failed to be offered an enhanced annuity? Mis-sold annuity claims — free initial review by specialist solicitors.',
+  description: 'Advised to buy the wrong annuity, or never offered an enhanced annuity? Understand your mis-sold annuity claim options. Free initial review by solicitors.',
   alternates: { canonical: '/pension-annuity-mis-selling-claims/' },
+  openGraph: pageOpenGraph('/pension-annuity-mis-selling-claims/'),
 }
 
 const faqs = [
@@ -109,6 +112,7 @@ export default function AnnuityMisSellingPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-annuity-mis-selling-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

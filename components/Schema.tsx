@@ -128,23 +128,6 @@ export function WebPageSchema({ title, description, url, datePublished = '2025-0
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 }
 
-export function AggregateRatingSchema({ ratingValue = '4.9', reviewCount = '47' }: { ratingValue?: string; reviewCount?: string }) {
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'LegalService',
-    '@id': `${siteConfig.url}/#organization`,
-    name: siteConfig.firmName,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue,
-      reviewCount,
-      bestRating: '5',
-      worstRating: '1',
-    },
-  }
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-}
-
 export function LocalBusinessSchema({ locationName, streetAddress, addressLocality, postalCode, url, description }: {
   locationName: string; streetAddress: string; addressLocality: string; postalCode: string; url: string; description: string
 }) {

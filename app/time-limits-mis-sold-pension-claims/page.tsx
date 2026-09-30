@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, Clock, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Time Limits For Mis-Sold Pension Claims | Act Before It Is Too Late',
+  title: 'Time Limits for Mis-Sold Pension Claims | Act Promptly',
   description: 'Time limits apply to mis-sold pension claims. Find out about FOS complaint deadlines, FSCS timescales and legal limitation periods. Seek advice promptly.',
   alternates: { canonical: '/time-limits-mis-sold-pension-claims/' },
+  openGraph: pageOpenGraph('/time-limits-mis-sold-pension-claims/'),
 }
 
 const faqs = [
@@ -48,7 +51,7 @@ export default function TimeLimitsPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">For <a href="/financial-ombudsman-pension-complaints/" className="text-[#c9a84c] underline">FOS complaints</a>, you generally have six months from the firm's final response letter. For legal claims, the usual period is six years from the loss, or three years from when you knew about it. FSCS has its own rules. Critically, the clock for older cases may start later than you think — do not assume you are out of time without seeking advice first.</p>
+              <p className="text-white text-sm leading-relaxed"><a href="/financial-ombudsman-pension-complaints/" className="text-[#c9a84c] underline">FOS complaints</a> generally must be referred within six months of the firm's final response. Legal claims usually have a six-year limit from the loss, or three years from when you knew about it. FSCS has its own rules. The clock on older cases can start later than expected, so seek advice before assuming you are out of time.</p>
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg mb-6">
@@ -157,6 +160,7 @@ export default function TimeLimitsPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/time-limits-mis-sold-pension-claims/" />
         <div className="mt-14"><PageCTA title="Time Limits May Apply — Act Now" body="Contact us today for a free, no-obligation initial assessment. Do not risk losing the right to claim by delaying." /></div>
       </div>
     </>

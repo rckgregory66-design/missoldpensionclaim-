@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Financial Adviser Duty of Care | What Advisers Owe You by Law',
   description: 'UK financial advisers owe clients a strict duty of care under FCA rules. Understand what standards apply, what a breach looks like, and how to claim.',
   alternates: { canonical: '/financial-adviser-duty-of-care/' },
+  openGraph: pageOpenGraph('/financial-adviser-duty-of-care/'),
 }
 
 const faqs = [
@@ -105,6 +108,7 @@ export default function FinancialAdviserDutyPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/financial-adviser-duty-of-care/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

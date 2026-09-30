@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Green Energy Pension Investment Claims | SIPP Mis-Selling Solicitors',
-  description: 'Was your SIPP invested in green energy, solar panels, biofuel or carbon credits? These were high-risk unregulated assets. Solicitor-led claims — free initial review.',
+  title: 'Green Energy Pension Investment Claims | SIPP Mis-Selling',
+  description: 'SIPP invested in green energy, solar panels, biofuel or carbon credits? These were often high-risk, unregulated assets. Solicitor-led claims; free review.',
   alternates: { canonical: '/mis-sold-sipp-claims/green-energy-pension-investment/' },
+  openGraph: pageOpenGraph('/mis-sold-sipp-claims/green-energy-pension-investment/'),
 }
 
 const faqs = [
@@ -111,6 +114,7 @@ export default function GreenEnergyPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-sipp-claims/green-energy-pension-investment/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

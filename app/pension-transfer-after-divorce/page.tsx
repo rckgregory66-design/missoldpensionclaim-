@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Pension Transfer After Divorce | Mis-Sold Pension Following a Pension Sharing Order',
-  description: 'Were you advised to transfer a pension share received in divorce into an unsuitable product? Pension mis-selling claims following divorce pension orders — free review.',
+  title: 'Pension Transfer After Divorce | Mis-Sold Pension Claims',
+  description: 'Advised to move a pension share received on divorce into an unsuitable product? Understand your pension mis-selling claim options. Free review.',
   alternates: { canonical: '/pension-transfer-after-divorce/' },
+  openGraph: pageOpenGraph('/pension-transfer-after-divorce/'),
 }
 
 const faqs = [
@@ -80,6 +83,7 @@ export default function PensionTransferAfterDivorcePage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-transfer-after-divorce/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

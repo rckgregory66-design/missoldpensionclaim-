@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -11,8 +13,9 @@ import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
   title: 'FSCS Pension Compensation Limit | How Much Can You Claim?',
-  description: 'The FSCS compensation limit for pension mis-selling claims is £85,000 per person per firm. Find out how the limit applies, what happens if your loss exceeds it, and what your options are.',
+  description: 'The FSCS pension mis-selling limit is £85,000 per person per firm. See how it applies, what happens if your loss is higher, and your other options.',
   alternates: { canonical: '/fscs-pension-compensation-limit/' },
+  openGraph: pageOpenGraph('/fscs-pension-compensation-limit/'),
 }
 
 const faqs = [
@@ -153,6 +156,7 @@ export default function FSCSCompensationLimitPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/fscs-pension-compensation-limit/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

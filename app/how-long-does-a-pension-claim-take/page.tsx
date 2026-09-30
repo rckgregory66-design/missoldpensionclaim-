@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, Clock } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'How Long Does a Pension Mis-Selling Claim Take? | Realistic Timescales',
-  description: 'FOS pension complaints typically take 6–18 months. FSCS claims 6–12 months. Legal proceedings longer. Honest guide to pension claim timescales — Edward & Amaury Solicitors.',
+  title: 'How Long Does a Pension Mis-Selling Claim Take?',
+  description: 'FOS pension complaints typically take 6–18 months, FSCS claims 6–12 months, and legal proceedings longer. An honest guide to pension claim timescales.',
   alternates: { canonical: '/how-long-does-a-pension-claim-take/' },
+  openGraph: pageOpenGraph('/how-long-does-a-pension-claim-take/'),
 }
 
 const faqs = [
@@ -58,7 +61,7 @@ export default function HowLongPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">FOS complaints: typically 6–18 months. FSCS claims: typically 6–12 months for straightforward cases. Legal proceedings: 12 months to 3+ years. The process is rarely quick, but we will keep you informed at every stage.</p>
+              <p className="text-white text-sm leading-relaxed">Timescales depend on the route. FOS complaints typically take 6–18 months, FSCS claims 6–12 months for straightforward cases, and legal proceedings anywhere from 12 months to over three years. The process is rarely quick, but we keep you informed at each stage. Contact us for a free review of your options.</p>
             </div>
 
             <h2>Timescales by Route</h2>
@@ -151,6 +154,7 @@ export default function HowLongPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/how-long-does-a-pension-claim-take/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

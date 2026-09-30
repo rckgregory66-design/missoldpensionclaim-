@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, Info } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Is Pension Mis-Selling Compensation Taxable? | Tax Treatment Guide',
-  description: 'Pension mis-selling compensation is generally not taxable as income. But the position depends on how it is paid and what it covers. Solicitor guide — seek tax advice.',
+  title: 'Is Pension Mis-Selling Compensation Taxable? | Tax Guide',
+  description: 'Pension mis-selling compensation is generally not taxed as income, but it depends on how it is paid and what it covers. Solicitor guide; seek tax advice.',
   alternates: { canonical: '/is-pension-mis-selling-compensation-taxable/' },
+  openGraph: pageOpenGraph('/is-pension-mis-selling-compensation-taxable/'),
 }
 
 const faqs = [
@@ -121,6 +124,7 @@ export default function TaxablePage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/is-pension-mis-selling-compensation-taxable/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

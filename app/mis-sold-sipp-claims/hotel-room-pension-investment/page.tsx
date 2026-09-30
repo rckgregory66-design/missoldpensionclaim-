@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Hotel Room Pension Investment Claims | SIPP Mis-Selling Solicitors',
+  title: 'Hotel Room Pension Investment Claims | SIPP Mis-Selling',
   description: 'Was your SIPP invested in hotel rooms or serviced accommodation? These were high-risk illiquid assets mis-sold as pension investments. Free solicitor review.',
   alternates: { canonical: '/mis-sold-sipp-claims/hotel-room-pension-investment/' },
+  openGraph: pageOpenGraph('/mis-sold-sipp-claims/hotel-room-pension-investment/'),
 }
 
 const faqs = [
@@ -114,6 +117,7 @@ export default function HotelRoomPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-sipp-claims/hotel-room-pension-investment/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import Breadcrumb from '@/components/Breadcrumb'
 import { BreadcrumbSchema, WebPageSchema } from '@/components/Schema'
-import { siteConfig } from '@/lib/metadata'
+import { siteConfig, pageOpenGraph } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Terms of Use | Mis-Sold Pension Claim',
   description: 'Terms and conditions for use of the Mis-Sold Pension Claim website operated by Edward & Amaury Solicitors.',
   alternates: { canonical: '/terms/' },
+  openGraph: pageOpenGraph('/terms/'),
 }
 
 export default function TermsPage() {

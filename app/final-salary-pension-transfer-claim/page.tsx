@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: 'Final Salary Pension Transfer Claim | Were You Mis-Sold?',
   description: 'If a financial adviser recommended you transfer out of a final salary (defined benefit) pension, you may have been mis-sold. Find out how to make a final salary pension transfer claim.',
   alternates: { canonical: '/final-salary-pension-transfer-claim/' },
+  openGraph: pageOpenGraph('/final-salary-pension-transfer-claim/'),
 }
 
 const faqs = [

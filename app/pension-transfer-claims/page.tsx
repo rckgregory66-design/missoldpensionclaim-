@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Pension Transfer Claims | Unsuitable Pension Transfer Advice Solicitors',
+  title: 'Pension Transfer Claims | Unsuitable Transfer Advice',
   description: 'If you were advised to transfer your pension from one scheme to another and that advice was unsuitable, you may have grounds for a claim. Find out more.',
   alternates: { canonical: '/pension-transfer-claims/' },
+  openGraph: pageOpenGraph('/pension-transfer-claims/'),
 }
 
 const faqs = [
@@ -47,7 +50,7 @@ export default function PensionTransferPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">A pension transfer claim arises when a financial adviser recommended moving your pension from one scheme to another and the advice was unsuitable — for example, because it led to higher charges, involved high-risk investments, or caused you to give up valuable guaranteed benefits without adequate warning. The most common types involve transfers out of defined benefit (final salary) schemes or into SIPPs.</p>
+              <p className="text-white text-sm leading-relaxed">A pension transfer claim arises when an adviser recommended moving your pension and the advice was unsuitable, for example because it raised charges, involved high-risk investments, or led you to give up valuable guaranteed benefits without adequate warning. The most common cases involve transfers out of defined benefit (final salary) schemes, or into SIPPs.</p>
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg mb-8">
@@ -116,6 +119,7 @@ export default function PensionTransferPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-transfer-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

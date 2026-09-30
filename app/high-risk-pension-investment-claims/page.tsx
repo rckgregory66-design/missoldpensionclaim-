@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'High-Risk Pension Investment Claims | Unregulated Investment Solicitors',
+  title: 'High-Risk Pension Investment Claims | Unregulated Assets',
   description: 'If your pension was invested in high-risk, unregulated or speculative assets, you may be able to claim compensation for unsuitable pension investment advice.',
   alternates: { canonical: '/high-risk-pension-investment-claims/' },
+  openGraph: pageOpenGraph('/high-risk-pension-investment-claims/'),
 }
 
 const faqs = [
@@ -63,7 +66,7 @@ export default function HighRiskInvestmentPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">A high-risk pension investment claim arises when a financial adviser placed your pension savings into speculative or unregulated assets — such as overseas property, storage pods, care home bonds or mini-bonds — that were wholly unsuitable for an ordinary pension saver. If the adviser firm has since collapsed, the FSCS may be able to compensate you. If it is still trading, the Financial Ombudsman Service is the usual first step.</p>
+              <p className="text-white text-sm leading-relaxed">A high-risk pension investment claim arises when an adviser placed your pension savings into speculative or unregulated assets, such as overseas property, storage pods or care home bonds, that were unsuitable for an ordinary pension saver. If the adviser firm has failed, the FSCS may compensate you. If it is still trading, the Financial Ombudsman Service is the usual first step.</p>
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg mb-6">
@@ -138,6 +141,7 @@ export default function HighRiskInvestmentPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/high-risk-pension-investment-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

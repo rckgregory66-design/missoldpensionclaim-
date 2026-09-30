@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Pension Charges Mis-Selling Claims | Excessive or Hidden Charges',
   description: 'Were you charged excessive or undisclosed fees on your pension? High charges can devastate retirement savings. Solicitor-led claims — free initial review.',
   alternates: { canonical: '/pension-charges-mis-selling/' },
+  openGraph: pageOpenGraph('/pension-charges-mis-selling/'),
 }
 
 const faqs = [
@@ -57,7 +60,7 @@ export default function PensionChargesPage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Pension charges might seem modest as annual percentages, but compounded over years they can take a devastating toll on retirement savings. Where charges were excessive, poorly disclosed, or involved undisclosed commission, there may be grounds for a mis-selling claim. Often, charge-related problems are part of a wider unsuitable advice picture.</p>
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">If you were charged excessive or undisclosed fees — or if your adviser received commission that was not properly explained — there may be grounds for a claim. Contact us for a free review of your charges and advice.</p>
+              <p className="text-white text-sm leading-relaxed">If you were charged excessive or undisclosed fees, or your adviser received commission that was not properly explained, you may have grounds for a claim. Advisers must give suitable advice and disclose charges clearly. Contact us for a free review of your charges, the advice you received and the routes open to you.</p>
             </div>
             <h2>Types of Pension Charge That Can Give Rise to a Claim</h2>
             <div className="not-prose space-y-3 mb-8">
@@ -106,6 +109,7 @@ export default function PensionChargesPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-charges-mis-selling/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

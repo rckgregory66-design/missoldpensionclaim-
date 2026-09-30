@@ -3,17 +3,19 @@ import Link from 'next/link'
 import { ArrowRight, CheckCircle, MapPin, Phone } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema, LocalBusinessSchema } from '@/components/Schema'
 import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
-import { siteConfig } from '@/lib/metadata'
+import { siteConfig, pageOpenGraph } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Carlisle Pension Mis-Selling Claims | Local Solicitors',
   description: 'Carlisle-based solicitors handling mis-sold pension claims across Cumbria. No win no fee. Edward & Amaury Solicitors, SRA No. 800525. Free review.',
   alternates: { canonical: '/carlisle-pension-mis-selling-claims/' },
+  openGraph: pageOpenGraph('/carlisle-pension-mis-selling-claims/'),
 }
 
 const faqs = [
@@ -66,7 +68,7 @@ export default function CarlislePensionClaimsPage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Edward & Amaury Solicitors are pension mis-selling specialists based in Carlisle, Cumbria. We handle solicitor-led claims for individuals across Cumbria and throughout England and Wales who received unsuitable pension advice or were placed into high-risk investments through their pension.</p>
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">We are Carlisle-based solicitors specialising in pension mis-selling claims. No win no fee, no upfront cost. Call us on {siteConfig.phone} or use the form below for a free initial review.</p>
+              <p className="text-white text-sm leading-relaxed">Edward &amp; Amaury Solicitors is a Carlisle-based, SRA-regulated firm advising on mis-sold pension, SIPP and defined benefit transfer claims across England and Wales. We offer a free initial review, and no win no fee options may be available for eligible cases. Call {siteConfig.phone} or use the form below.</p>
             </div>
 
             <div className="not-prose bg-[#f0f4f8] rounded-xl p-5 border border-gray-200 mb-8 flex gap-3">
@@ -146,6 +148,7 @@ export default function CarlislePensionClaimsPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/carlisle-pension-mis-selling-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

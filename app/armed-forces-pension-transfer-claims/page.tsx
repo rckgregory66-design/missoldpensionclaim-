@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, Shield } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Armed Forces Pension Transfer Claims | Military Pension Mis-Selling',
+  title: 'Armed Forces Pension Transfer Claims | Mis-Sold Advice',
   description: 'Were you advised to transfer out of the Armed Forces Pension Scheme? This is almost always unsuitable advice. Solicitor-led claims — free initial review.',
   alternates: { canonical: '/armed-forces-pension-transfer-claims/' },
+  openGraph: pageOpenGraph('/armed-forces-pension-transfer-claims/'),
 }
 
 const faqs = [
@@ -48,7 +51,7 @@ export default function ArmedForcesPensionPage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The Armed Forces Pension Scheme provides service personnel with guaranteed, government-backed retirement income and unique benefits that reflect the nature of military service. Advice to transfer out of an AFPS into a SIPP or personal pension was almost always unsuitable. If you were targeted by an adviser offering a free pension review and subsequently transferred, you may have a significant claim.</p>
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">Advice to transfer out of the Armed Forces Pension Scheme was almost always unsuitable. If you transferred and suffered a loss, you may have a significant compensation claim. Contact us for a free review — time limits apply.</p>
+              <p className="text-white text-sm leading-relaxed">The FCA's position is that transferring out of a defined benefit scheme such as the Armed Forces Pension Scheme is not in most people's best interests. If you were advised to transfer and suffered a loss, you may have a compensation claim. Time limits apply, so contact us for a free review promptly.</p>
             </div>
             <div className="not-prose bg-red-50 border-l-4 border-red-400 p-5 rounded-r-lg mb-8 flex gap-3">
               <AlertTriangle size={20} className="text-red-500 shrink-0 mt-0.5" />
@@ -100,6 +103,7 @@ export default function ArmedForcesPensionPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/armed-forces-pension-transfer-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

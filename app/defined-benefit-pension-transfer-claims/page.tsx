@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, Clock } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Defined Benefit Pension Transfer Claims | Final Salary Mis-Selling',
+  title: 'Defined Benefit Pension Transfer Claims | Final Salary',
   description: 'Were you advised to transfer out of a final salary or defined benefit pension? Find out whether the advice may have been unsuitable and what your options are.',
   alternates: { canonical: '/defined-benefit-pension-transfer-claims/' },
+  openGraph: pageOpenGraph('/defined-benefit-pension-transfer-claims/'),
 }
 
 const faqs = [
@@ -49,7 +52,7 @@ export default function DefinedBenefitPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">A defined benefit (DB) pension transfer claim arises when a financial adviser recommended you give up a guaranteed pension income in exchange for a cash transfer value, and that advice was unsuitable. The FCA has stated that for most people, transferring out of a DB pension is not in their best interests. If you were advised to transfer, particularly between 2015 and 2020, your advice may be worth reviewing.</p>
+              <p className="text-white text-sm leading-relaxed">A defined benefit (DB) pension transfer claim arises when an adviser recommended giving up a guaranteed pension income for a cash transfer value and the advice was unsuitable. The FCA's position is that transferring out of a DB scheme is not in most people's best interests. If you were advised to transfer, particularly between 2015 and 2020, your advice may be worth reviewing.</p>
             </div>
 
             <div className="bg-amber-50 border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
@@ -178,6 +181,7 @@ export default function DefinedBenefitPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/defined-benefit-pension-transfer-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

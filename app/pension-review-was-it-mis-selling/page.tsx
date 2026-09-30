@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Was My Pension Review Mis-Selling? | Warning Signs to Look For',
   description: 'Were you contacted for a free pension review and then advised to transfer? These reviews often led to unsuitable advice. Find out if you can claim compensation.',
   alternates: { canonical: '/pension-review-was-it-mis-selling/' },
+  openGraph: pageOpenGraph('/pension-review-was-it-mis-selling/'),
 }
 
 const faqs = [
@@ -128,6 +131,7 @@ export default function PensionReviewMisSellingPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-review-was-it-mis-selling/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

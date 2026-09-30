@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Forestry & Land Investment SIPP Claims | Pension Mis-Selling',
   description: 'Was your SIPP invested in forestry, farmland or land banking? These were high-risk unregulated investments. Solicitor-led pension claims — free initial review.',
   alternates: { canonical: '/mis-sold-sipp-claims/forestry-land-pension-investment/' },
+  openGraph: pageOpenGraph('/mis-sold-sipp-claims/forestry-land-pension-investment/'),
 }
 
 const faqs = [
@@ -107,6 +110,7 @@ export default function ForestryLandPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-sipp-claims/forestry-land-pension-investment/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

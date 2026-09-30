@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -11,8 +13,9 @@ import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
   title: 'SIPP vs Personal Pension: Key Differences | Mis-Selling Guide',
-  description: 'What is the difference between a SIPP and a personal pension? Was a SIPP the right product for you? Understanding the distinction is key to assessing mis-selling.',
+  description: 'What is the difference between a SIPP and a personal pension, and was a SIPP the right product for you? Key to assessing mis-selling.',
   alternates: { canonical: '/compare/sipp-vs-personal-pension/' },
+  openGraph: pageOpenGraph('/compare/sipp-vs-personal-pension/'),
 }
 
 const faqs = [
@@ -122,6 +125,7 @@ export default function SIPPvsPersonalPensionPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/compare/sipp-vs-personal-pension/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

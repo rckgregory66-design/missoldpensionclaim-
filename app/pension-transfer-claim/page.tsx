@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: 'Pension Transfer Claim | Mis-Sold Transfer & BSPS Claims',
   description: 'Were you advised to transfer out of a defined benefit or final salary pension, including the British Steel Pension Scheme? You may have a pension transfer mis-selling claim.',
   alternates: { canonical: '/pension-transfer-claim/' },
+  openGraph: pageOpenGraph('/pension-transfer-claim/'),
 }
 
 const faqs = [

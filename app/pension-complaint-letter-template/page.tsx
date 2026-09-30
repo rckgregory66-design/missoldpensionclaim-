@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, FileText } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Pension Complaint Letter Template | What to Include and How to Write It',
+  title: 'Pension Complaint Letter Template | What to Include',
   description: 'What to include in a pension mis-selling complaint letter to your adviser firm. A step-by-step guide — and why using a solicitor often produces better outcomes.',
   alternates: { canonical: '/pension-complaint-letter-template/' },
+  openGraph: pageOpenGraph('/pension-complaint-letter-template/'),
 }
 
 const faqs = [
@@ -141,6 +144,7 @@ export default function PensionComplaintLetterPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-complaint-letter-template/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

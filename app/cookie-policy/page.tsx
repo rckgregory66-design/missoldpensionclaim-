@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import Breadcrumb from '@/components/Breadcrumb'
 import { BreadcrumbSchema, WebPageSchema } from '@/components/Schema'
-import { siteConfig } from '@/lib/metadata'
+import { siteConfig, pageOpenGraph } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy | Mis-Sold Pension Claim',
   description: 'Information about how cookies are used on the Mis-Sold Pension Claim website operated by Edward & Amaury Solicitors.',
   alternates: { canonical: '/cookie-policy/' },
+  openGraph: pageOpenGraph('/cookie-policy/'),
 }
 
 export default function CookiePolicyPage() {

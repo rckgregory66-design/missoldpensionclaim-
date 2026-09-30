@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Financial Ombudsman Pension Complaints | FOS Pension Mis-Selling Guide',
-  description: 'Find out how the Financial Ombudsman Service handles pension mis-selling complaints, time limits that apply and how a solicitor can assist with your FOS complaint.',
+  title: 'Financial Ombudsman Pension Complaints | FOS Guide',
+  description: 'How the Financial Ombudsman Service handles pension mis-selling complaints, the time limits that apply and how a solicitor can help with your FOS complaint.',
   alternates: { canonical: '/financial-ombudsman-pension-complaints/' },
+  openGraph: pageOpenGraph('/financial-ombudsman-pension-complaints/'),
 }
 
 const faqs = [
@@ -49,7 +52,7 @@ export default function FOSPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">The Financial Ombudsman Service (FOS) is a free service that can investigate your pension mis-selling complaint and direct the firm to pay compensation if it rules in your favour. You must complain to the firm first, then refer to the FOS within six months of their final response. The FOS only covers firms that are still trading — if the firm has failed, the FSCS is the relevant route.</p>
+              <p className="text-white text-sm leading-relaxed">The Financial Ombudsman Service (FOS) is a free service that can investigate a pension mis-selling complaint and direct a firm to pay compensation. You must complain to the firm first, then refer to the FOS within six months of its final response. The FOS covers firms still trading; if the firm has failed, the FSCS is the relevant route.</p>
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg mb-8">
@@ -159,6 +162,7 @@ export default function FOSPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/financial-ombudsman-pension-complaints/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

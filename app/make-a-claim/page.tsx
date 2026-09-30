@@ -5,12 +5,13 @@ import Breadcrumb from '@/components/Breadcrumb'
 import ContactForm from '@/components/ContactForm'
 import FAQAccordion from '@/components/FAQAccordion'
 import { BreadcrumbSchema, WebPageSchema, FAQSchema } from '@/components/Schema'
-import { siteConfig } from '@/lib/metadata'
+import { siteConfig, pageOpenGraph } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Make a Mis-Sold Pension Claim | Start Your Free Enquiry',
   description: 'Start your mis-sold pension claim with Edward & Amaury Solicitors. Free initial review, no obligation, and no win no fee options available for eligible cases.',
   alternates: { canonical: '/make-a-claim/' },
+  openGraph: pageOpenGraph('/make-a-claim/'),
 }
 
 const faqs = [

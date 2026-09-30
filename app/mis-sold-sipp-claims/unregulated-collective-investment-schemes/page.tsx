@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'UCIS Pension Claims | Unregulated Collective Investment Scheme SIPP',
-  description: 'Was your SIPP invested in a UCIS? Unregulated collective investment schemes in pensions were almost always mis-sold. Solicitor-led UCIS pension claims — free review.',
+  title: 'UCIS Pension Claims | Unregulated Investment Schemes',
+  description: 'SIPP invested in a UCIS? Unregulated collective investment schemes were often unsuitable for pension savers. Solicitor-led UCIS claims; free review.',
   alternates: { canonical: '/mis-sold-sipp-claims/unregulated-collective-investment-schemes/' },
+  openGraph: pageOpenGraph('/mis-sold-sipp-claims/unregulated-collective-investment-schemes/'),
 }
 
 const faqs = [
@@ -112,6 +115,7 @@ export default function UCISPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-sipp-claims/unregulated-collective-investment-schemes/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

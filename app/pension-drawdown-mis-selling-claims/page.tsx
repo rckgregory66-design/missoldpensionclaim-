@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -11,8 +13,9 @@ import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
   title: 'Pension Drawdown Mis-Selling Claims | Unsuitable Drawdown Advice',
-  description: 'Were you advised to go into drawdown when an annuity or staying in your DB scheme would have been more suitable? You may have a claim. Solicitor-led — free review.',
+  description: 'Advised into drawdown when an annuity or staying in your DB scheme was more suitable? You may have a claim. Solicitor-led, with a free initial review.',
   alternates: { canonical: '/pension-drawdown-mis-selling-claims/' },
+  openGraph: pageOpenGraph('/pension-drawdown-mis-selling-claims/'),
 }
 
 const faqs = [
@@ -110,6 +113,7 @@ export default function DrawdownMisSellingPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-drawdown-mis-selling-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

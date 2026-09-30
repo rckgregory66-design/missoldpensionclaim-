@@ -5,12 +5,13 @@ import TrustStrip from '@/components/TrustStrip'
 import ContactForm from '@/components/ContactForm'
 import FAQAccordion from '@/components/FAQAccordion'
 import { OrganizationSchema, FAQSchema } from '@/components/Schema'
-import { siteConfig } from '@/lib/metadata'
+import { siteConfig, pageOpenGraph } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Mis-Sold Pension Claims Solicitors | No Win No Fee Options',
-  description: 'Think you were given bad pension advice? Edward & Amaury Solicitors can often handle eligible mis-sold pension claims on a no win no fee basis. Free initial enquiry.',
+  description: 'Think you were given bad pension advice? We can often handle eligible mis-sold pension claims on a no win no fee basis. Free initial enquiry.',
   alternates: { canonical: '/' },
+  openGraph: pageOpenGraph('/'),
 }
 
 const warningSigns = [

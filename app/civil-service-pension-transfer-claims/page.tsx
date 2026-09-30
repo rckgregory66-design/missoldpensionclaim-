@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, Shield } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Civil Service Pension Transfer Claims | Mis-Sold Pension Solicitors',
+  title: 'Civil Service Pension Transfer Claims | CSPS Mis-Selling',
   description: 'Were you advised to transfer out of the Civil Service Pension Scheme? This is almost always unsuitable. Solicitor-led claims — free initial review.',
   alternates: { canonical: '/civil-service-pension-transfer-claims/' },
+  openGraph: pageOpenGraph('/civil-service-pension-transfer-claims/'),
 }
 
 const faqs = [
@@ -130,6 +133,7 @@ export default function CivilServicePensionPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/civil-service-pension-transfer-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

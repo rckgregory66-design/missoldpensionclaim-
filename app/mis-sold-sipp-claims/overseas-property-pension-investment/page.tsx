@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Overseas Property SIPP Investment Claims | Pension Mis-Selling',
   description: 'Was your SIPP invested in overseas property? Off-plan or foreign property in a pension was high-risk and often mis-sold. Free solicitor review — claim today.',
   alternates: { canonical: '/mis-sold-sipp-claims/overseas-property-pension-investment/' },
+  openGraph: pageOpenGraph('/mis-sold-sipp-claims/overseas-property-pension-investment/'),
 }
 
 const faqs = [
@@ -103,6 +106,7 @@ export default function OverseasPropertyPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-sipp-claims/overseas-property-pension-investment/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

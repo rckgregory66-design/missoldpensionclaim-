@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Pension Ombudsman Complaint Process | Step-by-Step Guide 2025',
-  description: 'How to make a pension complaint to the Financial Ombudsman Service or the Pensions Ombudsman. Step-by-step guide — time limits, what to expect, and how solicitors help.',
+  title: 'Pension Ombudsman Complaint Process | Step-by-Step Guide',
+  description: 'How to complain to the Financial Ombudsman Service or the Pensions Ombudsman: time limits, what to expect, and how solicitors can help.',
   alternates: { canonical: '/pension-ombudsman-complaint-process/' },
+  openGraph: pageOpenGraph('/pension-ombudsman-complaint-process/'),
 }
 
 const faqs = [
@@ -102,6 +105,7 @@ export default function PensionOmbudsmanProcessPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-ombudsman-complaint-process/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

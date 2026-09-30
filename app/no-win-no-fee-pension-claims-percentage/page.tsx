@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, Info } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'No Win No Fee Pension Claims: What Percentage Do Solicitors Charge?',
+  title: 'No Win No Fee Pension Claims: What Percentage Is Charged?',
   description: 'How much do no win no fee solicitors charge for pension mis-selling claims? What is a reasonable percentage? What to look out for in a CFA. Clear guide.',
   alternates: { canonical: '/no-win-no-fee-pension-claims-percentage/' },
+  openGraph: pageOpenGraph('/no-win-no-fee-pension-claims-percentage/'),
 }
 
 const faqs = [
@@ -130,6 +133,7 @@ export default function NoWinNoFeePercentagePage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/no-win-no-fee-pension-claims-percentage/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

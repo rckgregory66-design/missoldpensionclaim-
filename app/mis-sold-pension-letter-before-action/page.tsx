@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, FileText } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Pension Mis-Selling Letter Before Action | Pre-Action Protocol Guide',
+  title: 'Pension Mis-Selling Letter Before Action | Pre-Action Guide',
   description: 'What is a letter before action in a pension mis-selling claim? When is one needed, what must it contain, and how does it differ from an FOS complaint?',
   alternates: { canonical: '/mis-sold-pension-letter-before-action/' },
+  openGraph: pageOpenGraph('/mis-sold-pension-letter-before-action/'),
 }
 
 const faqs = [
@@ -96,6 +99,7 @@ export default function LetterBeforeActionPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-pension-letter-before-action/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

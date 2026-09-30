@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, FileText } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
@@ -12,6 +14,7 @@ export const metadata: Metadata = {
   title: 'What Evidence Do I Need for a Pension Mis-Selling Claim?',
   description: 'Find out what documents and evidence you need for a pension mis-selling claim — and what to do if you no longer have them. Solicitor-led guide.',
   alternates: { canonical: '/what-evidence-do-i-need-for-pension-mis-selling-claim/' },
+  openGraph: pageOpenGraph('/what-evidence-do-i-need-for-pension-mis-selling-claim/'),
 }
 
 const faqs = [
@@ -195,6 +198,7 @@ export default function EvidencePage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/what-evidence-do-i-need-for-pension-mis-selling-claim/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

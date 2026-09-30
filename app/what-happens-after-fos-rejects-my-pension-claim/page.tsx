@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'What Happens After FOS Rejects My Pension Claim? | Options Guide',
   description: 'FOS rejected your pension mis-selling complaint? You still have options — legal action, FSCS, or accepting the decision. Solicitor guide to your next steps.',
   alternates: { canonical: '/what-happens-after-fos-rejects-my-pension-claim/' },
+  openGraph: pageOpenGraph('/what-happens-after-fos-rejects-my-pension-claim/'),
 }
 
 const faqs = [
@@ -60,7 +63,7 @@ export default function FOSRejectionPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">A FOS rejection does not bar a court claim. You have the right to reject the ombudsman's decision and pursue litigation. Courts make their own independent assessment. Time limits apply — take legal advice promptly before your options close.</p>
+              <p className="text-white text-sm leading-relaxed">A Financial Ombudsman rejection does not stop you bringing a court claim. You can reject the ombudsman's decision and pursue litigation, and a court makes its own independent assessment. Time limits still apply, so take legal advice promptly before your options close. Contact us for a free review of your case.</p>
             </div>
 
             <div className="not-prose bg-amber-50 border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8 flex gap-3">
@@ -149,6 +152,7 @@ export default function FOSRejectionPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/what-happens-after-fos-rejects-my-pension-claim/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

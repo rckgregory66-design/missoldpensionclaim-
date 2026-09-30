@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -7,11 +8,13 @@ import MobileCTA from '@/components/MobileCTA'
 import { OrganizationSchema, PersonSchema } from '@/components/Schema'
 import { siteConfig } from '@/lib/metadata'
 
+const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700'], display: 'swap', variable: '--font-inter' })
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: 'Mis-Sold Pension Claims Solicitors | Pension Compensation Claims',
-    template: '%s | Mis-Sold Pension Claim',
+    template: '%s',
   },
   description: 'Solicitor-led support for mis-sold pension, SIPP and defined benefit transfer claims. Free initial enquiry. Edward & Amaury Solicitors, SRA regulated.',
   openGraph: {
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.svg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Mis-Sold Pension Claims Solicitors — Edward & Amaury Solicitors',
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/og-image.svg'],
+    images: ['/og-image.png'],
   },
   verification: {
     google: '_6P32nzvOGjCGUwstNRGa1IWdwkz1AiHTdKa8zbvoOk',
@@ -42,7 +45,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className="h-full antialiased">
+    <html lang="en-GB" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
         <OrganizationSchema />
         <PersonSchema />

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Can I Claim If I Have Moved Abroad? | Pension Mis-Selling from Overseas',
+  title: 'Can I Claim If I Have Moved Abroad? | Pension Mis-Selling',
   description: 'Living abroad does not prevent a UK pension mis-selling claim. You can claim from overseas if the original advice was given in the UK. Find out how.',
   alternates: { canonical: '/can-i-claim-if-i-moved-abroad/' },
+  openGraph: pageOpenGraph('/can-i-claim-if-i-moved-abroad/'),
 }
 
 const faqs = [
@@ -48,7 +51,7 @@ export default function MovedAbroadPage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Many pension mis-selling victims are now living abroad — whether retired to Spain, France, Australia, or elsewhere. Moving country does not extinguish your right to claim against a UK-regulated financial adviser. If the advice was given in the UK and the adviser was FCA-regulated, the claim follows the adviser — not your postcode.</p>
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">Yes — in most cases you can claim from abroad. The entire process can be handled remotely. Contact us for a free review — we work with clients across the world.</p>
+              <p className="text-white text-sm leading-relaxed">Yes, in most cases you can still claim a mis-sold pension from abroad. Living overseas does not usually prevent a Financial Ombudsman, FSCS or legal claim, and the process can generally be handled remotely by post and email. Eligibility depends on where the advice was given and the firm involved, so contact us for a free review.</p>
             </div>
             <h2>What You Can Still Do From Abroad</h2>
             <div className="not-prose space-y-3 mb-8">
@@ -97,6 +100,7 @@ export default function MovedAbroadPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/can-i-claim-if-i-moved-abroad/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Pension Cold Calling Claims | Contacted Out of the Blue?',
   description: 'Pension cold calling has been banned since January 2019. If you were cold-called and then mis-sold a pension, you may have a compensation claim.',
   alternates: { canonical: '/pension-cold-calling-claims/' },
+  openGraph: pageOpenGraph('/pension-cold-calling-claims/'),
 }
 
 const faqs = [
@@ -48,7 +51,7 @@ export default function PensionColdCallingPage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Pension cold calling was one of the most common entry points for pension mis-selling and fraud in the UK. Being called out of the blue about your pension — particularly with offers of a "free review," early access, or high-return investments — is a hallmark of the patterns that led to hundreds of millions in pension losses. If you were cold-called and your pension was subsequently transferred or invested unsuitably, you may have a significant claim.</p>
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">Pension cold calling has been illegal since January 2019. If you were cold-called and subsequently mis-sold a pension product, you may have a compensation claim. Contact us for a free, no-obligation review.</p>
+              <p className="text-white text-sm leading-relaxed">Pension cold calling has been banned in the UK since January 2019. If you were cold-called and then advised to transfer or invest in an unsuitable pension product, you may have a compensation claim against the adviser or firm involved. Contact us for a free, no-obligation review of what happened and which route may apply.</p>
             </div>
             <div className="not-prose bg-red-50 border-l-4 border-red-400 p-5 rounded-r-lg mb-8 flex gap-3">
               <AlertTriangle size={20} className="text-red-500 shrink-0 mt-0.5" />
@@ -97,6 +100,7 @@ export default function PensionColdCallingPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-cold-calling-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

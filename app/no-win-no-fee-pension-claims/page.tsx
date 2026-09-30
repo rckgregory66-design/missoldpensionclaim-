@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, PoundSterling, Shield } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import AuthorBox from '@/components/AuthorBox'
@@ -11,8 +13,9 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema, WebPageSchema } from '@/com
 
 export const metadata: Metadata = {
   title: 'No Win No Fee Pension Claims | Mis-Sold Pension Solicitors',
-  description: 'Edward & Amaury Solicitors can often handle eligible mis-sold pension claims on a no win no fee basis. Learn how funding works, what it may cost and request a free review.',
+  description: 'Edward & Amaury Solicitors can often handle eligible mis-sold pension claims on a no win no fee basis. See how funding works and request a free review.',
   alternates: { canonical: '/no-win-no-fee-pension-claims/' },
+  openGraph: pageOpenGraph('/no-win-no-fee-pension-claims/'),
 }
 
 const faqs = [
@@ -136,6 +139,7 @@ export default function NoWinNoFeePensionClaimsPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/no-win-no-fee-pension-claims/" />
         <div className="mt-14"><PageCTA title="Could No Win No Fee Funding Apply?" body="Start with a free, no-obligation review. Funding availability and all proposed terms will be explained before you decide whether to proceed." /></div>
       </div>
     </>

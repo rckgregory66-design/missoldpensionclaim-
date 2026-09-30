@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Already Used a Claims Management Company? | Can I Switch to a Solicitor?',
+  title: 'Already Used a Claims Management Company? | Your Options',
   description: 'Used a CMC for your pension mis-selling claim but unhappy with progress? You may be able to switch to a solicitor. Find out your rights and options.',
   alternates: { canonical: '/what-if-i-already-used-a-claims-management-company/' },
+  openGraph: pageOpenGraph('/what-if-i-already-used-a-claims-management-company/'),
 }
 
 const faqs = [
@@ -48,7 +51,7 @@ export default function AlreadyUsedCMCPage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">Many people first approach a claims management company (CMC) about a pension mis-selling claim, only to find the process is slower or less satisfying than expected. If you are unhappy with your CMC's progress, or simply want a second opinion, you may have more options than you realise — including switching to a solicitor.</p>
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">Using a CMC first doesn't close off your options. Check your contract for termination rights, and contact us for a free assessment — we can advise on whether and how to switch, without obligation.</p>
+              <p className="text-white text-sm leading-relaxed">Using a claims management company first does not close off your options. Check your contract for termination rights and any fees owed, then contact us for a free assessment. We can advise on whether and how to switch to a solicitor, without obligation, and on any time limits that may apply to your claim.</p>
             </div>
             <h2>CMC vs Solicitor — What's the Difference?</h2>
             <div className="not-prose overflow-x-auto mb-8">
@@ -119,6 +122,7 @@ export default function AlreadyUsedCMCPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/what-if-i-already-used-a-claims-management-company/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

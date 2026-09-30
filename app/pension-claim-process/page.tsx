@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import ContactForm from '@/components/ContactForm'
 import FAQAccordion from '@/components/FAQAccordion'
 import { BreadcrumbSchema, WebPageSchema, ArticleSchema, FAQSchema, HowToSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'The Pension Mis-Selling Claim Process | Step-by-Step Guide',
   description: 'A clear step-by-step guide to how the mis-sold pension claim process works, from initial enquiry through to pursuing compensation.',
   alternates: { canonical: '/pension-claim-process/' },
+  openGraph: pageOpenGraph('/pension-claim-process/'),
 }
 
 const faqs = [
@@ -168,6 +171,7 @@ export default function ClaimProcessPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-claim-process/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

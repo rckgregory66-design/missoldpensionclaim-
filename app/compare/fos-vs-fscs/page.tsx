@@ -1,17 +1,20 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { CheckCircle, XCircle, ArrowRight } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import { BreadcrumbSchema, WebPageSchema, ArticleSchema, FAQSchema } from '@/components/Schema'
 import AuthorBox from '@/components/AuthorBox'
 import FAQAccordion from '@/components/FAQAccordion'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'FOS vs FSCS: Which Route for a Mis-Sold Pension Claim? | Comparison',
-  description: 'Compare the Financial Ombudsman Service (FOS) and the Financial Services Compensation Scheme (FSCS) to find out which route applies to your pension mis-selling claim.',
+  title: 'FOS vs FSCS: Which Route for a Mis-Sold Pension Claim?',
+  description: 'Compare the Financial Ombudsman Service (FOS) and the FSCS to find out which route applies to your pension mis-selling claim.',
   alternates: { canonical: '/compare/fos-vs-fscs/' },
+  openGraph: pageOpenGraph('/compare/fos-vs-fscs/'),
 }
 
 const faqs = [
@@ -114,6 +117,7 @@ export default function FosVsFscsPage() {
           <FAQAccordion faqs={faqs} />
         </div>
 
+        <RelatedGuides href="/compare/fos-vs-fscs/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

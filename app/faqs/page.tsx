@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Pension Mis-Selling FAQs | 40+ Common Questions Answered',
   description: 'Answers to over 40 frequently asked questions about mis-sold pension claims, SIPP compensation, defined benefit transfers, time limits, fees and more.',
   alternates: { canonical: '/faqs/' },
+  openGraph: pageOpenGraph('/faqs/'),
 }
 
 const general = [

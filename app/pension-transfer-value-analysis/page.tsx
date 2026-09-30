@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, Info } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'What Is a Transfer Value Analysis (TVAS)? | Pension Mis-Selling Guide',
-  description: 'A TVAS compared DB scheme benefits with projected returns from the transfer value. Advisers who ignored a negative TVAS and recommended transfer may have mis-sold.',
+  title: 'What Is a Transfer Value Analysis (TVAS)? | Guide',
+  description: 'A TVAS compares DB scheme benefits with projected returns from the transfer value. Advisers who ignored a negative TVAS may have mis-sold. Solicitor guide.',
   alternates: { canonical: '/pension-transfer-value-analysis/' },
+  openGraph: pageOpenGraph('/pension-transfer-value-analysis/'),
 }
 
 const faqs = [
@@ -124,6 +127,7 @@ export default function TVASPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/pension-transfer-value-analysis/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

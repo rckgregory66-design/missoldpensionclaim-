@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, XCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Solicitor vs Direct Claim: Which Is Better for a Pension Claim?',
   description: 'Should you use a solicitor or go direct to FOS or FSCS for your pension claim? Honest comparison of costs, speed, complexity and outcomes. Solicitor guide.',
   alternates: { canonical: '/compare/solicitor-vs-direct-claim/' },
+  openGraph: pageOpenGraph('/compare/solicitor-vs-direct-claim/'),
 }
 
 const faqs = [
@@ -167,6 +170,7 @@ export default function SolicitorVsDirectPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/compare/solicitor-vs-direct-claim/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'FSCS Pension Claims | Financial Services Compensation Scheme Solicitors',
+  title: 'FSCS Pension Claims | Financial Services Compensation Scheme',
   description: 'If your pension adviser or SIPP operator has failed, the FSCS may be able to compensate you. Find out how FSCS pension claims work and how we can help.',
   alternates: { canonical: '/fscs-pension-claims/' },
+  openGraph: pageOpenGraph('/fscs-pension-claims/'),
 }
 
 const faqs = [
@@ -153,6 +156,7 @@ export default function FSCSPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/fscs-pension-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

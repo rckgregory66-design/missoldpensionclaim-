@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { CheckCircle, ArrowRight, AlertTriangle, FileText, Clock } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Mis-Sold Pension Claims | Pension Compensation Solicitors',
   description: 'Find out what a mis-sold pension claim involves, who can claim, what advice may have been unsuitable and how a solicitor can help you pursue compensation.',
   alternates: { canonical: '/mis-sold-pension-claims/' },
+  openGraph: pageOpenGraph('/mis-sold-pension-claims/'),
 }
 
 const faqs = [
@@ -49,7 +52,7 @@ export default function MisSoldPensionClaimsPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">A mis-sold pension claim is a legal or regulatory complaint against a financial adviser who recommended a pension transfer or investment that was not suitable for you. If the advice caused you to lose money or give up guaranteed benefits, you may be able to recover those losses through the Financial Ombudsman Service, the FSCS, or legal proceedings — depending on whether the adviser firm is still trading.</p>
+              <p className="text-white text-sm leading-relaxed">A mis-sold pension claim is a complaint or legal action against a financial adviser who recommended a pension transfer or investment that was not suitable for you. If the advice caused losses or cost you guaranteed benefits, you may recover them through the Financial Ombudsman Service, the FSCS or legal proceedings, depending on whether the firm is still trading.</p>
             </div>
 
             <div className="bg-amber-50 border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
@@ -183,6 +186,7 @@ export default function MisSoldPensionClaimsPage() {
         </div>
 
         <div className="mt-14">
+          <RelatedGuides href="/mis-sold-pension-claims/" />
           <PageCTA />
         </div>
       </div>

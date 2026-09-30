@@ -1,17 +1,20 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import { BreadcrumbSchema, WebPageSchema, ArticleSchema, FAQSchema } from '@/components/Schema'
 import AuthorBox from '@/components/AuthorBox'
 import FAQAccordion from '@/components/FAQAccordion'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Defined Benefit vs Defined Contribution Pensions | Key Differences Explained',
+  title: 'Defined Benefit vs Defined Contribution Pensions Explained',
   description: 'Understand the difference between defined benefit (final salary) and defined contribution pensions — and why it matters for mis-sold pension claims.',
   alternates: { canonical: '/compare/defined-benefit-vs-defined-contribution/' },
+  openGraph: pageOpenGraph('/compare/defined-benefit-vs-defined-contribution/'),
 }
 
 const faqs = [
@@ -60,7 +63,7 @@ export default function DbVsDcPage() {
 
           <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
             <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-            <p className="text-white text-sm leading-relaxed">A <strong className="text-[#c9a84c]">defined benefit (DB) pension</strong> pays a guaranteed income for life based on your salary and service — you cannot run out of money. A <strong className="text-[#c9a84c]">defined contribution (DC) pension</strong> builds up a pot of money that depends on investment performance — the income in retirement is not guaranteed. Transferring from DB to DC means giving up that guarantee, which is why the FCA says for most people it will not be in their best interests.</p>
+            <p className="text-white text-sm leading-relaxed">A <strong className="text-[#c9a84c]">defined benefit (DB) pension</strong> pays a guaranteed income for life based on salary and service. A <strong className="text-[#c9a84c]">defined contribution (DC) pension</strong> builds a pot whose value depends on investment performance, so retirement income is not guaranteed. Transferring from DB to DC means giving up that guarantee, which is why the FCA says it will not be in most people's best interests.</p>
           </div>
 
           <div className="not-prose bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg mb-8">
@@ -107,6 +110,7 @@ export default function DbVsDcPage() {
           <FAQAccordion faqs={faqs} />
         </div>
 
+        <RelatedGuides href="/compare/defined-benefit-vs-defined-contribution/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

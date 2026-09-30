@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Storage Pod Pension Investment Claims | SIPP Mis-Selling Solicitors',
+  title: 'Storage Pod Pension Investment Claims | SIPP Mis-Selling',
   description: 'Were you advised to invest your SIPP in storage pods? This was a high-risk unregulated investment. Solicitor-led claims — free initial review.',
   alternates: { canonical: '/mis-sold-sipp-claims/storage-pod-pension-investment/' },
+  openGraph: pageOpenGraph('/mis-sold-sipp-claims/storage-pod-pension-investment/'),
 }
 
 const faqs = [
@@ -123,6 +126,7 @@ export default function StoragePodPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-sipp-claims/storage-pod-pension-investment/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

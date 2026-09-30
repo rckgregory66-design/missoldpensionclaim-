@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -11,8 +13,9 @@ import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
   title: 'What Is a Personal Pension? | Types, Rules & Mis-Selling Guide',
-  description: 'A personal pension is a defined contribution scheme you arrange yourself. Learn how personal pensions work, who they are for, and when advice about them can be mis-selling.',
+  description: 'A personal pension is a defined contribution scheme you arrange yourself. How they work, who they suit, and when advice about them can be mis-selling.',
   alternates: { canonical: '/what-is-a-personal-pension/' },
+  openGraph: pageOpenGraph('/what-is-a-personal-pension/'),
 }
 
 const faqs = [
@@ -91,6 +94,7 @@ export default function WhatIsPersonalPensionPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/what-is-a-personal-pension/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

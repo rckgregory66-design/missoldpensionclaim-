@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, XCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Pensions Ombudsman vs FOS: Which Handles Your Complaint?',
   description: 'The Pensions Ombudsman and the FOS handle different types of pension complaint. Find out which one applies to your mis-selling or administration claim.',
   alternates: { canonical: '/compare/pensions-ombudsman-vs-fos/' },
+  openGraph: pageOpenGraph('/compare/pensions-ombudsman-vs-fos/'),
 }
 
 const faqs = [
@@ -139,6 +142,7 @@ export default function PensionsOmbudsmansVsFOSPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/compare/pensions-ombudsman-vs-fos/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

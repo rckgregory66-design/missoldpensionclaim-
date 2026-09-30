@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, Shield } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Police Pension Transfer Claims | Mis-Sold Pension Solicitors',
   description: 'Were you advised to transfer out of the Police Pension Scheme? Transferring from a police pension is almost always unsuitable advice. Free initial review.',
   alternates: { canonical: '/police-pension-transfer-claims/' },
+  openGraph: pageOpenGraph('/police-pension-transfer-claims/'),
 }
 
 const faqs = [
@@ -57,7 +60,7 @@ export default function PolicePensionPage() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed speakable">The Police Pension Scheme is one of the most comprehensive occupational pension schemes in the UK. It provides officers with guaranteed, index-linked income and unique protections for injury and ill-health. Advice to transfer out of it was almost always unsuitable. If you were advised to transfer and have suffered losses, you may have grounds for a significant claim.</p>
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-6">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">For the overwhelming majority of police officers, advice to transfer out of the Police Pension Scheme was unsuitable. If you transferred and suffered a loss, you may have a significant compensation claim. Contact us for a free review.</p>
+              <p className="text-white text-sm leading-relaxed">The FCA's position is that transferring out of a defined benefit scheme such as the Police Pension Scheme is not in most people's best interests. If you were advised to transfer and suffered a loss, you may have a compensation claim. Time limits apply, so contact us for a free review promptly.</p>
             </div>
             <div className="not-prose bg-red-50 border-l-4 border-red-400 p-5 rounded-r-lg mb-8 flex gap-3">
               <AlertTriangle size={20} className="text-red-500 shrink-0 mt-0.5" />
@@ -110,6 +113,7 @@ export default function PolicePensionPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/police-pension-transfer-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

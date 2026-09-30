@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, FileText } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'What Is a Suitability Report? | Pension Advice Documentation Guide',
-  description: 'A suitability report is required documentation from a regulated adviser explaining why their recommendation was suitable for you. Missing or poor ones support mis-selling claims.',
+  title: 'What Is a Suitability Report? | Pension Advice Guide',
+  description: 'A suitability report is the document a regulated adviser must give you explaining why their advice was suitable. Missing or poor ones can support a claim.',
   alternates: { canonical: '/what-is-a-suitability-report/' },
+  openGraph: pageOpenGraph('/what-is-a-suitability-report/'),
 }
 
 const faqs = [
@@ -150,6 +153,7 @@ export default function SuitabilityReportPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/what-is-a-suitability-report/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

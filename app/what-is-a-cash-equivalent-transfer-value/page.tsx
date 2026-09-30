@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, Info } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'What Is a Cash Equivalent Transfer Value (CETV)? | Pension Guide',
   description: 'A CETV is the lump sum your defined benefit scheme will pay to transfer your pension. It rarely reflects the true value of what you give up. Solicitor guide.',
   alternates: { canonical: '/what-is-a-cash-equivalent-transfer-value/' },
+  openGraph: pageOpenGraph('/what-is-a-cash-equivalent-transfer-value/'),
 }
 
 const faqs = [
@@ -119,6 +122,7 @@ export default function CETVPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/what-is-a-cash-equivalent-transfer-value/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, Shield } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'NHS Pension Transfer Claims | Mis-Sold Final Salary Pension Solicitors',
+  title: 'NHS Pension Transfer Claims | Mis-Sold Pension Solicitors',
   description: 'Were you advised to transfer out of the NHS pension? It is almost never suitable. Solicitor-led NHS pension transfer mis-selling claims. Free initial review.',
   alternates: { canonical: '/nhs-pension-transfer-claims/' },
+  openGraph: pageOpenGraph('/nhs-pension-transfer-claims/'),
 }
 
 const faqs = [
@@ -146,6 +149,7 @@ export default function NHSPensionTransferPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/nhs-pension-transfer-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

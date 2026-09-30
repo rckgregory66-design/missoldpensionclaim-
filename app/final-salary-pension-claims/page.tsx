@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Final Salary Pension Transfer Claims | Final Salary Mis-Selling Solicitors',
+  title: 'Final Salary Pension Transfer Claims | Mis-Selling Solicitors',
   description: 'Were you advised to give up your final salary pension? Solicitor-led support for final salary pension transfer mis-selling claims. Free initial enquiry.',
   alternates: { canonical: '/final-salary-pension-claims/' },
+  openGraph: pageOpenGraph('/final-salary-pension-claims/'),
 }
 
 const faqs = [
@@ -48,7 +51,7 @@ export default function FinalSalaryPage() {
 
             <div className="not-prose bg-[#0f2035] border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
               <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-wide mb-2">Quick Answer</p>
-              <p className="text-white text-sm leading-relaxed">A final salary pension transfer claim is a complaint or legal action against a financial adviser who recommended you give up your guaranteed lifetime income. Final salary and defined benefit pensions are the same thing. The FCA's position is that for most people, transferring out is not in their best interests. If you received advice to transfer — especially between 2015 and 2020 when transfer values were high — it is worth a free review.</p>
+              <p className="text-white text-sm leading-relaxed">A final salary pension transfer claim is a complaint or legal action against an adviser who recommended giving up your guaranteed lifetime income. Final salary and defined benefit pensions are the same thing. The FCA's position is that transferring out is not in most people's best interests. If you were advised to transfer, especially between 2015 and 2020, a free review is worthwhile.</p>
             </div>
 
             <div className="bg-amber-50 border-l-4 border-[#c9a84c] p-5 rounded-r-lg mb-8">
@@ -125,6 +128,7 @@ export default function FinalSalaryPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/final-salary-pension-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

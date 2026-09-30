@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, AlertTriangle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Can I Claim If I Am Already Retired? | Pension Mis-Selling Claims',
+  title: 'Can I Claim If I Am Already Retired? | Pension Claims',
   description: 'Already retired? You can still make a mis-sold pension claim. Retirement does not bar you from compensation. Free initial review — Edward & Amaury Solicitors.',
   alternates: { canonical: '/can-i-claim-if-i-am-already-retired/' },
+  openGraph: pageOpenGraph('/can-i-claim-if-i-am-already-retired/'),
 }
 
 const faqs = [
@@ -134,6 +137,7 @@ export default function AlreadyRetiredPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/can-i-claim-if-i-am-already-retired/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

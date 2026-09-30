@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { CheckCircle, AlertTriangle, ArrowRight, XCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import ContactForm from '@/components/ContactForm'
 import FAQAccordion from '@/components/FAQAccordion'
 import { BreadcrumbSchema, WebPageSchema, ArticleSchema, FAQSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'How Do I Know If My Pension Was Mis-Sold? | Eligibility Checklist',
   description: 'Use our practical checklist to identify the signs that your pension may have been mis-sold. Find out whether you may have grounds for a compensation claim.',
   alternates: { canonical: '/how-do-i-know-if-my-pension-was-mis-sold/' },
+  openGraph: pageOpenGraph('/how-do-i-know-if-my-pension-was-mis-sold/'),
 }
 
 const faqs = [
@@ -173,6 +176,7 @@ export default function EligibilityPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/how-do-i-know-if-my-pension-was-mis-sold/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

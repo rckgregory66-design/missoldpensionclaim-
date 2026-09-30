@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, Clock } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Mis-Sold SIPP Claims | SIPP Pension Compensation Solicitors',
   description: 'If you were advised to transfer your pension into an unsuitable SIPP or high-risk investment, you may be able to claim compensation. Find out more.',
   alternates: { canonical: '/mis-sold-sipp-claims/' },
+  openGraph: pageOpenGraph('/mis-sold-sipp-claims/'),
 }
 
 const faqs = [
@@ -163,6 +166,7 @@ export default function MisSoldSippClaimsPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/mis-sold-sipp-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

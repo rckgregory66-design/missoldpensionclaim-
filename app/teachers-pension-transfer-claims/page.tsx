@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle, Shield } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Teachers Pension Transfer Claims | Mis-Sold Pension Solicitors',
   description: 'Were you advised to transfer out of the Teachers Pension Scheme? This is almost always unsuitable advice. Solicitor-led claims — free initial review.',
   alternates: { canonical: '/teachers-pension-transfer-claims/' },
+  openGraph: pageOpenGraph('/teachers-pension-transfer-claims/'),
 }
 
 const faqs = [
@@ -128,6 +131,7 @@ export default function TeachersPensionPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/teachers-pension-transfer-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

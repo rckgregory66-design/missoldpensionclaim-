@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, Info } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'How Is DB Pension Transfer Redress Calculated? | Compensation Guide',
-  description: 'Defined benefit pension transfer redress is calculated by comparing what you gave up with what you now have. Solicitor guide to FCA redress methodology for DB transfers.',
+  title: 'How Is DB Pension Transfer Redress Calculated? | Guide',
+  description: "DB transfer redress compares what you gave up with what you now have. Solicitor guide to the FCA's redress methodology for defined benefit transfers.",
   alternates: { canonical: '/how-is-defined-benefit-pension-transfer-redress-calculated/' },
+  openGraph: pageOpenGraph('/how-is-defined-benefit-pension-transfer-redress-calculated/'),
 }
 
 const faqs = [
@@ -154,6 +157,7 @@ export default function DBRedressPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/how-is-defined-benefit-pension-transfer-redress-calculated/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

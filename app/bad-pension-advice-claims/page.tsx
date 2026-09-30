@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Bad Pension Advice Claims | Negligent Pension Advice Solicitors',
-  description: 'If you received negligent or unsuitable pension advice from a financial adviser, you may be able to claim compensation. Find out what bad pension advice looks like.',
+  title: 'Bad Pension Advice Claims | Negligent Advice Solicitors',
+  description: 'Received negligent or unsuitable pension advice? You may be able to claim compensation. Find out what bad pension advice looks like and what to do next.',
   alternates: { canonical: '/bad-pension-advice-claims/' },
+  openGraph: pageOpenGraph('/bad-pension-advice-claims/'),
 }
 
 const faqs = [
@@ -129,6 +132,7 @@ export default function BadPensionAdvicePage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/bad-pension-advice-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

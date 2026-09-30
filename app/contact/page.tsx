@@ -3,12 +3,13 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, WebPageSchema } from '@/components/Schema'
-import { siteConfig } from '@/lib/metadata'
+import { siteConfig, pageOpenGraph } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Free Pension Mis-Selling Enquiry',
   description: 'Contact Edward & Amaury Solicitors for a free, no-obligation initial enquiry about a mis-sold pension claim. Call us or complete the enquiry form.',
   alternates: { canonical: '/contact/' },
+  openGraph: pageOpenGraph('/contact/'),
 }
 
 export default function ContactPage() {

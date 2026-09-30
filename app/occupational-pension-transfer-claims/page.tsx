@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, AlertTriangle, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
 import PageCTA from '@/components/PageCTA'
+import RelatedGuides from '@/components/RelatedGuides'
 import FAQAccordion from '@/components/FAQAccordion'
 import ContactForm from '@/components/ContactForm'
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, ArticleSchema } from '@/components/Schema'
@@ -10,9 +12,10 @@ import AuthorBox from '@/components/AuthorBox'
 import TLDRBox from '@/components/TLDRBox'
 
 export const metadata: Metadata = {
-  title: 'Occupational Pension Transfer Claims | Private Sector DB Mis-Selling',
+  title: 'Occupational Pension Transfer Claims | Private Sector DB',
   description: 'Were you advised to transfer out of your employer\'s occupational DB pension? This is almost always unsuitable advice. Solicitor-led claims — free review.',
   alternates: { canonical: '/occupational-pension-transfer-claims/' },
+  openGraph: pageOpenGraph('/occupational-pension-transfer-claims/'),
 }
 
 const faqs = [
@@ -93,6 +96,7 @@ export default function OccupationalPensionPage() {
             </div>
           </aside>
         </div>
+        <RelatedGuides href="/occupational-pension-transfer-claims/" />
         <div className="mt-14"><PageCTA /></div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { pageOpenGraph } from '@/lib/metadata'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: 'Self-Invested Personal Pension (SIPP) Mis-Selling Claim',
   description: 'Were you advised to invest your pension in a high-risk SIPP? If your SIPP was mis-sold — through unsuitable advice, high-risk investments, or an unregulated introducer — you may have a claim.',
   alternates: { canonical: '/self-invested-personal-pension-claim/' },
+  openGraph: pageOpenGraph('/self-invested-personal-pension-claim/'),
 }
 
 const faqs = [
