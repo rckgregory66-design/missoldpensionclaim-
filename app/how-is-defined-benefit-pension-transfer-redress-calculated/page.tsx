@@ -147,6 +147,7 @@ export default function DBRedressPage() {
                   { label: 'Defined Benefit Transfer Claims', href: '/defined-benefit-pension-transfer-claims/' },
                   { label: 'Final Salary Pension Claims', href: '/final-salary-pension-claims/' },
                   { label: 'NHS Pension Transfer Claims', href: '/nhs-pension-transfer-claims/' },
+                  { label: 'British Steel Pension Redress', href: '/british-steel-pension-scheme-redress/' },
                   { label: 'Compensation Guide', href: '/mis-sold-pension-compensation-calculator/' },
                   { label: 'Is Compensation Taxable?', href: '/is-pension-mis-selling-compensation-taxable/' },
                   { label: 'Time Limits', href: '/time-limits-mis-sold-pension-claims/' },

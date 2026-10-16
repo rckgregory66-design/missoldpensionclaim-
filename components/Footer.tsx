@@ -63,6 +63,7 @@ const infoLinks = [
   { label: 'No Win No Fee Percentage', href: '/no-win-no-fee-pension-claims-percentage/' },
   { label: 'How to Make an FSCS Claim', href: '/how-to-make-an-fscs-pension-claim/' },
   { label: 'What Is a CETV?', href: '/what-is-a-cash-equivalent-transfer-value/' },
+  { label: 'British Steel Pension Redress', href: '/british-steel-pension-scheme-redress/' },
   { label: 'DB Transfer Redress Calculation', href: '/how-is-defined-benefit-pension-transfer-redress-calculated/' },
   { label: 'Compare: FOS vs Legal Action', href: '/compare/fos-vs-legal-action/' },
   { label: 'Compare: FOS vs FSCS', href: '/compare/fos-vs-fscs/' },

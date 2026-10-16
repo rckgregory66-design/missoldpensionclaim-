@@ -61,6 +61,7 @@ const routes = [
   // Batch 3 — process detail + compare pages
   { url: '/what-happens-after-fos-rejects-my-pension-claim/', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/how-is-defined-benefit-pension-transfer-redress-calculated/', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/british-steel-pension-scheme-redress/', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: '2026-10-16' },
   // Compare pages
   { url: '/compare/fos-vs-fscs/', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/compare/fos-vs-legal-action/', priority: 0.7, changeFrequency: 'monthly' as const },
@@ -104,6 +105,7 @@ const routes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map(route => ({
     url: `${BASE_URL}${route.url}`,
+    ...('lastModified' in route ? { lastModified: route.lastModified } : {}),
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }))

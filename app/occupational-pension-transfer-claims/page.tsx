@@ -85,6 +85,7 @@ export default function OccupationalPensionPage() {
                 {[
                   { label: 'Defined Benefit Transfer Claims', href: '/defined-benefit-pension-transfer-claims/' },
                   { label: 'Final Salary Pension Claims', href: '/final-salary-pension-claims/' },
+                  { label: 'British Steel Pension Redress', href: '/british-steel-pension-scheme-redress/' },
                   { label: 'DB Redress Calculation', href: '/how-is-defined-benefit-pension-transfer-redress-calculated/' },
                   { label: 'What Is a CETV?', href: '/what-is-a-cash-equivalent-transfer-value/' },
                   { label: 'FSCS Pension Claims', href: '/fscs-pension-claims/' },
